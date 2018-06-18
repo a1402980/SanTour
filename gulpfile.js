@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
-//var concat = require('gulp-concat');
+var concat = require('gulp-concat');
 var notify = require("gulp-notify");
 //var compass = require("gulp-compass");
 var minify = require('gulp-minifier');
@@ -13,7 +13,8 @@ var minify = require('gulp-minifier');
 
 gulp.task('sass', function() {
 
-	gulp.src('assets/scss/*.scss')
+	//gulp.src('assets/scss/*.scss')
+	gulp.src('assets/scss/main.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass({outputStyle: 'compact'}).on("error", notify.onError({
 		message: "Error: <%= error.message %>",
