@@ -1,15 +1,24 @@
 $text: #0F110F;
 $black: #000000;
 
+$green: #B1A664;
+$lightGreen:#DFD285;
+$darkGreen:#93894B;
+
+$sm: 48em;
+$md: 62em;
+$lg: 75em;
+
 @import 'fonts';
 @import 'typography';
+@import 'common';
 @import 'flexboxgrid';
 @import 'navigation';
 
 
-
 body{
   margin: 0;
+  min-width: 400px;
   main{
     background-image: url('../../img/backgrounds/bg1.jpg');
     min-height: 100vh;

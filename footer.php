@@ -1,5 +1,4 @@
-<script src="js/scripts.js"></script>
-
+<script src="assets/minified/js/scripts.min.js" ></script>
 <footer>
 
 </footer>

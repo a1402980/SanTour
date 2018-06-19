@@ -1,12 +1,14 @@
 //desktop nav styles
 
 nav{
-  width: 100%;
+  width:  calc(100% - 80px);
   height: 40px;
   position: absolute;
   top: 0;
+  padding-top: 5px;
+  margin: 0px 40px;
 
-  #navigation{
+  #nav-links{
     float: right;
     margin:0;
     padding:0;
@@ -16,9 +18,9 @@ nav{
     margin:0;
     }
     a:link,a:visited {
-      color:#000;
-    	background:#b2b580;
-    	padding:10px 20px;
+      color:white;
+    	padding:10px 30px;
+      text-decoration: none;
     }
   }
   #some{
@@ -33,7 +35,14 @@ nav{
     a:link,a:visited {
       text-decoration: none;
       i{
-        font-size: 30px
+        font-size: 40px;
+        &.facebook{
+         color: #3b5998;
+        }
+        &.twitter{
+         color: #00aced;
+        }
+
       }
     }
   }
@@ -42,3 +51,66 @@ nav{
 
 
 //mobile nav styles
+
+//flexbox md width
+@media screen and (max-width: $sm) {
+
+  nav{
+    margin: 0px 5px;
+
+    #navigation{
+      display: none !important;
+      visibility: hidden;
+    }
+    #mobile-navigation{
+      display: block;
+
+      .nav-toggle{
+        background-color: transparent;
+        color: white;
+        padding: 0;
+        i{
+          font-size: 40px;
+        }
+      }
+
+      #mobile-links{
+        float: right;
+        margin:0;
+        padding:0;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0;
+        background-color:$green;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 30px;
+
+        a{
+          color: white;
+          font-size: 30px;
+          text-decoration: none;
+        }
+
+        .nav-toggle{
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        &.open{
+          width: 300px !important;
+        }
+      }
+    }
+
+
+
+  }
+
+
+
+}

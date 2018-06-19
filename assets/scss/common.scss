@@ -1,0 +1,27 @@
+//this file contains common elements stylesheet
+
+button{
+  background-color: $green;
+  border-radius: 40px;
+  border: none;
+  padding: 10px 30px;
+  font-family: 'Roboto-Medium';
+  color: white;
+  text-transform: uppercase;
+
+  &:hover{
+    background-color: $darkGreen;
+    cursor: pointer;
+  }
+  &:active{
+    background-color: $lightGreen;
+  }
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}

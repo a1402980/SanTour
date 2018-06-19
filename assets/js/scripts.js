@@ -15,7 +15,14 @@ $( ".info-trigger" ).click(function() {
 $( ".more-info" ).slideToggle()
 });
 
+
+$( ".nav-toggle" ).click(function(){
+  //$( "#mobile-links" ).toggle();
+  $( "#mobile-links" ).toggleClass("open");
 });
+
+});
+
 
 
 function getWeather(gps) {
