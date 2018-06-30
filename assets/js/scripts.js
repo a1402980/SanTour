@@ -1,3 +1,11 @@
+$(function() {
+  $(".lazy").Lazy({
+      afterLoad: function(element) {
+          console.log("loaded lazy!")
+      }
+  });
+});
+
 $( document ).ready(function() {
 
   console.log("Ready!");
@@ -21,12 +29,40 @@ $( ".nav-toggle" ).click(function(){
   $( "#mobile-links" ).toggleClass("open");
 });
 
-$("#start-button").click(function(){
-  $("#page-1").removeClass("active");
-  $("#page-2").addClass("active");
+
+$(".map-canton").click(function(){
+  $("#canton-select").val($(this).attr('id'));
 });
 
+$(".next-page").click(function(){
+  //take id of closest section and add +1 to it
+  var pageNum = $(this).closest('section').attr('id');
+  var num = pageNum.split("-");
+  num = parseInt(num[1])+1;
+  //console.log(num);
+  $(".page").removeClass("active");
+  $("#page-"+num).addClass("active");
 });
+
+$(".img-carousel img").click(function(){
+  $(".img-carousel img").removeClass("selected");
+  $(this).addClass("selected");
+  var strNum = $(this).attr('id');
+  var num = strNum.split("-");
+  num = parseInt(num[1]);
+  $(this).parent().next().val(num);
+});
+
+$(".slider").on('input', function () {
+    var value = $(this).val();
+    $(this).prev().children().removeClass("selected");
+    $(this).prev().find('#img-'+value).addClass("selected")
+});
+
+
+
+});
+
 
 
 

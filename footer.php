@@ -3,11 +3,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p>Footer text is here bla bla</p>
+        <p>© SanTour <?php echo date("Y"); ?></p>
       </div>
     </div>
   </div>
 </footer>
-  
+
 </body>
 </html>
