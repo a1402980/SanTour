@@ -1,30 +1,109 @@
 $text: #0F110F;
 $black: #000000;
 
-$green: #B1A664;
-$lightGreen:#DFD285;
-$darkGreen:#93894B;
+$tan: #B1A664;
+$lightTan:#DFD285;
+$darkTan:#93894B;
 
-$sm: 48em;
-$md: 62em;
-$lg: 75em;
+$green: #B6F890;
+$lightGreen: #E9FFD6;
+
+$sm: 33.75em;
+$md: 45em;
+$lg: 60em;
 
 @import 'fonts';
 @import 'typography';
 @import 'common';
-@import 'flexboxgrid';
+//@import 'flexboxgrid';
+@import 'simple-grid';
 @import 'navigation';
+@import 'footer';
 
 
 body{
-  margin: 0;
-  min-width: 400px;
-  main{
-    background-image: url('../../img/backgrounds/bg1.jpg');
+  min-width: 320px;
+  .page{
     min-height: 100vh;
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    display: none;
+
+    &.active{
+      -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 0.5s; /* Firefox < 16 */
+      -ms-animation: fadein 0.5s; /* Internet Explorer */
+      -o-animation: fadein 0.5s; /* Opera < 12.1 */
+      animation: fadein 0.5s;
+
+      opacity: 1;
+      display: block;
+    }
+
+    .container{
+      padding-top: 4em;
+    }
   }
+  .bg1{
+    background-image: url('../../img/backgrounds/bg1.jpg');
+  }
+  .bg2{
+    background-image: url('../../img/backgrounds/bg2.jpg');
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+//swiss map styles
+#map{
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  .st0,.st1{
+    fill: #FFFFFF;
+    stroke: $green;
+    stroke-width: 2;
+    opacity: 0.9;
+
+    &:hover{
+      fill: $lightGreen;
+      cursor: pointer;
+    }
+  }
+    //hide circles around cities
+    //circle{display: none;}
+    .st0{stroke-miterlimit:10;}
+    .st2{opacity:0.87;}
+    .st3{fill:#BDDCE8;}
+    //hide names of cantons
+    //.st4{display: none;}
+    .st5{display:inline;}
+    .st6{font-family:'Roboto-Medium'}
+    .st7{font-size:20px;}
+    .st8{font-size:10px;}
 }

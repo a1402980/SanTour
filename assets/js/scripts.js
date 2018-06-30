@@ -21,6 +21,11 @@ $( ".nav-toggle" ).click(function(){
   $( "#mobile-links" ).toggleClass("open");
 });
 
+$("#start-button").click(function(){
+  $("#page-1").removeClass("active");
+  $("#page-2").addClass("active");
+});
+
 });
 
 

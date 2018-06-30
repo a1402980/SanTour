@@ -1,7 +1,7 @@
 //this file contains common elements stylesheet
 
 button{
-  background-color: $green;
+  background-color: $tan;
   border-radius: 40px;
   border: none;
   padding: 10px 30px;
@@ -10,11 +10,11 @@ button{
   text-transform: uppercase;
 
   &:hover{
-    background-color: $darkGreen;
+    background-color: $darkTan;
     cursor: pointer;
   }
   &:active{
-    background-color: $lightGreen;
+    background-color: $lightTan;
   }
 }
 

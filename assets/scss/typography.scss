@@ -4,6 +4,7 @@ h1{
   color: $text;
   letter-spacing: -1px;
   line-height: 54px;
+  margin: 30px 0px 25px 0px;
   }
 
 h2{
@@ -12,6 +13,7 @@ h2{
   color: $text;
   letter-spacing: -0.5px;
   line-height: 31px;
+  margin: 25px 0px 15px 0px;
   }
 
   h3{
@@ -20,6 +22,7 @@ h2{
     color: $text;
     letter-spacing: -0.5px;
     line-height: 27px;
+    margin: 20px 0px 10px 0px;
   }
   h4{
     font-family: 'Roboto-Medium', sans-serif;
@@ -27,36 +30,42 @@ h2{
     color: $text;
     letter-spacing: 0;
     line-height: 20px;
+    margin: 15px 0px 10px 0px;
   }
   h5{
     font-family: 'Roboto-Medium', sans-serif;
     font-size: 16px;
     color: $text;
     letter-spacing: 0.5px;
+    margin: 10px 0px 5px 0px;
   }
   p{
     font-family: 'Roboto-Medium', sans-serif;
     font-size: 16px;
     color: $black;
     line-height: 24px;
+    margin: 10px 0px 5px 0px;
   }
   .secondary-p{
     font-family: 'Roboto-SemiBold', sans-serif;
     font-size: 16px;
     color: $text;
     line-height: 21px;
+    margin: 10px 0px 5px 0px;
   }
   a{
     font-family: 'Roboto-SemiBold', sans-serif;
     font-size: 16px;
-    color: $green;
+    color: $tan;
     line-height: 21px;
   }
   .thin-text{
     font-family: 'Roboto-Thin', sans-serif;
+    text-shadow: 1px 1px 5px white;
     font-size: 33px;
     color: $text;
     letter-spacing: -0.14px;
     text-align: center;
     line-height: 33px;
+    margin: 20px 0px 10px 0px;
   }
