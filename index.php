@@ -1,9 +1,9 @@
 <?php
 require_once('header.php');
 ?>
-<main>
+<main class="bg1 noblur">
 
-  <section id="page-1" class="page bg1 active">
+  <section id="page-1" class="page active">
     <div class="container">
       <div class="row">
         <div class="col-12 center">
@@ -17,7 +17,7 @@ require_once('header.php');
 
   <form action="index.php" method="post">
 
-    <section id="page-2" class="page bg2 lazy">
+    <section id="page-2" class="page lazy">
       <div class="container">
         <div class="row">
           <div class="col-12 center">
@@ -64,7 +64,7 @@ require_once('header.php');
       </div>
     </section>
 
-    <section id="page-3" class="page bg3 lazy">
+    <section id="page-3" class="page lazy">
       <div class="container">
         <div class="row">
           <div class="col-12 center">
@@ -107,7 +107,7 @@ require_once('header.php');
       </div>
     </section>
 
-    <section id="page-4" class="page bg4 lazy">
+    <section id="page-4" class="page lazy">
       <div class="container">
         <div class="row">
           <div class="col-12 center">
@@ -151,7 +151,7 @@ require_once('header.php');
       </div>
     </section>
 
-    <section id="page-5" class="page bg5 lazy">
+    <section id="page-5" class="page lazy">
       <div class="container">
         <div class="row">
           <div class="col-12 center">

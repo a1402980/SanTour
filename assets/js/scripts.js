@@ -32,6 +32,8 @@ $( ".nav-toggle" ).click(function(){
 
 $(".map-canton").click(function(){
   $("#canton-select").val($(this).attr('id'));
+  $("#map .map-canton").removeClass("selected");
+  $(this).addClass("selected")
 });
 
 $(".next-page").click(function(){
@@ -42,7 +44,17 @@ $(".next-page").click(function(){
   //console.log(num);
   $(".page").removeClass("active");
   $("#page-"+num).addClass("active");
+  changeBG();
 });
+
+function changeBG(){
+
+  var x = Math.floor((Math.random() * 9) + 1);
+
+  $("main").removeClass();
+  $("main").addClass("bg"+x);
+
+}
 
 $(".img-carousel img").click(function(){
   $(".img-carousel img").removeClass("selected");

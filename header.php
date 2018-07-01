@@ -22,9 +22,12 @@ define('URL_DIR', 'http'.'://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT
   <meta name="description" content="Hiking service">
   <meta name="author" content="Mikko Lerto">
 
+
+
   <link rel="stylesheet" href="assets/minified/css/main.min.css">
   <script src="assets/minified/vendor/jquery-3.3.1.min.js" ></script>
   <script src="assets/minified/vendor/jquery.lazy.min.js" ></script>
+
 
 </head>
 

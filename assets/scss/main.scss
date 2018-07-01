@@ -23,11 +23,36 @@ $lg: 60em;
 
 body{
   min-width: 320px;
+  main::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+    transform: scale(1.1);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+  .noblur::before{
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+  }
   .page{
     min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     padding: 0;
     margin: 0;
     opacity: 0;
@@ -48,22 +73,107 @@ body{
       padding-top: 4em;
     }
   }
-  .bg1{
-    background-image: url('../../img/backgrounds/bg1.jpg');
+}
+
+
+@media screen and (min-width: $lg){
+
+  .bg1::before{
+    background-image: url('../../img/backgrounds/large/bg1.jpg');
+
   }
-  .bg2{
-    background-image: url('../../img/backgrounds/bg2.jpg');
+  .bg2::before{
+    background-image: url('../../img/backgrounds/large/bg2.jpg');
   }
-  .bg3{
-    background-image: url('../../img/backgrounds/bg3.jpg');
+  .bg3::before{
+    background-image: url('../../img/backgrounds/large/bg3.jpg');
   }
-  .bg4{
-    background-image: url('../../img/backgrounds/bg4.jpg');
+  .bg4::before{
+    background-image: url('../../img/backgrounds/large/bg4.jpg');
   }
-  .bg5{
-    background-image: url('../../img/backgrounds/bg5.jpg');
+  .bg5::before{
+    background-image: url('../../img/backgrounds/large/bg5.jpg');
+  }
+  .bg6::before{
+    background-image: url('../../img/backgrounds/large/bg6.jpg');
+  }
+  .bg7::before{
+    background-image: url('../../img/backgrounds/large/bg7.jpg');
+  }
+  .bg8::before{
+    background-image: url('../../img/backgrounds/large/bg8.jpg');
+  }
+  .bg9::before{
+    background-image: url('../../img/backgrounds/large/bg9.jpg');
   }
 }
+
+@media screen and (max-width: $lg) and (min-width: $md){
+
+  .bg1::before{
+    background-image: url('../../img/backgrounds/medium/bg1.jpg');
+  }
+  .bg2::before{
+    background-image: url('../../img/backgrounds/medium/bg2.jpg');
+  }
+  .bg3::before{
+    background-image: url('../../img/backgrounds/medium/bg3.jpg');
+  }
+  .bg4::before{
+    background-image: url('../../img/backgrounds/medium/bg4.jpg');
+  }
+  .bg5::before{
+    background-image: url('../../img/backgrounds/medium/bg5.jpg');
+  }
+  .bg6::before{
+    background-image: url('../../img/backgrounds/medium/bg6.jpg');
+  }
+  .bg7::before{
+    background-image: url('../../img/backgrounds/medium/bg7.jpg');
+  }
+  .bg8::before{
+    background-image: url('../../img/backgrounds/medium/bg8.jpg');
+  }
+  .bg9::before{
+    background-image: url('../../img/backgrounds/medium/bg9.jpg');
+  }
+
+}
+
+
+@media screen and (max-width: $md){
+
+  .bg1::before{
+    background-image: url('../../img/backgrounds/small/bg1.jpg');
+  }
+  .bg2::before{
+    background-image: url('../../img/backgrounds/small/bg2.jpg');
+  }
+  .bg3::before{
+    background-image: url('../../img/backgrounds/small/bg3.jpg');
+  }
+  .bg4::before{
+    background-image: url('../../img/backgrounds/small/bg4.jpg');
+  }
+  .bg5::before{
+    background-image: url('../../img/backgrounds/small/bg5.jpg');
+  }
+  .bg6::before{
+    background-image: url('../../img/backgrounds/small/bg6.jpg');
+  }
+  .bg7::before{
+    background-image: url('../../img/backgrounds/small/bg7.jpg');
+  }
+  .bg8::before{
+    background-image: url('../../img/backgrounds/small/bg8.jpg');
+  }
+  .bg9::before{
+    background-image: url('../../img/backgrounds/small/bg9.jpg');
+  }
+
+}
+
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -94,13 +204,14 @@ body{
   max-width: 650px;
   margin: auto;
   .st0,.st1{
-    fill: #FFFFFF;
+    fill: white;
     stroke: $green;
     stroke-width: 2;
     opacity: 0.9;
 
     &:hover{
-      fill: $lightGreen;
+      fill: white;
+      opacity: 1;
       cursor: pointer;
     }
   }
@@ -115,4 +226,8 @@ body{
     .st6{font-family:'Roboto-Medium'}
     .st7{font-size:20px;}
     .st8{font-size:10px;}
+
+    .selected{
+      fill: $lightGreen !important;
+    }
 }

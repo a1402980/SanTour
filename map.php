@@ -1,7 +1,7 @@
 
 <div id="map">
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 1052 744" style="enable-background:new 0 0 1052 744;" xml:space="preserve">
+     viewBox="0 0 1052 660" style="enable-background:new 0 0 1052 744;" xml:space="preserve">
 
   <g id="Map_of_swiss_cantons_with_canton_of_Zurich_highlighted" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.46" sodipodi:docname="Switzerland_Cantons_Map.svg" sodipodi:version="0.32" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
 
