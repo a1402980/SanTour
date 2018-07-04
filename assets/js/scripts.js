@@ -1,11 +1,3 @@
-$(function() {
-  $(".lazy").Lazy({
-      afterLoad: function(element) {
-          console.log("loaded lazy!")
-      }
-  });
-});
-
 $( document ).ready(function() {
 
   console.log("Ready!");
@@ -31,9 +23,14 @@ $( ".nav-toggle" ).click(function(){
 
 
 $(".map-canton").click(function(){
-  $("#canton-select").val($(this).attr('id'));
-  $("#map .map-canton").removeClass("selected");
-  $(this).addClass("selected")
+  if ($(this).attr('id') == "VS") {
+    $("#canton-select").val($(this).attr('id'));
+    $("#map .map-canton").removeClass("selected");
+    $(this).addClass("selected")
+  }else {
+    alert("Unfortunetly only Valais is currently available for SanTour. More cantons will be supported in the future.");
+  }
+
 });
 
 $(".next-page").click(function(){
@@ -69,6 +66,11 @@ $(".slider").on('input', function () {
     var value = $(this).val();
     $(this).prev().children().removeClass("selected");
     $(this).prev().find('#img-'+value).addClass("selected")
+});
+
+$(".accordian .ac-head").click(function(){
+  $(".ac-body").slideUp();
+  $(this).next().slideDown();
 });
 
 

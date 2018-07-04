@@ -4,21 +4,21 @@
   "image":"https://www.valais.ch/media/cache/single_image/e/erlebnis-wandern-goms-eggerhorn_ernen.jpg",
   "poi": [
     {
-      "name":"Waterfall",
+      "name":"Waterfall (mock)",
       "latlng":{
             "lat":"46.3982490589",
             "lng":"8.14670429708"
       }
     },
     {
-      "name":"Panoramic view",
+      "name":"Panoramic view (mock)",
       "latlng":{
             "lat":"46.378736849",
             "lng":"8.1810008472"
       }
     },
     {
-      "name":"Flowers",
+      "name":"Flowers (mock)",
       "latlng":{
             "lat":"46.3899712088",
             "lng":"8.15136373516"

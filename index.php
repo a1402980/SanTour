@@ -17,7 +17,7 @@ require_once('header.php');
 
   <form action="index.php" method="post">
 
-    <section id="page-2" class="page lazy">
+    <section id="page-2" class="page">
       <div class="container">
         <div class="row">
           <div class="col-12 center">
@@ -26,33 +26,33 @@ require_once('header.php');
             <?php include 'map.php'; ?>
             <div class="col-12 center">
               <select id="canton-select" name="canton">
-                <option value="CH" selected>Whole Switzerland</option>
-                <option value="AG">Aargau</option>
-                <option value="AI">Appenzell Innerrhoden</option>
-                <option value="AR">Appenzell Ausserrhoden</option>
-                <option value="BE">Bern</option>
-                <option value="BL">Basel-Landschaft</option>
-                <option value="BS">Basel-Stadt</option>
-                <option value="FR">Fribourg</option>
-                <option value="GE">Geneva</option>
-                <option value="GL">Glarus</option>
-                <option value="GR">Grisons</option>
-                <option value="JU">Jura</option>
-                <option value="LU">Luzern</option>
-                <option value="NE">Neuchâtel</option>
-                <option value="NW">Nidwalden</option>
-                <option value="OW">Obwalden</option>
-                <option value="SG">St. Gallen</option>
-                <option value="SH">Schaffhausen</option>
-                <option value="SO">Solothurn</option>
-                <option value="SZ">Schwyz</option>
-                <option value="TG">Thurgau</option>
-                <option value="TI">Ticino</option>
-                <option value="UR">Uri</option>
-                <option value="VD">Vaud</option>
-                <option value="VS">Valais</option>
-                <option value="ZG">Zug</option>
-                <option value="ZH">Zürich</option>
+                <option value="CH" disabled>Whole Switzerland</option>
+                <option value="AG" disabled>Aargau</option>
+                <option value="AI" disabled>Appenzell Innerrhoden</option>
+                <option value="AR" disabled>Appenzell Ausserrhoden</option>
+                <option value="BE" disabled>Bern</option>
+                <option value="BL" disabled>Basel-Landschaft</option>
+                <option value="BS" disabled>Basel-Stadt</option>
+                <option value="FR" disabled>Fribourg</option>
+                <option value="GE" disabled>Geneva</option>
+                <option value="GL" disabled>Glarus</option>
+                <option value="GR" disabled>Grisons</option>
+                <option value="JU" disabled>Jura</option>
+                <option value="LU" disabled>Luzern</option>
+                <option value="NE" disabled>Neuchâtel</option>
+                <option value="NW" disabled>Nidwalden</option>
+                <option value="OW" disabled>Obwalden</option>
+                <option value="SG" disabled>St. Gallen</option>
+                <option value="SH" disabled>Schaffhausen</option>
+                <option value="SO" disabled>Solothurn</option>
+                <option value="SZ" disabled>Schwyz</option>
+                <option value="TG" disabled>Thurgau</option>
+                <option value="TI" disabled>Ticino</option>
+                <option value="UR" disabled>Uri</option>
+                <option value="VD" disabled>Vaud</option>
+                <option value="VS" selected>Valais</option>
+                <option value="ZG" disabled>Zug</option>
+                <option value="ZH" disabled>Zürich</option>
               </select>
             </div>
             <div class="col-12 center">
@@ -64,7 +64,7 @@ require_once('header.php');
       </div>
     </section>
 
-    <section id="page-3" class="page lazy">
+    <section id="page-3" class="page">
       <div class="container">
         <div class="row">
           <div class="col-12 center">
@@ -107,7 +107,7 @@ require_once('header.php');
       </div>
     </section>
 
-    <section id="page-4" class="page lazy">
+    <section id="page-4" class="page">
       <div class="container">
         <div class="row">
           <div class="col-12 center">
@@ -151,7 +151,7 @@ require_once('header.php');
       </div>
     </section>
 
-    <section id="page-5" class="page lazy">
+    <section id="page-5" class="page">
       <div class="container">
         <div class="row">
           <div class="col-12 center">

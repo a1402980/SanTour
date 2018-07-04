@@ -231,3 +231,53 @@ body{
       fill: $lightGreen !important;
     }
 }
+
+#it-map {
+  height: 400px;
+  width: 100%;
+  a{
+    font-size: 10px;
+  }
+}
+
+.accordian{
+  width: 100%;
+  &>*{
+    font-family: 'Roboto-SemiBold';
+  }
+  .ac-head{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 2% 3%;
+    display: table;
+    width: 100%;
+    text-align: left;
+    &>*{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .score{
+      display: inline-block;
+      background-color: $green;
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      font-weight: bolder;
+    }
+
+    .toggle-icon{
+      text-align: right;
+      font-size: 2em;
+    }
+
+  }
+  .ac-body{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 2% 3%;
+    display: none;
+  }
+}
