@@ -68,28 +68,28 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Do you have a fear of heights?</h1>
-            <p class="thin-text">would you fear if you walked over a suspension bridge?</p>
+            <h1>Do you have regular physical activity?</h1>
+            <p class="thin-text">such as walking, running, biking jogging etc.</p>
             <div class="col-12">
               <div class="row">
                 <div class="col-4">
                   <label class="thumb">
                     <span>Yes</span>
-                    <input type="radio" name="fear-of-heights" value="yes" />
+                    <input type="radio" name="physical-activity" value="yes" />
                     <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
                   </label>
                 </div>
                 <div class="col-4">
                   <label class="thumb">
                     <span>Maybe</span>
-                    <input type="radio" name="fear-of-heights" value="maybe"/>
+                    <input type="radio" name="physical-activity" value="maybe"/>
                     <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
                   </label>
                 </div>
                 <div class="col-4">
                   <label class="thumb">
                     <span>No</span>
-                    <input type="radio" name="fear-of-heights" value="no" />
+                    <input type="radio" name="physical-activity" value="no" />
                     <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
                   </label>
                 </div>
@@ -111,33 +111,32 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>What walking devices do you use?</h1>
-            <p class="thin-text">lorem ipsum</p>
+            <h1>Would you say that you are active at least 30 minutes each day (at least 5 days a week)?</h1>
+            <p class="thin-text">for example walking home from work or biking</p>
             <div class="col-12">
-              <div class="radio-buttons">
-                <label>
-                  Any
-                  <input type="radio" name="fear-of-heights" value="any" />
-                  <span class="checkmark"></span>
-                </label>
+              <div class="row">
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Yes</span>
+                    <input type="radio" name="physical-activity-2" value="yes" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Maybe</span>
+                    <input type="radio" name="physical-activity-2" value="maybe"/>
+                    <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>No</span>
+                    <input type="radio" name="physical-activity-2" value="no" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
+                  </label>
+                </div>
 
-                <label>
-                  a cane
-                  <input type="radio" name="fear-of-heights" value="cane"/>
-                  <span class="checkmark"></span>
-                </label>
-
-                <label>
-                  two canes
-                  <input type="radio" name="fear-of-heights" value="twocanes" />
-                  <span class="checkmark"></span>
-                </label>
-
-                <label>
-                  walker
-                  <input type="radio" name="fear-of-heights" value="walker" />
-                  <span class="checkmark"></span>
-                </label>
               </div>
             </div>
             <div class="col-12">
@@ -155,6 +154,99 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
+            <h1>What walking devices do you use?</h1>
+            <p class="thin-text">lorem ipsum</p>
+            <div class="col-12">
+              <div class="radio-buttons">
+                <label>
+                  Any
+                  <input type="radio" name="walking-help" value="any" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  a cane
+                  <input type="radio" name="walking-help" value="cane"/>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  two canes
+                  <input type="radio" name="walking-help" value="twocanes" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  walker
+                  <input type="radio" name="walking-help" value="walker" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12" style="color:black;">
+              <a href="#">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-6" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>Compared to the average walking speed,do you usually walk ...</h1>
+            <p class="thin-text">for example when walking with a friend</p>
+            <div class="col-12">
+              <div class="radio-buttons">
+                <label>
+                  noticably slower
+                  <input type="radio" name="walking-speed" value="-2" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>
+                  a bit slower
+                  <input type="radio" name="walking-speed" value="-1" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  at the same speed
+                  <input type="radio" name="walking-help" value="0"/>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  a bit faster
+                  <input type="radio" name="walking-help" value="1" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  significantly faster
+                  <input type="radio" name="walking-help" value="2" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12" style="color:black;">
+              <a href="#">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-7" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
             <h1>Which type of rocks would you prefer?</h1>
             <p class="thin-text">lorem ipsum</p>
             <div class="col-12">
@@ -162,12 +254,13 @@ require_once('header.php');
               <div class="preview-slider">
                 <div id="rocks" class="img-carousel">
 
-                  <img id="img-1" class="selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/1.jpg" alt="">
-                  <img id="img-2" src="<?php echo URL_DIR ?>assets/img/form/rocks/2.jpg" alt="">
-                  <img id="img-3" src="<?php echo URL_DIR ?>assets/img/form/rocks/3.jpg" alt="">
+                  <img id="img-1" class="selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-1.jpg" alt="">
+                  <img id="img-2" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="">
+                  <img id="img-3" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-3.jpg" alt="">
 
                 </div>
                 <input type="range" min="1" max="3" value="1" class="slider">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
               </div>
             </div>
             <div class="col-12">

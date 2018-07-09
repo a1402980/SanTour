@@ -252,6 +252,11 @@ body{
     display: table;
     width: 100%;
     text-align: left;
+    margin-top: 2%;
+    cursor: pointer;
+    &:first-of-type{
+      margin-top: 0px;
+    }
     &>*{
       display: table-cell;
       vertical-align: middle;
@@ -279,5 +284,6 @@ body{
     border-radius: 5px;
     padding: 2% 3%;
     display: none;
+
   }
 }

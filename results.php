@@ -45,7 +45,7 @@ require_once('header.php');
 
               <div class="accordian">
                 <div class="ac-head">
-                 <span class="score">89%</span><span>Zinal bla bal</span> <span>40min</span> <i class="arrow_triangle-down toggle-icon"></i>
+                 <span class="score">89%</span><span>Zinal bla bal bla bla bla bla</span><span>12 km</span> <span>40min</span> <i class="arrow_triangle-down toggle-icon"></i>
                 </div>
                 <div class="ac-body">
                   <div class="row">
@@ -106,7 +106,7 @@ require_once('header.php');
                 </div>
 
                 <div class="ac-head">
-                 <span class="score">89%</span><span>Zinal bla bal</span> <span>40min</span> <i class="arrow_triangle-down toggle-icon"></i>
+                 <span class="score">78%</span><span>Zinal bla bal</span> <span>12 km</span> <span>40min</span> <i class="arrow_triangle-down toggle-icon"></i>
                 </div>
                 <div class="ac-body">
                   <div class="row">

@@ -69,8 +69,16 @@ $(".slider").on('input', function () {
 });
 
 $(".accordian .ac-head").click(function(){
-  $(".ac-body").slideUp();
-  $(this).next().slideDown();
+  if (!$(this).next(".ac-body").hasClass("active")) {
+    $(".ac-body").slideUp();
+    $(".ac-body").removeClass("active");
+    $(this).next(".ac-body").addClass("active");
+    $(this).next(".ac-body").slideDown();
+  }else{
+    $(".ac-body").removeClass("active");
+    $(this).next(".ac-body").slideUp();
+  }
+  $(this).children(".toggle-icon").toggleClass("arrow_triangle-down arrow_triangle-up");
 });
 
 

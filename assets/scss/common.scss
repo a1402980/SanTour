@@ -197,15 +197,33 @@ label .checkmark:after {
 
 .img-carousel{
   width: 100%;
-  img{
-    width: 28%;
-    cursor: pointer;
-    -webkit-transition: width 0.2s; /* Safari */
-    transition: width 0.2s;
+  @media screen and (min-width: $md){
+    img{
+      width: 28%;
+      cursor: pointer;
+      -webkit-transition: width 0.2s; /* Safari */
+      transition: width 0.2s;
 
-    &.selected{
-      width: 36%;
-      border: 3px solid $green;
+      &.selected{
+        width: 36%;
+        border: 3px solid $green;
+      }
+    }
+  }
+  @media screen and (max-width: $md){
+    img{
+      width: 0;
+      float: left;
+      cursor: pointer;
+      -webkit-transition: width 0.2s; /* Safari */
+      transition: width 0.2s;
+
+      &.selected{
+        float: right;
+        display: inline-block;
+        width: 100%;
+        border: 3px solid $green;
+      }
     }
   }
 
