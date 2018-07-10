@@ -1,11 +1,11 @@
 {
-  "name": "Les Arolles",
-  "url": "https://www.snukr.com/exploration-details?id=59d4e9a6798c500bf04bbf2b&city=zinal&lang=fr",
-  "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042fefa3f2ba0bf28eed52-1-m.jpg",
-  "description":"Ce parcours fait partie du projet SanTour actuellement en cours à la HES-SO Valais-Wallis à Sierre www.santour.ch",
+  "name": "Les Clautis",
+  "url": "https://www.snukr.com/exploration-details?id=59ce049e798c500bf04bbf09&city=zinal&lang=fr",
+  "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a48b798c500bf04bbf54-1-m.jpg",
+  "description":"This route is part of the SanTour project currently underway at the HES-SO Valais-Wallis in Sierre www.santour.ch",
   "stats":{
     "distance":"3.55km",
-    "time":"53min",
+    "time":"1h",
       },
   "poi": [
     {
@@ -25,7 +25,16 @@
             "lat":46.12694184332048,
             "lng":7.630846735782484
       }
-    }
+    },
+    {
+          "name":"View",
+          "description":"Point of danger",
+          "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a48b798c500bf04bbf54-1-m.jpg",
+          "latlng":{
+            "lat":46.129984843459845,
+            "lng":7.634993430919508
+          }
+        },
   ],
   "pod": [
     {
@@ -73,14 +82,234 @@
       }
     },
     {
+      "name":"Bank",
+      "description":"View of the downhill slope",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a090798c500bf04bbf46-1-m.jpg",
+      "type":"Elevation",
+      "level":2,
+      "latlng":{
+        "lat":46.12363654947795,
+        "lng":7.634811040706495
+      }
+    },
+    {
+      "name":"Path",
+      "description":"Mossy path",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a0d0798c500bf04bbf47-1-m.jpg",
+      "type":"Slipperyness",
+      "level":1,
+      "latlng":{
+        "lat":46.12369603908364,
+        "lng":7.6348003118704355
+      }
+    },
+    {
+      "name":"Turnstile",
+      "description":"Turnstile prevents cowds from passing",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89f7c798c500bf04bbf43-1-m.jpg",
+      "type":"Path narrowness",
+      "level":1,
+      "latlng":{
+        "lat":46.123335382363315,
+        "lng":7.6354735463331735
+      }
+    },
+    {
+      "name":"Barriers",
+      "description":"Take the left turn and follow the barriers ",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a00f798c500bf04bbf45-1-m.jpg",
+      "type":"Obsticle",
+      "level":2,
+      "latlng":{
+        "lat":46.123497120462886,
+        "lng":7.635169115609983
+      }
+    },
+    {
+      "name":"Path",
+      "description":"Mossy path",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a0d0798c500bf04bbf47-1-m.jpg",
+      "type":"Slipperyness",
+      "level":1,
+      "latlng":{
+        "lat":46.12337999981753,
+        "lng":7.635106083698133
+      }
+    },
+    {
+      "name":"Path elevation",
+      "description":"Rise with slope",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89fbc798c500bf04bbf44-1-m.jpg",
+      "type":"Elevation",
+      "level":1,
+      "latlng":{
+        "lat":46.12320896604683,
+        "lng":7.6346501081656015
+      }
+    },
+    {
+      "name":"Steps",
+      "description":"Steps on the path",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89eae798c500bf04bbf40-1-m.jpg",
+      "type":"Elevation",
+      "level":1,
+      "latlng":{
+        "lat":46.12319037538756,
+        "lng":7.634258505649427
+      }
+    },
+    {
+      "name":"Path",
+      "description":"Path covered with moss",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89e74798c500bf04bbf3f-1-m.jpg",
+      "type":"Slipperyness",
+      "level":1,
+      "latlng":{
+        "lat":46.12306767687928,
+        "lng":7.634049293346266
+      }
+    },
+    {
+      "name":"Roots",
+      "description":"Difficult on to pass, traversed by tree roots in places",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89dd2798c500bf04bbf3d-1-m.jpg",
+      "type":"Obsticle",
+      "level":1,
+      "latlng":{
+        "lat":46.1231662075212,
+        "lng":7.6326545446585214
+      }
+    },
+    {
+      "name":"Path elevation",
+      "description":"Soil path",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a377798c500bf04bbf50-1-m.jpg",
+      "type":"Slipperyness",
+      "level":1,
+      "latlng":{
+        "lat":46.12317550285569,
+        "lng":7.63269209558473
+      }
+    },
+    {
+      "name":"Path with rocks",
+      "description":"Path covered with stones",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89acf798c500bf04bbf3c-1-m.jpg",
+      "type":"Rocks",
+      "level":1,
+      "latlng":{
+        "lat":46.12315691218516,
+        "lng":7.632732328719953
+      }
+    },
+    {
+      "name":"Rocks",
+      "description":"Some rocks in a bend",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89dd2798c500bf04bbf3d-1-m.jpg",
+      "type":"Rocks",
+      "level":2,
+      "latlng":{
+        "lat":46.12316063031974,
+        "lng":7.633325096912245
+      }
+    },
+    {
+      "name":"Dirt path",
+      "description":"Dented dirt path",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89e32798c500bf04bbf3e-1-m.jpg",
+      "type":"Slipperyness",
+      "level":1,
+      "latlng":{
+        "lat":46.12324242921769,
+        "lng":7.633330461330274
+      }
+    },
+    {
+      "name":"Turnstile",
+      "description":"Tourniquet at the start of chemin des Clautis",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59cdfa95798c500bf04bbeff-1-m.jpg",
+      "type":"Obsticle",
+      "level":1,
+      "latlng":{
+        "lat":46.12351180989865,
+        "lng":7.632342511795059
+      }
+    },
+    {
+      "name":"Decending road",
+      "description":"Descends along a dirt road",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a4ff798c500bf04bbf56-1-m.jpg",
+      "type":"Rocks",
+      "level":1,
+      "latlng":{
+        "lat":46.13102392351255,
+        "lng":7.633764979190687
+      }
+    },
+    {
+      "name":"Turnstile",
+      "description":"Wood turnstile prevents cowds from passing",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a4c3798c500bf04bbf55-1-m.jpg",
+      "type":"Rocks",
+      "level":1,
+      "latlng":{
+        "lat":46.130075926394994,
+        "lng":7.634247776813368
+      }
+    },
+    {
+      "name":"Descent",
+      "description":"zig-zag descent",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a3d1798c500bf04bbf51-1-m.jpg",
+      "type":"Elevation",
+      "level":2,
+      "latlng":{
+        "lat":46.12958519206601,
+        "lng":7.635084626026014
+      }
+    },
+    {
+      "name":"Bridge",
+      "description":"Small wooden bridge not fixed on a heap of stones",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a414798c500bf04bbf52-1-m.jpg",
+      "type":"Bridge",
+      "level":1,
+      "latlng":{
+        "lat":46.12968928759206,
+        "lng":7.635103401489118
+      }
+    },
+    {
+      "name":"Descent",
+      "description":"Descent on rocky path",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59e89733798c50343672d556-1-m.jpg",
+      "type":"Elevation",
+      "level":2,
+      "latlng":{
+        "lat":46.13004246737507,
+        "lng":7.634977337665418
+      }
+    },
+    {
       "name":"Pebbles",
-      "description":"Point of danger",
+      "description":"Pebbles cross the path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
       "type":"Rocks",
       "level":1,
       "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
+        "lat":46.12703107235102,
+        "lng":7.634381887264112
+      }
+    },
+    {
+      "name":"Path",
+      "description":"Path and slope",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a2f6798c500bf04bbf4e-1-m.jpg",
+      "type":"Elevation",
+      "level":2,
+      "latlng":{
+        "lat":46.12797540406504,
+        "lng":7.6343014209936655
       }
     },
     {
@@ -90,98 +319,43 @@
       "type":"Rocks",
       "level":1,
       "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
+        "lat":46.130075926394994,
+        "lng":7.634247776813368
       }
     },
     {
-      "name":"Pebbles",
-      "description":"Point of danger",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
+      "name":"Roots",
+      "description":"Roots in a small descent",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a249798c500bf04bbf4d-1-m.jpg",
+      "type":"Obsticle",
       "level":1,
       "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
+        "lat":46.12787316420816,
+        "lng":7.634143170661787
       }
     },
     {
-      "name":"Pebbles",
-      "description":"Point of danger",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
+      "name":"Path elevation",
+      "description":"Small climb in the trees",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a339798c500bf04bbf4f-1-m.jpg",
+      "type":"Elevation",
       "level":1,
       "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
+        "lat":46.128179883209384,
+        "lng":7.634515997714857
       }
     },
     {
-      "name":"Pebbles",
-      "description":"Point of danger",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
+      "name":"Road",
+      "description":"Tarred road to the car park",
+      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a53a798c500bf04bbf57-1-m.jpg",
       "type":"Rocks",
       "level":1,
       "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
+        "lat":46.130815737308474,
+        "lng":7.6305570572088754
       }
-    },
-    {
-      "name":"Pebbles",
-      "description":"Point of danger",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
-      "level":1,
-      "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
-      }
-    },
-    {
-      "name":"Pebbles",
-      "description":"Point of danger",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
-      "level":1,
-      "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
-      }
-    },
-    {
-      "name":"Pebbles",
-      "description":"Point of danger",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
-      "level":1,
-      "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
-      }
-    },
-    {
-      "name":"Pebbles",
-      "description":"Point of danger",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
-      "level":1,
-      "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
-      }
-    },
-    {
-      "name":"Pebbles",
-      "description":"Point of danger",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
-      "level":1,
-      "latlng":{
-        "lat":46.12591198113181,
-        "lng":7.634167310542921
-      }
-    },
+    }
   ],
   "latlng": [
     [7.630709297962085,46.127261580010995,0],

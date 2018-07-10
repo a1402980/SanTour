@@ -27,28 +27,28 @@ translates":{"name":"Cailloux","description":"Des cailloux sur le chemin","code"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 "position":{"lat":46.12363654947795,"lnt":7.634811040706495},
 "name":"talus","description":"Vue du talus descendant","code":"fr"},
+
+
+
 
 position":{"lat":46.12369603908364,"lnt":7.6348003118704355},
 "name":"Chemin","description":"Chemin de mousse","code":"fr"},
 
+
+
+
 "position":{"lat":46.123335382363315,"lnt":7.6354735463331735}
 name":"Tourniquet","description":"Tourniquet emp&ecirc;chant les vaches de passer","code":"fr"},
 
+
+
+
 "position":{"lat":46.123497120462886,"lnt":7.635169115609983},
 name":"barrieres","description":"Prendre la bifurcation de gauche et suivre les barri&egrave;res","code":"fr"},
+
+
 
 position":{"lat":46.12337999981753,"lnt":7.635106083698133},
 {"name":"Chemin","description":"Chemin en mousse","code":"fr"}
