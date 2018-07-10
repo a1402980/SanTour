@@ -15,7 +15,7 @@ require_once('header.php');
     </div>
   </section>
 
-  <form action="index.php" method="post">
+  <form action="results.php" method="post">
 
     <section id="page-2" class="page">
       <div class="container">
@@ -68,7 +68,7 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Do you have regular physical activity?</h1>
+            <h1>Are you engaged in regular exercise?</h1>
             <p class="thin-text">such as walking, running, biking jogging etc.</p>
             <div class="col-12">
               <div class="row">
@@ -215,19 +215,19 @@ require_once('header.php');
 
                 <label>
                   at the same speed
-                  <input type="radio" name="walking-help" value="0"/>
+                  <input type="radio" name="walking-speed" value="0"/>
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
                   a bit faster
-                  <input type="radio" name="walking-help" value="1" />
+                  <input type="radio" name="walking-speed" value="1" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
                   significantly faster
-                  <input type="radio" name="walking-help" value="2" />
+                  <input type="radio" name="walking-speed" value="2" />
                   <span class="checkmark"></span>
                 </label>
               </div>
@@ -274,6 +274,7 @@ require_once('header.php');
       </div>
     </section>
 
+    <button type="submit">Submit form</button>
   </form>
 
 
