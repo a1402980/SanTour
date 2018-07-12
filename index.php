@@ -247,6 +247,295 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
+            <h1>Choose the maximum time you think you can walk without stopping to rest</h1>
+            <p class="thin-text"></p>
+            <div class="col-12">
+              <div class="radio-buttons">
+                <label>
+                  impossible
+                  <input type="radio" name="walking-speed" value="0" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>
+                  1 minute
+                  <input type="radio" name="walking-speed" value="1" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  5 minutes
+                  <input type="radio" name="walking-speed" value="2"/>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  15 minutes
+                  <input type="radio" name="walking-speed" value="3" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  30 minutes
+                  <input type="radio" name="walking-speed" value="4" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  1 hour
+                  <input type="radio" name="walking-speed" value="5" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  2 hours
+                  <input type="radio" name="walking-speed" value="6" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  3 hours or more
+                  <input type="radio" name="walking-speed" value="7" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12" style="color:black;">
+              <a href="#">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-8" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>Report the degree of physical difficulty that best describes how difficult it was to climb stairs without stopping to rest during the last week</h1>
+            <p class="thin-text"></p>
+            <div class="col-12">
+              <div class="radio-buttons">
+                <h5>Walking one story</h5>
+                <label>
+                  none
+                  <input type="radio" name="incline" value="0" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>
+                  Light
+                  <input type="radio" name="incline" value="1" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  Some
+                  <input type="radio" name="incline" value="2"/>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  significant
+                  <input type="radio" name="incline" value="3" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  impossible
+                  <input type="radio" name="incline" value="4" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12" style="color:black;">
+              <a href="#">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-9" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>Are you afraid of falling?</h1>
+            <p class="thin-text"></p>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Yes</span>
+                    <input type="radio" name="falling" value="yes" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Not sure</span>
+                    <input type="radio" name="falling" value="maybe"/>
+                    <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>No</span>
+                    <input type="radio" name="falling" value="no" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12" style="color:black;">
+              <a href="#">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-10" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>Have you fallen in the last 12 months?</h1>
+            <p class="thin-text"></p>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Yes</span>
+                    <input type="radio" name="falling2" value="yes" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Not sure</span>
+                    <input type="radio" name="falling2" value="maybe"/>
+                    <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>No</span>
+                    <input type="radio" name="falling2" value="no" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12" style="color:black;">
+              <a href="#">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-11" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>Do you sometimes feel dizzy?</h1>
+            <p class="thin-text"></p>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Yes</span>
+                    <input type="radio" name="falling3" value="yes" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Not sure</span>
+                    <input type="radio" name="falling3" value="maybe"/>
+                    <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>No</span>
+                    <input type="radio" name="falling3" value="no" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12" style="color:black;">
+              <a href="#">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-12" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>Are you afraid of altitude (fear of heights)?</h1>
+            <p class="thin-text"></p>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Yes</span>
+                    <input type="radio" name="fear-of-heights" value="yes" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>Not sure</span>
+                    <input type="radio" name="fear-of-heights" value="maybe"/>
+                    <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
+                  </label>
+                </div>
+                <div class="col-4">
+                  <label class="thumb">
+                    <span>No</span>
+                    <input type="radio" name="fear-of-heights" value="no" />
+                    <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12" style="color:black;">
+              <a href="#">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-13" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
             <h1>Which type of rocks would you prefer?</h1>
             <p class="thin-text">lorem ipsum</p>
             <div class="col-12">

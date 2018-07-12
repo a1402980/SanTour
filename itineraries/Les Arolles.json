@@ -2,38 +2,123 @@
   "name": "Les Arolles",
   "url": "https://www.snukr.com/exploration-details?id=59d4e9a6798c500bf04bbf2b&city=zinal&lang=fr",
   "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042fefa3f2ba0bf28eed52-1-m.jpg",
-  "poi": [
-    {
-      "name":"Zinal",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d4e978798c500bf04bbf29-1-m.jpg",
-      "latlng":{
-            "lat":46.1338556,
-            "lng":7.6233778
+  "description":"Ce parcours fait partie du projet SanTour actuellement en cours à la HES-SO Valais-Wallis à Sierre www.santour.ch",
+  "stats":{
+    "distance":"6.8km",
+    "time":"2.75h",
+      },
+    "poi": [
+      {
+        "name":"Zinal",
+        "description":"Zinal is a village in Switzerland, located in the municipality of Anniviers in the canton of Valais.",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d4e978798c500bf04bbf29-1-m.jpg",
+        "latlng":{
+              "lat":46.13714873086472,
+              "lng":7.625117395080224
+        }
       }
-    }
-  ],
-  "pod": [
-    {
-      "name":"Chemin caillouteux",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a2001839ea40a0bf1b15969-1-m.jpg",
-      "type":"Rocks",
-      "level":1,
-      "latlng":{
-        "lat":46.142753968566176,
-        "lng":7.631445371306995
+    ],
+    "pod": [
+      {
+        "name":"Rocky road",
+        "description":"Point of danger",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a2001839ea40a0bf1b15969-1-m.jpg",
+        "type":"Rocks",
+        "level":1,
+        "latlng":{
+          "lat":46.1354350794616,
+          "lng":7.633178078330616
+        }
+      },
+      {
+        "name":"Path with pebbles and slope",
+        "description":"Point of danger",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042ceea3f2ba0bf28eed4f-1-m.jpg",
+        "type":"Rocks",
+        "level":1,
+        "latlng":{
+          "lat":46.145831402827895,
+          "lng":7.635629617370228
+        }
+      },
+      {
+        "name":"Narrow/slope path",
+        "description":"Point of danger",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a1fe5559ea40a0bf1b15967-1-m.jpg",
+        "type":"Elevation",
+        "level":1,
+        "latlng":{
+          "lat":46.13930280052948,
+          "lng":7.641307853854755
+        }
+      },
+      {
+        "name":"Narrow and steep path",
+        "description":"Point of danger",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042fefa3f2ba0bf28eed52-1-m.jpg",
+        "type":"Path narrowness",
+        "level":1,
+        "latlng":{
+          "lat":46.1391411088353,
+          "lng":7.645092450774769
+        }
+      },
+      {
+        "name":"Descending",
+        "description":"Steep path",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a1fc08a9ea40a0bf1b15966-1-m.jpg",
+        "type":"Elevation",
+        "level":1,
+        "latlng":{
+          "lat":46.138851177717676,
+          "lng":7.644633793033222
+        }
+      },
+      {
+        "name":"Stony path",
+        "description":"Point of danger",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042f6da3f2ba0bf28eed51-1-m.jpg",
+        "type":"Rocks",
+        "level":1,
+        "latlng":{
+          "lat":46.141787588983306,
+          "lng":7.64455600897179
+        }
+      },
+      {
+        "name":"Steep slope",
+        "description":"Point of danger",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042f6da3f2ba0bf28eed51-1-m.jpg",
+        "type":"Elevation",
+        "level":1,
+        "latlng":{
+          "lat":46.14355679408954,
+          "lng":7.641981088317493
+        }
+      },
+      {
+        "name":"Stony path",
+        "description":"Point of danger",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a2001839ea40a0bf1b15969-1-m.jpg",
+        "type":"Rocks",
+        "level":1,
+        "latlng":{
+          "lat":46.142753968566176,
+          "lng":7.631445371306995
+        }
+      },
+      {
+        "name":"Narrow path/slope",
+        "description":"Point of danger",
+        "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042fefa3f2ba0bf28eed52-1-m.jpg",
+        "type":"Path narrowness",
+        "level":4,
+        "latlng":{
+          "lat":46.1391411088353,
+          "lng":7.645092450774769
+        }
       }
-    },
-    {
-      "name":"Chemin étroit/pente",
-      "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a1fe5559ea40a0bf1b15967-1-m.jpg",
-      "type":"Path narrowness",
-      "level":4,
-      "latlng":{
-        "lat":46.1391411088353,
-        "lnt":7.645092450774769
-      }
-    }
-  ],
+    ],
   "latlng": [
     [7.625117395080224,46.13714873086472,0],
     [7.62511965819408,46.13714358699341,0],

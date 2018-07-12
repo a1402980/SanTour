@@ -49,7 +49,7 @@ $responseData = json_decode($response, TRUE);
           <div class="col-5">
             <div id="it-map"></div>
             <script>
-              //map center
+              //map center to center of Switzerland
               var mymap = L.map('it-map').setView([46.7985286,8.2296061], 8);
 
               L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {
@@ -80,18 +80,62 @@ $responseData = json_decode($response, TRUE);
 
             <?php foreach ($responseData as $itinerary): ?>
 
-              <div class="ac-head" onclick="updateMap<?php echo $itinerary['_id'] ?>()">
+              <div class="ac-head" onclick="updateMap<?php echo $itinerary['_id'] ?>()" value="<?php echo 'lat='.$itinerary['latlng'][0][0].'&lng='.$itinerary['latlng'][0][1] ?>">
                <span class="score">89%</span><span><?php echo $itinerary['name']; ?></span><?php echo $itinerary['stats']['distance']; ?><span></span> <span><?php echo $itinerary['stats']['time']; ?></span> <i class="arrow_triangle-down toggle-icon"></i>
               </div>
               <div class="ac-body">
                 <div class="row">
                   <div class="col-8">
                     <p><?php echo $itinerary['description']; ?></p>
+
                   </div>
 
-                  <div class="col-4">
-                    <h4>weather</h4>
-                    <h2>26°C</h2>
+                  <div class="col-4 weather">
+                    <h4>Weather</h4>
+                    <div class="icon_loading spinner">
+
+                    </div>
+                    <img class="weather-icon" src="" hidden alt="">
+                    <span class="weather-temp" hidden></span>
+
+
+                  </div>
+                  <div class="col-12">
+                    <canvas id="altitude-<?php echo $itinerary['_id'] ?>" width="50" height="30"></canvas>
+                    <script type="text/javascript">
+                    new Chart(document.getElementById("altitude-<?php echo $itinerary['_id'] ?>"), {
+                    type: 'line',
+                    data: {
+                      labels: [
+                        <?php foreach ($itinerary['latlng'] as $key => $altitude): ?>
+                          <?php echo $key.",";?>
+                        <?php endforeach; ?>
+                      ],
+                      datasets: [{
+                          data: [
+                            <?php foreach ($itinerary['latlng'] as $altitude): ?>
+                              <?php echo $altitude[2].",";?>
+                            <?php endforeach; ?>
+                          ],
+                          label: "Meters",
+                          borderColor: "#B6F890",
+                          fill: false
+                        }
+                      ]
+                    },
+                    options: {
+                      title: {
+                        display: true,
+                        text: 'Altitude profile'
+                      },
+                      legend: {
+                        display: false,
+                      },
+                      elements: { point: { radius: 0 } }
+                      },
+
+                    });
+                    </script>
                   </div>
                   <div class="col-6">
                     <canvas id="polar-chart" width="100%" height="100px"></canvas>
@@ -122,22 +166,22 @@ $responseData = json_decode($response, TRUE);
                       //restart map
                       mymap.remove()
                       //map center
-                      mymap = L.map('it-map').setView([<?php echo $itinerary['latlng'][0][1].", ".$itinerary['latlng'][0][0]; ?>], 8);
+                      mymap = L.map('it-map').setView([<?php echo $itinerary['latlng'][0][0].", ".$itinerary['latlng'][0][1]; ?>], 8);
 
                       L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {
-                      //maxZoom: 15,
                       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                       bounds: [[45, 5], [48, 11]]
                       }).addTo(mymap);
 
                       //map center
-                      mymap.setView(new L.LatLng(<?php echo $itinerary['latlng'][0][1].", ".$itinerary['latlng'][0][0]; ?>), 8);
+                      mymap.setView(new L.LatLng(<?php echo $itinerary['latlng'][0][0].", ".$itinerary['latlng'][0][1]; ?>), 8);
 
                       // create a red polyline from an array of LatLng points
                       var latlngs = [
 
+                      //print all the gps points
                       <?php foreach ($itinerary['latlng'] as $cords): ?>
-                        <?php echo "[".$cords[1].",".$cords[0]."],"?>
+                        <?php echo "[".$cords[0].",".$cords[1]."],"?>
                       <?php endforeach; ?>
 
                       ];
