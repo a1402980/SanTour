@@ -56,52 +56,67 @@ form{
 }
 
 //styles for thumbs up/down selects
-label.thumb{
-  position: relative;
-  & > input[type="radio"]{
-    visibility: hidden;
-    position: absolute;
+.thumb-container{
+  label.thumb{
+    position: relative;
+    & > input[type="radio"]{
+      visibility: hidden;
+      position: absolute;
+    }
+
+    & >input[type="radio"] + img{
+      cursor:pointer;
+      border:3px solid transparent;
+      padding: 50px;
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 5px;
+    }
+    & >input[type="radio"] + img:hover{
+      border-color: white;
+    }
+    & >input[type="radio"]:checked + img{
+      border-color: $green;
+    }
+
+    span{
+      position: absolute;
+      bottom: 25px;
+      left: 0;
+      right: 0;
+      font-family: 'Roboto-Medium', sans-serif;
+      font-size: 16px;
+      color: $text;
+      line-height: 24px;
+      pointer-events:none;
+    }
+
   }
 
-  & >input[type="radio"] + img{
-    cursor:pointer;
-    border:3px solid transparent;
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-  }
-  & >input[type="radio"] + img:hover{
-    border-color: white;
-  }
-  & >input[type="radio"]:checked + img{
-    border-color: $green;
+  @media screen and (max-width: $md){
+    width: 29% !important;
+    label.thumb >input[type="radio"] + img{
+      padding: 10%;
+    }
+    span{
+      display: none;
+    }
   }
 
-  span{
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-    right: 0;
-    font-family: 'Roboto-Medium', sans-serif;
-    font-size: 16px;
-    color: $text;
-    line-height: 24px;
-    pointer-events:none;
-  }
+
 }
 
-.radio-buttons{
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
-  padding: 5% 10%;
 
+.radio-buttons{
+p{
+  text-align: left;
+}
 label {
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -159,39 +174,107 @@ label .checkmark:after {
 
 }
 
-.preview-slider{
-  //custom slider styles
-  background-color: rgba(255, 255, 255, 0.4);
+.checkboxes{
+  text-align: left;
+    /* The container */
+  label {
+      display: block;
+      position: relative;
+      padding-left: 29px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      font-size: 16px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      line-height: 1.5em;
+
+      /* Hide the browser's default checkbox */
+     input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+      }
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 19px;
+      width: 19px;
+      background-color: transparent;
+      border: 3px solid $black;
+  }
+
+  label:hover input ~ .checkmark {
+      background-color: $lightGreen;
+  }
+
+  label input:checked ~ .checkmark {
+      background-color: $green;
+  }
+
+  .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+  }
+
+  label input:checked ~ .checkmark:after {
+      display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  label .checkmark:after {
+      content: "X";
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      position: absolute;
+      left: 30%;
+      transform: translate(-30%, 0);
+      line-height: 0.6em;
+      text-align: center;
+  }
+}
+
+.slider {
+  margin: 3% 0 0 0;
+  padding: 0;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
   border-radius: 5px;
-  padding: 5% 5%;
-  .slider {
-    margin: 3% 0 0 0;
-    padding: 0;
+  background: #d3d3d3;
+}
+
+
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    border-radius: 5px;
-    background: #d3d3d3;
-  }
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: $green;
+    cursor: pointer;
+}
 
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: $green;
+    cursor: pointer;
+}
 
-  .slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background: $green;
-      cursor: pointer;
-  }
-
-  .slider::-moz-range-thumb {
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background: $green;
-      cursor: pointer;
-  }
+.skip{
+  color: $black;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 

@@ -239,6 +239,22 @@ body{
   }
 }
 
+#mount-slider{
+  img{
+    max-width: 100%;
+    width: 60%;
+  }
+  span{
+  }
+
+}
+
+.white-container{
+  background-color: rgba(255,255,255,.4);
+  border-radius: 5px;
+  padding: 5%;
+}
+
 .accordian{
   width: 100%;
   &>*{

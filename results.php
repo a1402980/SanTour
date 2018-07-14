@@ -3,8 +3,8 @@ require_once('header.php');
 ?>
 
 <?php
-//$a = $_POST["physical-activity"];
-//var_dump($a);
+// $a = $_POST["physical-activity"];
+// var_dump($a);
 
 // The data to send to the API
 $postData = array(
