@@ -62,18 +62,18 @@ $("#mount-slider .slider").on('input', function () {
 });
 
 $(".img-carousel img").click(function(){
-  $(".img-carousel img").removeClass("selected");
-  $(this).addClass("selected");
-  var strNum = $(this).attr('id');
-  var num = strNum.split("-");
-  num = parseInt(num[1]);
-  $(this).parent().next().val(num);
+  $(this).parent('.img-carousel').children().removeClass("selected");
+  //$(".img-carousel img").removeClass("selected");
+  var classes = $(this).attr("class");
+  $("."+classes).addClass("selected");
+  var num = parseInt($(this).attr('value'));
+  $(this).parent().next(".slider").val(num);
 });
 
 $(".preview-slider .slider").on('input', function () {
     var value = $(this).val();
-    $(this).prev().children().removeClass("selected");
-    $(this).prev().find('#img-'+value).addClass("selected")
+    $(this).prev('.img-carousel').children().removeClass("selected");
+    $(this).prev().find('[class^=img-'+value+']').addClass("selected")
 });
 
 $(".accordian .ac-head").click(function(){
@@ -96,7 +96,9 @@ $( ".accordian .ac-head" ).click(function() {
     var gps = $(this).attr("value")
     var temp;
     var that = $(this);
+    console.log(gps);
     getWeather(gps).then(function(weather) {
+          console.log(weather);
           temp = weather.main.temp;
           var iconCode = weather.weather[0].icon
           var icon = 'http://openweathermap.org/img/w/'+iconCode+'.png'
@@ -123,8 +125,11 @@ $( ".accordian .ac-head" ).click(function() {
 
 function getWeather(gps) {
   var mytemp = [];
+  var getUrl = window.location;
+  var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+  console.log(baseUrl);
   return $.ajax({
-    url: "http://localhost:8080/SanTour/weather.php?"+gps,
+    url: baseUrl+"/weather.php?"+gps,
     async: true,
     dataType: 'json',
   });

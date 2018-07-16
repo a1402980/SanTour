@@ -8,6 +8,8 @@ $darkTan:#93894B;
 $green: #B6F890;
 $lightGreen: #E9FFD6;
 
+$red: #ff9190;
+
 $sm: 33.75em;
 $md: 45em;
 $lg: 60em;
@@ -242,11 +244,17 @@ body{
 #mount-slider{
   img{
     max-width: 100%;
-    width: 60%;
+    width: 40%;
   }
   span{
   }
 
+}
+
+.slide-tooltip{
+  .arrow_triangle-up{
+    vertical-align: middle;
+  }
 }
 
 .white-container{
@@ -278,13 +286,22 @@ body{
     }
     .score{
       display: inline-block;
-      background-color: $green;
       height: 60px;
       width: 60px;
       line-height: 60px;
       border-radius: 50%;
       text-align: center;
       font-weight: bolder;
+
+      &.red{
+        background-color: $red;
+      }
+      &.orange{
+        background-color: orange;
+      }
+      &.green{
+        background-color: $green;
+      }
     }
 
     .toggle-icon{
@@ -306,9 +323,11 @@ body{
 .weather{
   .weather-icon{
     display: block;
+    margin: auto;
   }
   .weather-temp{
     display: block;
+    font-size: 25px;
   }
 }
 

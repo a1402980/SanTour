@@ -10,8 +10,7 @@ $ch = curl_init($URL);
 
 curl_setopt_array($ch, array(
     CURLOPT_POST => TRUE,
-    CURLOPT_RETURNTRANSFER => TRUE,
-    CURLOPT_POSTFIELDS => json_encode($postData)
+    CURLOPT_RETURNTRANSFER => TRUE
 ));
 
 // Send the request

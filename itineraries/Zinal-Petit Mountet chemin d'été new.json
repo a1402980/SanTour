@@ -3,10 +3,33 @@
   "url": "https://www.snukr.com/exploration-details?id=59ce50dd798c500bf04bbf10&city=zinal&lang=fr",
   "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d4e978798c500bf04bbf29-1-m.jpg",
   "description":"This route is part of the SanTour project currently underway at the HES-SO Valais-Wallis in Sierre www.santour.ch",
-  "stats":{
+  "info":{
     "distance":"10.8km",
     "time":"3h",
-      },
+    "canton":"VS"
+  },
+  "attributes":{
+    "physical-activity":70,
+    "walking-help":100,
+    "walking-speed":60,
+    "walking-time":50,
+    "mounting":10,
+    "fear-of-heights":0,
+    "balance":0,
+    "pain":30,
+    "mobility":20,
+    "roots":100,
+    "rocks":100,
+    "dents":0,
+    "climbing":100,
+    "decent":100,
+    "flatness":100,
+    "bridges":100,
+    "peaks":100,
+    "handrails":0,
+    "time":100,
+    "walking-insurance":30,
+  },
   "poi": [
     {
       "name":"Small mountain",

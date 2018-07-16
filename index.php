@@ -656,19 +656,27 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Which type of roots would you prefer?</h1>
-            <p class="thin-text">lorem ipsum</p>
+            <h1>Which level of roots would you prefer?</h1>
+            <p class="thin-text">What is the maximum dencity of roots youd prefer on your hikin itinerary?</p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
-                <div id="rocks" class="img-carousel">
+                <div id="roots" class="img-carousel count-5">
 
-                  <img id="img-1" class="selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-1.jpg" alt="">
-                  <img id="img-2" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="">
-                  <img id="img-3" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-3.jpg" alt="">
+                  <img  value="0" class="img-0-roots selected" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-0.jpg" alt="">
+                  <img  value="25" class="img-25-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-1.jpg" alt="">
+                  <img value="50" class="img-50-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-2.jpg" alt="">
+                  <img value="75" class="img-75-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-3.jpg" alt="">
+                  <img value="100" class="img-100-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-4.jpg" alt="">
+
+                  <span class="img-0-roots selected">No roots</span>
+                  <span class="img-25-roots">Few roots</span>
+                  <span class="img-50-roots">Moderate amount of roots</span>
+                  <span class="img-75-roots">Many roots</span>
+                  <span class="img-100-roots">Extreme amount of roots</span>
 
                 </div>
-                <input type="range" min="1" max="3" value="1" class="slider">
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="roots">
                 <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
               </div>
             </div>
@@ -687,20 +695,378 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Which type of rocks would you prefer?</h1>
-            <p class="thin-text">lorem ipsum</p>
+            <h1>Which level of rocks would you prefer?</h1>
+            <p class="thin-text">What is the largest rock youd be able to face in an itinerary?</p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
-                <div id="rocks" class="img-carousel">
+                <div id="rocks" class="img-carousel count-5">
 
-                  <img id="img-1" class="selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-1.jpg" alt="">
-                  <img id="img-2" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="">
-                  <img id="img-3" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-3.jpg" alt="">
+                  <img value="0"  class="img-0-rocks selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-0.jpg" alt="">
+                  <img value="25" class="img-25-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-1.jpg" alt="">
+                  <img value="50" class="img-50-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="">
+                  <img value="75" class="img-75-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-3.jpg" alt="">
+                  <img value="100" class="img-100-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-4.jpg" alt="">
+
+                  <span class="img-0-rocks selected">No rocks</span>
+                  <span class="img-25-rocks">Minor rocks</span>
+                  <span class="img-50-rocks">Mediocre sized rocks</span>
+                  <span class="img-75-rocks">Large rocks</span>
+                  <span class="img-100-rocks">Extremely large rocks</span>
 
                 </div>
-                <input type="range" min="1" max="3" value="1" class="slider">
+                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="rocks">
                 <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-17" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>Choose the level of dentation</h1>
+            <p class="thin-text">What is the maximum amount of denting that youd like to have on your itinerary?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="dents" class="img-carousel count-5">
+
+                  <img value="0"  class="img-0-dents selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-0.jpg" alt="">
+                  <img value="1" class="img-25-dents" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-1.jpg" alt="">
+                  <img value="2" class="img-50-dents" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="">
+                  <img value="3" class="img-75-dents" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-3.jpg" alt="">
+                  <img value="4" class="img-100-dents" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-4.jpg" alt="">
+
+                  <span class="img-0-dents selected">No dents</span>
+                  <span class="img-25-dents">Minor dents</span>
+                  <span class="img-50-dents">Mediocre sized dents</span>
+                  <span class="img-75-dents">Large dents</span>
+                  <span class="img-100-dents">Extremely large dents</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="dents">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-18" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>What level of climbing would you like?</h1>
+            <p class="thin-text">Which option describes your preferance in climbing?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="climbing" class="img-carousel count-5">
+
+                  <img value="0"  class="img-0-climbing selected" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-0.jpg" alt="">
+                  <img value="25" class="img-25-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-1.jpg" alt="">
+                  <img value="50" class="img-50-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-2.jpg" alt="">
+                  <img value="75" class="img-75-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-3.jpg" alt="">
+                  <img value="100" class="img-100-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-4.jpg" alt="">
+
+                  <span class="img-0-climbing selected">No climbing</span>
+                  <span class="img-25-climbing">Easy rock climbing</span>
+                  <span class="img-50-climbing">Moderate rock climbing</span>
+                  <span class="img-75-climbing">Challenging rock climbing</span>
+                  <span class="img-100-climbing">Wall climbing</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="climbing">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-19" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>What level of decenting would you like?</h1>
+            <p class="thin-text">Which option describes your preferance in the level of ground decent?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="decent" class="img-carousel count-5">
+
+                  <img value="0"  class="img-0-decent selected" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-0.jpg" alt="">
+                  <img value="25" class="img-25-decent" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-1.jpg" alt="">
+                  <img value="50" class="img-50-decent" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-2.jpg" alt="">
+                  <img value="75" class="img-75-decent" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-3.jpg" alt="">
+                  <img value="100" class="img-100-decent" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-4.jpg" alt="">
+
+                  <span class="img-0-decent selected">No decent</span>
+                  <span class="img-25-decent">Easy decent</span>
+                  <span class="img-50-decent">Moderate decent</span>
+                  <span class="img-75-decent">Challenging decent</span>
+                  <span class="img-100-decent">Extreme decent</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="decent">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-20" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>What level of ground flatness would you like?</h1>
+            <p class="thin-text">Which option describes your preferance in the level of ground flatness?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="flatness" class="img-carousel count-5">
+
+                  <img value="0" class="img-0-flatness selected" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-0.jpg" alt="">
+                  <img value="25" class="img-25-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-1.jpg" alt="">
+                  <img value="50" class="img-50-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-2.jpg" alt="">
+                  <img value="75" class="img-75-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-3.jpg" alt="">
+                  <img value="100" class="img-100-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-4.jpg" alt="">
+
+                  <span class="img-0-flatness selected">Flat land</span>
+                  <span class="img-25-flatness">Easy hills</span>
+                  <span class="img-50-flatness">Moderate hills</span>
+                  <span class="img-75-flatness">Challenging hills</span>
+                  <span class="img-100-flatness">Extreme hills</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="flatness">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-21" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>What kind of bridges would you prefer?</h1>
+            <p class="thin-text">Which option describes your preferance in the type of bridges?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="bridges" class="img-carousel count-5">
+
+                  <img value="0" class="img-0-bridges selected" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-0.jpg" alt="">
+                  <img value="25" class="img-25-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-1.jpg" alt="">
+                  <img value="50" class="img-50-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-2.jpg" alt="">
+                  <img value="75" class="img-75-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-3.jpg" alt="">
+                  <img value="100" class="img-100-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-4.jpg" alt="">
+
+                  <span class="img-0-bridges selected">No bridges</span>
+                  <span class="img-25-bridges">Very shallow bridges</span>
+                  <span class="img-50-bridges">Moderately high bridges</span>
+                  <span class="img-75-bridges">High bridges</span>
+                  <span class="img-100-bridges">Very high bridges</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="bridges">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-22" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>What kind of peaks would you prefer?</h1>
+            <p class="thin-text">Which option describes your preferance in the type of peaks?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="peaks" class="img-carousel count-5">
+
+                  <img value="0" class="img-0-peaks selected" src="<?php echo URL_DIR ?>assets/img/form/peaks/peaks-0.jpg" alt="">
+                  <img value="25" class="img-25-peaks" src="<?php echo URL_DIR ?>assets/img/form/peaks/peaks-1.jpg" alt="">
+                  <img value="50" class="img-50-peaks" src="<?php echo URL_DIR ?>assets/img/form/peaks/peaks-2.jpg" alt="">
+                  <img value="75" class="img-75-peaks" src="<?php echo URL_DIR ?>assets/img/form/peaks/peaks-3.jpg" alt="">
+                  <img value="100" class="img-100-peaks" src="<?php echo URL_DIR ?>assets/img/form/peaks/peaks-4.jpg" alt="">
+
+                  <span class="img-0-peaks selected">No peaks</span>
+                  <span class="img-25-peaks">Very shallow peaks</span>
+                  <span class="img-50-peaks">Moderately high peaks</span>
+                  <span class="img-75-peaks">High peaks</span>
+                  <span class="img-100-peaks">Very high peaks</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="peaks">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-23" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>What kind of handrails would you prefer?</h1>
+            <p class="thin-text">Which option describes your preferance in the type of handrails?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="handrails" class="img-carousel count-5">
+
+                  <img value="0" class="img-0-handrails selected" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-0.jpg" alt="">
+                  <img value="25" class="img-25-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-1.jpg" alt="">
+                  <img value="50" class="img-50-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-2.jpg" alt="">
+                  <img value="75" class="img-75-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-3.jpg" alt="">
+                  <img value="100" class="img-100-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-4.jpg" alt="">
+
+                  <span class="img-0-handrails selected">No handrails</span>
+                  <span class="img-25-handrails">Very simple handrails</span>
+                  <span class="img-50-handrails">Safety chains for handrails</span>
+                  <span class="img-75-handrails">Waist high handrails</span>
+                  <span class="img-100-handrails">Full height handrails</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="handrails">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-23" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>How long do you wish to hike?</h1>
+            <p class="thin-text">Which option best describes the time youd want to spend on hiking?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="handrails" class="img-carousel count-5">
+
+                  <img value="0" class="img-0-handrails selected" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-0.jpg" alt="">
+                  <img value="25" class="img-25-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-1.jpg" alt="">
+                  <img value="50" class="img-50-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-2.jpg" alt="">
+                  <img value="75" class="img-75-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-3.jpg" alt="">
+                  <img value="100" class="img-100-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-4.jpg" alt="">
+
+                  <span class="img-0-handrails selected">No handrails</span>
+                  <span class="img-25-handrails">Very simple handrails</span>
+                  <span class="img-50-handrails">Safety chains for handrails</span>
+                  <span class="img-75-handrails">Waist high handrails</span>
+                  <span class="img-100-handrails">Full height handrails</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="handrails">
+                <span class="slide-tooltip">Slide me <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page">Select and continue</button>
+            </div>
+            <div class="col-12">
+              <a class="skip">I want to skip this question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-24" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>How long do you wish to hike?</h1>
+            <p class="thin-text">Which option best describes the time youd want to spend on hiking?</p>
+            <div class="col-12">
+              <div class="radio-buttons white-container">
+                <label>
+                  0-2 hours
+                  <input type="radio" name="time" value="0" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  2-4 hours
+                  <input type="radio" name="time" value="50" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label>
+                  Over 5 hours
+                  <input type="radio" name="time" value="100"/>
+                  <span class="checkmark"></span>
+                </label>
               </div>
             </div>
             <div class="col-12">

@@ -3,10 +3,33 @@
   "url": "https://www.snukr.com/exploration-details?id=59ce049e798c500bf04bbf09&city=zinal&lang=fr",
   "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a48b798c500bf04bbf54-1-m.jpg",
   "description":"This route is part of the SanTour project currently underway at the HES-SO Valais-Wallis in Sierre www.santour.ch",
-  "stats":{
+  "info":{
     "distance":"3.55km",
     "time":"1h",
-      },
+    "canton":"VS"
+  },
+  "attributes":{
+    "physical-activity":30,
+    "walking-help":30,
+    "walking-speed":20,
+    "walking-time":50,
+    "mounting":10,
+    "fear-of-heights":0,
+    "balance":0,
+    "pain":30,
+    "mobility":20,
+    "roots":100,
+    "rocks":100,
+    "dents":0,
+    "climbing":100,
+    "decent":100,
+    "flatness":100,
+    "bridges":100,
+    "peaks":100,
+    "handrails":0,
+    "time":100,
+    "walking-insurance":30,
+  },
   "poi": [
     {
       "name":"Parking",

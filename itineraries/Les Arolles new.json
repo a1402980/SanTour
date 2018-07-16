@@ -3,11 +3,34 @@
   "url": "https://www.snukr.com/exploration-details?id=59d4e9a6798c500bf04bbf2b&city=zinal&lang=fr",
   "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042fefa3f2ba0bf28eed52-1-m.jpg",
   "description":"Ce parcours fait partie du projet SanTour actuellement en cours à la HES-SO Valais-Wallis à Sierre www.santour.ch",
-  "stats":{
+  "info":{
     "distance":"6.8km",
     "time":"2.75h",
-      },
-    "poi": [
+    "canton":"VS"
+  },
+  "attributes":{
+    "physical-activity":80,
+    "walking-help":30,
+    "walking-speed":20,
+    "walking-time":50,
+    "mounting":20,
+    "fear-of-heights":0,
+    "balance":0,
+    "pain":30,
+    "mobility":20,
+    "roots":100,
+    "rocks":100,
+    "dents":0,
+    "climbing":100,
+    "decent":100,
+    "flatness":100,
+    "bridges":100,
+    "peaks":100,
+    "handrails":0,
+    "time":100,
+    "walking-insurance":30,
+  },
+  "poi": [
       {
         "name":"Zinal",
         "description":"Zinal is a village in Switzerland, located in the municipality of Anniviers in the canton of Valais.",
@@ -17,8 +40,8 @@
               "lng":7.625117395080224
         }
       }
-    ],
-    "pod": [
+  ],
+  "pod": [
       {
         "name":"Rocky road",
         "description":"Point of danger",
