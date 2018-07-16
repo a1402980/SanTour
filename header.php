@@ -9,6 +9,43 @@ define('SITE_NAME', substr(dirname($_SERVER['SCRIPT_NAME']),1)); //--> php_mvc
 define('ROOT_DIR', dirname(getcwd()) . '/' . SITE_NAME.'/'); //physical path on disk
 //define('URL_DIR', $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT']
 define('URL_DIR', 'http'.'://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT']. '/' . SITE_NAME.'/');
+
+
+//multilanguage support
+if(isSet($_GET['lang']))
+{
+$lang = $_GET['lang'];
+// register the session and set the cookie
+$_SESSION['lang'] = $lang;
+setcookie('lang', $lang, time() + (3600 * 24 * 30));
+}
+else if(isSet($_SESSION['lang']))
+{
+$lang = $_SESSION['lang'];
+}
+else if(isSet($_COOKIE['lang']))
+{
+$lang = $_COOKIE['lang'];
+}
+else
+{
+$lang = 'en';
+}
+switch ($lang) {
+  case 'en':
+  $lang_file = 'lang.en.php';
+  break;
+  case 'de':
+  $lang_file = 'lang.de.php';
+  break;
+  case 'fr':
+  $lang_file = 'lang.fr.php';
+  break;
+  default:
+  $lang_file = 'lang.en.php';
+}
+include_once ROOT_DIR.'languages/'.$lang_file;
+
  ?>
 
 <!doctype html>
@@ -42,7 +79,17 @@ define('URL_DIR', 'http'.'://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT
         <ul id="nav-links">
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li>
+            <div class="dropdown">
+                <a class="dd-trigger"><?php echo $lang['LANGUAGE']; ?> <i class="arrow_triangle-down toggle-icon"></i></a>
+                <ul hidden>
+                  <?php $the_url = strtok($_SERVER["REQUEST_URI"],'?') ?>
+                  <li><a href="<?php echo $the_url ?>?lang=en">En</a></li>
+                  <li><a href="<?php echo $the_url ?>?lang=de">De</a></li>
+                  <li><a href="<?php echo $the_url ?>?lang=fr">Fr</a></li>
+                </ul>
+            </div>
+          </li>
         </ul>
 
         <ul id="some">

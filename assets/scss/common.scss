@@ -269,6 +269,7 @@ label .checkmark:after {
   color: $black;
   text-decoration: underline;
   cursor: pointer;
+  text-shadow: 1px 1px 6px white;
 }
 
 
@@ -322,4 +323,33 @@ label .checkmark:after {
     }
   }
 
+}
+.previous-page{
+  text-decoration: underline;
+  cursor: pointer;
+  text-shadow: 1px 1px 6px white;
+}
+.done-text{
+  text-shadow: 1px 1px 6px white;
+}
+
+
+.dropdown{
+  display: inline-block;
+  position: relative;
+  .dd-trigger{
+    cursor: pointer;
+  }
+  ul{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    li{
+      display: block;
+      &:hover{
+        text-decoration: underline;
+        color: white;
+      }
+    }
+  }
 }

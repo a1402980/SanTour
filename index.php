@@ -7,9 +7,9 @@ require_once('header.php');
     <div class="container">
       <div class="row">
         <div class="col-12 center">
-          <h1>Welcome to SanTour</h1>
-          <p class="thin-text">SanTour helps you find a hiking itinerary that's fit just for you</p>
-          <button class="next-page">Let's begin</button>
+          <h1><?php echo $lang['INDEX_WELCOME'] ?></h1>
+          <p class="thin-text"><?php echo $lang['INDEX_INTRO'] ?></p>
+          <button class="next-page"><?php echo $lang['INDEX_BEGIN'] ?></button>
         </div>
       </div>
     </div>
@@ -56,9 +56,10 @@ require_once('header.php');
               </select>
             </div>
             <div class="col-12 center">
-              <button type="button" class="next-page">select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
-
           </div>
         </div>
       </div>
@@ -74,21 +75,21 @@ require_once('header.php');
               <div class="row">
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>Yes</span>
+                    <span><?php echo $lang['Yes'] ?></span>
                     <input type="radio" name="physical-activity" value="67" />
                     <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
                   </label>
                 </div>
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>Not sure</span>
+                    <span><?php echo $lang['NOT_SURE'] ?></span>
                     <input type="radio" name="physical-activity" value="0"/>
                     <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
                   </label>
                 </div>
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>No</span>
+                    <span><?php echo $lang['NO'] ?></span>
                     <input type="radio" name="physical-activity" value="67" />
                     <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
                   </label>
@@ -97,10 +98,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -117,21 +120,21 @@ require_once('header.php');
               <div class="row">
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>Yes</span>
+                    <span><?php echo $lang['Yes'] ?></span>
                     <input type="radio" name="physical-activity" value="83" />
                     <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
                   </label>
                 </div>
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>not sure</span>
+                    <span><?php echo $lang['NOT_SURE'] ?></span>
                     <input type="radio" name="physical-activity" value="67"/>
                     <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
                   </label>
                 </div>
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>No</span>
+                    <span><?php echo $lang['NO'] ?></span>
                     <input type="radio" name="physical-activity" value="67" />
                     <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
                   </label>
@@ -140,10 +143,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -160,21 +165,21 @@ require_once('header.php');
               <div class="row">
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>Yes</span>
+                    <span><?php echo $lang['Yes'] ?></span>
                     <input type="radio" name="physical-activity" value="100" />
                     <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
                   </label>
                 </div>
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>not sure</span>
+                    <span><?php echo $lang['NOT_SURE'] ?></span>
                     <input type="radio" name="physical-activity" value="83"/>
                     <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
                   </label>
                 </div>
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>No</span>
+                    <span><?php echo $lang['NO'] ?></span>
                     <input type="radio" name="physical-activity" value="83" />
                     <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
                   </label>
@@ -183,10 +188,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
-            <div class="col-12" style="color:black;">
-              <a class="skip">I want to skip this question</a>
+            <div class="col-12">
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -239,10 +246,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -288,10 +297,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -355,10 +366,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -403,10 +416,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -473,10 +488,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -494,21 +511,21 @@ require_once('header.php');
               <div class="row">
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>Yes</span>
+                    <span><?php echo $lang['Yes'] ?></span>
                     <input type="radio" name="fear-of-heights" value="0" />
                     <img src="<?php echo URL_DIR ?>/assets/img/yes.svg">
                   </label>
                 </div>
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>Not sure</span>
+                    <span><?php echo $lang['NOT_SURE'] ?></span>
                     <input type="radio" name="fear-of-heights" value="50"/>
                     <img src="<?php echo URL_DIR ?>/assets/img/maybe.svg">
                   </label>
                 </div>
                 <div class="col-4 thumb-container">
                   <label class="thumb">
-                    <span>No</span>
+                    <span><?php echo $lang['NO'] ?></span>
                     <input type="radio" name="fear-of-heights" value="100" />
                     <img src="<?php echo URL_DIR ?>/assets/img/no.svg">
                   </label>
@@ -517,10 +534,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -555,10 +574,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -601,10 +622,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -642,10 +665,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -681,10 +706,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -720,10 +747,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -759,10 +788,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -798,10 +829,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -837,10 +870,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -876,10 +911,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -915,10 +952,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -954,10 +993,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -993,10 +1034,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -1032,10 +1075,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>
@@ -1070,10 +1115,12 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page">Select and continue</button>
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>
             <div class="col-12">
-              <a class="skip">I want to skip this question</a>
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
             </div>
           </div>
         </div>

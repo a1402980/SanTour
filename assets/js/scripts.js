@@ -30,20 +30,37 @@ $(".next-page").click(function(){
   nextPage(context);
 });
 
-  function nextPage(current){
-    //take id of closest section and add +1 to it
-    var pageNum = current.closest('section').attr('id');
-    var num = pageNum.split("-");
-    num = parseInt(num[1])+1;
-    $(".page").removeClass("active");
-    $("#page-"+num).addClass("active");
-    changeBG();
-    $(window).scrollTop(0);
-  }
-
 $(".skip").click(function(){
   var context = $(this);
   nextPage(context);
+});
+
+function nextPage(current){
+  //take id of closest section and add +1 to it
+  var pageNum = current.closest('section').attr('id');
+  var num = pageNum.split("-");
+  num = parseInt(num[1])+1;
+  $(".page").removeClass("active");
+  $("#page-"+num).addClass("active");
+  var totalpages = $('.page').length;
+  var percentageDone = (num/totalpages) * 100;
+  $(".done-percentage").text(Math.round(percentageDone));
+  changeBG();
+  $(window).scrollTop(0);
+}
+
+$(".previous-page").click(function(){
+  //take id of closest section and -1 to it
+  var pageNum = $(this).closest('section').attr('id');
+  var num = pageNum.split("-");
+  num = parseInt(num[1])-1;
+  $(".page").removeClass("active");
+  $("#page-"+num).addClass("active");
+  var totalpages = $('.page').length;
+  var percentageDone = (num/totalpages) * 100;
+  $(".done-percentage").text(Math.round(percentageDone));
+  changeBG();
+  $(window).scrollTop(0);
 });
 
 function changeBG(){
@@ -115,6 +132,13 @@ $( ".accordian .ac-head" ).click(function() {
 
 });
 
+$( ".dropdown .dd-trigger" ).click(function() {
+  $(".dropdown ul").slideToggle();
+  $(".dropdown .toggle-icon").toggleClass("arrow_triangle-down arrow_triangle-up");
+});
+
+
+
 
 
 });
@@ -127,7 +151,6 @@ function getWeather(gps) {
   var mytemp = [];
   var getUrl = window.location;
   var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
-  console.log(baseUrl);
   return $.ajax({
     url: baseUrl+"/weather.php?"+gps,
     async: true,
