@@ -2,11 +2,13 @@
   "name": "Les Arolles",
   "url": "https://www.snukr.com/exploration-details?id=59d4e9a6798c500bf04bbf2b&city=zinal&lang=fr",
   "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042fefa3f2ba0bf28eed52-1-m.jpg",
-  "description":"Ce parcours fait partie du projet SanTour actuellement en cours à la HES-SO Valais-Wallis à Sierre www.santour.ch",
+  "description":"From Les Erables, follow the little road that goes uphill to the left until you reach the start of the path, which runs steeply uphill through woodland to the Lirec alpine pasture (1h). Continue on the path on the right, which runs alongside the forest of Arolla pines (arolles), above the alpine pastures, and joins the Chemin de Tracuit. Cross the alpine pasture, with its view over the Roc de la Vache waterfall, and continue to Zinal. Note: After heavy rain, it can be diffcult or impossible to cross the couloirs and rivers. Check beforehand at the Zinal Tourist Offce. Arven wachsen bis in rund 2‘200 Metern Höhe und markieren die Waldgrenze. Arolla pines can grow at altitudes of up to 2200 metres.
+  and mark the upper limit of forests.",
   "info":{
     "distance":"6.8km",
     "time":"2.75h",
-    "canton":"VS"
+    "canton":"VS",
+    "trail-type":"mountain"
   },
   "attributes":{
     "physical-activity":83,
@@ -20,15 +22,15 @@
     "mobility":100,
     "roots":25,
     "rocks":75,
-    "dents":0,
+    "bumps":0,
     "climbing":50,
     "decent":75,
     "flatness":75,
     "bridges":0,
-    "peaks":50,
-    "handrails":0,
+    "ridges":50,
+    "handrails":100,
     "time":50,
-    "walking-insurance":80,
+    "walking-confidence":80,
   },
   "poi": [
       {

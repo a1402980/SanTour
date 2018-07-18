@@ -2,11 +2,12 @@
   "name": "Les Clautis",
   "url": "https://www.snukr.com/exploration-details?id=59ce049e798c500bf04bbf09&city=zinal&lang=fr",
   "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a48b798c500bf04bbf54-1-m.jpg",
-  "description":"This route is part of the SanTour project currently underway at the HES-SO Valais-Wallis in Sierre www.santour.ch",
+  "description":"Follow the Route de Tracuit (Reka), which starts between the Hôtel des Bouquetins and the Auberge Alpina, until you reach the start of the Chemin de Tracuit. Take the path on the right, continue for about half an hour, and walk downhill to the Le Barmé picnic area.",
   "info":{
     "distance":"3.55km",
     "time":"1h",
-    "canton":"VS"
+    "canton":"VS",
+    "trail-type":"mountain"
   },
   "attributes":{
     "physical-activity":67,
@@ -20,15 +21,15 @@
     "mobility":100,
     "roots":75,
     "rocks":75,
-    "dents":0,
+    "bumps":0,
     "climbing":25,
     "decent":50,
     "flatness":50,
     "bridges":25,
-    "peaks":75,
+    "ridges":75,
     "handrails":50,
     "time":50,
-    "walking-insurance":80,
+    "walking-confidence":80,
   },
   "poi": [
     {

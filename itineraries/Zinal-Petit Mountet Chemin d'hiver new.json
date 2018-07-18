@@ -2,11 +2,12 @@
   "name": "Zinal-Petit Mountet Chemin d'hiver",
   "url": "https://www.snukr.com/exploration-details?id=59ce2d40798c500bf04bbf0e&city=zinal&lang=fr",
   "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042fefa3f2ba0bf28eed52-1-m.jpg",
-  "description":"Ce parcours fait partie du projet SanTour actuellement en cours à la HES-SO Valais-Wallis à Sierre www.santour.ch",
+  "description":"Walk along either bank of the river Navisence. Once you are at the end of the Plats de la Lée, take the small forest track that goes up to the right, with a fine view of the waterfalls. Continue to the Cabane du Petit Mountet, which stands above the Zinal glacier. The Petit Mountet mountain hut is fairly easy to reach and makes an ideal destination for family walks and also for watching the wildlife. A brochure entitled “Flore du Petit Mountet” (French only) gives details of some of the plants and ﬂowers to be seen on this walk, and is on sale at the hut and the Zinal Tourist Offce, price CHF 2. You should not pick the ﬂowers, because many of them are protected species.",
   "info":{
     "distance":"12.6km",
     "time":"3.5h",
-    "canton":"VS"
+    "canton":"VS",
+    "trail-type":"mountain"
     },
     "attributes":{
       "physical-activity":83,
@@ -20,15 +21,15 @@
       "mobility":100,
       "roots":0,
       "rocks":25,
-      "dents":0,
+      "bumps":0,
       "climbing":25,
       "decent":75,
       "flatness":75,
       "bridges":25,
-      "peaks":75,
-      "handrails":75,
+      "ridges":75,
+      "handrails":25,
       "time":50,
-      "walking-insurance":100,
+      "walking-confidence":100,
     },
     "poi": [
       {

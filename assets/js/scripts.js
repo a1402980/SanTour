@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
   console.log("Ready!");
+  //Cookies.remove("saved-users");
 
 
 $( ".info-trigger" ).click(function() {
@@ -25,9 +26,15 @@ $(".map-canton").click(function(){
 
 });
 
+
 $(".next-page").click(function(){
-  var context = $(this);
-  nextPage(context);
+  if ($(this).hasClass("skip-physical")) {
+    skipPhysical();
+  }else {
+    var context = $(this);
+    nextPage(context);
+  }
+
 });
 
 $(".skip").click(function(){
@@ -54,13 +61,19 @@ $(".previous-page").click(function(){
   var pageNum = $(this).closest('section').attr('id');
   var num = pageNum.split("-");
   num = parseInt(num[1])-1;
-  $(".page").removeClass("active");
-  $("#page-"+num).addClass("active");
-  var totalpages = $('.page').length;
-  var percentageDone = (num/totalpages) * 100;
-  $(".done-percentage").text(Math.round(percentageDone));
-  changeBG();
-  $(window).scrollTop(0);
+  //special case for physical questions. If pressed back, take back to beginning of physical evaluation
+  if (num == 6) {
+    backToPhysical();
+  }else {
+    $(".page").removeClass("active");
+    $("#page-"+num).addClass("active");
+    var totalpages = $('.page').length;
+    var percentageDone = (num/totalpages) * 100;
+    $(".done-percentage").text(Math.round(percentageDone));
+    changeBG();
+    $(window).scrollTop(0);
+  }
+
 });
 
 function changeBG(){
@@ -103,6 +116,7 @@ $(".accordian .ac-head").click(function(){
     $(".ac-body").removeClass("active");
     $(this).next(".ac-body").slideUp();
   }
+  $(".toggle-icon").removeClass("arrow_triangle-up").addClass("arrow_triangle-down");
   $(this).children(".toggle-icon").toggleClass("arrow_triangle-down arrow_triangle-up");
 });
 
@@ -124,13 +138,10 @@ $( ".accordian .ac-head" ).click(function() {
           that.next(".ac-body").find( ".weather-icon" ).show();
           that.next(".ac-body").find( ".weather-temp" ).text(temp + "°C");
           that.next(".ac-body").find( ".weather-temp" ).show();
-
-
     });
   }
-
-
 });
+
 
 $( ".dropdown .dd-trigger" ).click(function() {
   $(".dropdown ul").slideToggle();
@@ -139,13 +150,120 @@ $( ".dropdown .dd-trigger" ).click(function() {
 
 
 
+$(".pain").change(function() {
+    if(this.checked) {
+      $('.no-pain').prop('checked', false); // Unchecks no pain option
+    }
+});
+
+$(".no-pain").change(function() {
+    if(this.checked) {
+      $('.pain').prop('checked', false); // Unchecks pain options
+    }
+});
+
+$(".no-mobility").change(function() {
+    if(this.checked) {
+      $('.full-mobility').prop('checked', false); // Unchecks full mobility
+    }
+});
+
+$(".full-mobility").change(function() {
+    if(this.checked) {
+      $('.no-mobility').prop('checked', false); // Unchecks mobility limitations
+    }
+});
+
+//branching logic to skip further physical questions
+$(".physical-1").change(function() {
+  if ($('input[name=physical-activity]:checked').val() == 0) {
+    $("#pageskipperone").removeClass("next-page");
+    $("#pageskipperone").addClass("skip-physical");
+  }else {
+    $("#pageskipperone").addClass("next-page");
+    $("#pageskipperone").removeClass("skip-physical");
+  }
+});
+
+//branching logic to skip further physical questions
+$(".physical-2").change(function() {
+  if ($('input[name=physical-activity]:checked').val() == 67) {
+    $("#pageskippertwo").removeClass("next-page");
+    $("#pageskippertwo").addClass("skip-physical");
+  }else {
+    $("#pageskippertwo").addClass("next-page");
+    $("#pageskippertwo").removeClass("skip-physical");
+  }
+});
+
+//skip the rest of the physical questions
+function skipPhysical(){
+  var num = 7;
+  $(".page").removeClass("active");
+  $("#page-"+num).addClass("active");
+  var totalpages = $('.page').length;
+  var percentageDone = (num/totalpages) * 100;
+  $(".done-percentage").text(Math.round(percentageDone));
+  changeBG();
+  $(window).scrollTop(0);
+};
+
+//special case for back press on question after
+function backToPhysical(){
+  var num = 4;
+  $(".page").removeClass("active");
+  $("#page-"+num).addClass("active");
+  var totalpages = $('.page').length;
+  var percentageDone = (num/totalpages) * 100;
+  $(".done-percentage").text(Math.round(percentageDone));
+  changeBG();
+  $(window).scrollTop(0);
+};
+
+
+
+$(".user-box").click(function(){
+  var index = $(this).attr('value');
+  $("#user-"+index).submit();
+});
+
+//change the canton in the cookie forms
+$("#canton-select").change(function() {
+  var canton = $(this).val();
+  $("input[type='text'][name='canton']").attr('value', canton);
+});
+
+$(".user-box .icon_close").click(function(){
+  var index = $(this).attr('value');
+  var cookie_name = "saved-users";
+  var cookie = unserialize(Cookies.get(cookie_name));
+
+  //if user is the only one, delete whole cookie
+  if (cookie.length == 1 ) {
+    Cookies.remove(cookie_name);
+  }else {
+    delete cookie[index];
+    cookie = serialize(cookie);
+    Cookies.set(cookie_name, cookie);
+  }
+
+  $(this).parent().remove();
+});
+
+//set default canton value for cookie forms
+if($(".cookie-form").length != 0) {
+  var canton = $("#canton-select").val();
+  $("input[type='text'][name='canton']").attr('value', canton);
+}
+
 
 
 });
 
-
-
-
+//stop form from sending with enter press
+$(document).on("keypress", "form", function(event) {
+    return event.keyCode != 13;
+});
 
 function getWeather(gps) {
   var mytemp = [];

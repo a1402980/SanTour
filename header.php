@@ -63,6 +63,9 @@ include_once ROOT_DIR.'languages/'.$lang_file;
 
   <link rel="stylesheet" href="assets/minified/css/main.min.css">
   <script src="assets/minified/vendor/jquery-3.3.1.min.js" ></script>
+  <script src="assets/minified/js/js.cookie.min.js" ></script>
+  <script src="assets/minified/js/unserialize.min.js" ></script>
+  <script src="assets/minified/js/serialize.min.js" ></script>
   <script src="assets/minified/vendor/chart.min.js" ></script>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
@@ -77,8 +80,8 @@ include_once ROOT_DIR.'languages/'.$lang_file;
     <nav>
       <div id="navigation">
         <ul id="nav-links">
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li><a href="<?php echo URL_DIR ?>">Start</a></li>
+          <li><a href="#">About</a></li>
           <li>
             <div class="dropdown">
                 <a class="dd-trigger"><?php echo $lang['LANGUAGE']; ?> <i class="arrow_triangle-down toggle-icon"></i></a>

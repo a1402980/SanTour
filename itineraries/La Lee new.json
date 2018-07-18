@@ -2,11 +2,12 @@
   "name": "La Lee",
   "url": "https://www.snukr.com/exploration-details?id=59d8b8a5798c500bf04bbf5d&city=zinal&lang=fr",
   "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59cdf84a798c500bf04bbefa-1-m.jpg",
-  "description":"This route is part of the SanTour project currently underway at the HES-SO Valais-Wallis in Sierre www.santour.ch",
+  "description":"To get from Zinal to the starting point for the Plats de la Lée walk, walk along the street that runs through the old village, or along the main road, to the Singline car park at the end of the village (15 minutes). By car, follow the cantonal road to the Singline car park. Walk along the right bank of the river Navisence and return along the left bank. A pleasant and very easy family walk, which is suitable for baby strollers and can be done as a circular walk. Picnic area available. You can have a light meal at the Relais de la Tzoucdana, a restaurant with a large pond, animals and a play area.",
   "info":{
     "distance":"3.73km",
     "time":"1h",
-    "canton":"VS"
+    "canton":"VS",
+    "trail-type":"hiking"
     },
   "attributes":{
     "physical-activity":0,
@@ -20,15 +21,15 @@
     "mobility":20,
     "roots":0,
     "rocks":25,
-    "dents":25,
+    "bumps":0,
     "climbing":0,
     "decent":0,
     "flatness":0,
     "bridges":25,
-    "peaks":0,
-    "handrails":0,
+    "ridges":0,
+    "handrails":100,
     "time":0,
-    "walking-insurance":40,
+    "walking-confidence":40,
   },
   "poi": [
     {

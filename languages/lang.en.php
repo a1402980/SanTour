@@ -19,6 +19,7 @@ $lang['SKIP'] = "I want to skip this question";
 $lang['Yes'] = "Yes";
 $lang['NOT_SURE'] = "Not sure";
 $lang['NO'] = "No";
+$lang['SLIDE_ME'] = "Slide me";
 
 
 
