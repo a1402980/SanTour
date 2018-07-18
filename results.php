@@ -71,6 +71,8 @@ if (!$user_info['physical-activity']) {
   if (!$user_info['pain'] and $user_info['pain-1'] || $user_info['pain-2'] || $user_info['pain-3'] || $user_info['pain-4']) {
     $user_info['pain'] = 100 - ($user_info['pain-1'] + $user_info['pain-2'] + $user_info['pain-3'] + $user_info['pain-4']);
     unset($user_info['pain-1'],$user_info['pain-2'],$user_info['pain-3'],$user_info['pain-4']);
+  }elseif (!$user_info['pain'] and !$user_info['pain-1'] and !$user_info['pain-2'] and !$user_info['pain-3'] and !$user_info['pain-4']){
+    $user_info['pain'] = 0;
   }else {
     $user_info['pain'] = 100;
     }
@@ -78,6 +80,8 @@ if (!$user_info['physical-activity']) {
   //calculate the total mobility points
   if (!$user_info['mobility'] and $user_info['mobility-1'] || $user_info['mobility-2'] ||$user_info['mobility-3']) { $user_info['mobility'] = 100 - ($user_info['mobility-1'] + $user_info['mobility-2'] + $user_info['mobility-3']);
     unset($user_info['mobility-1'],$user_info['mobility-2'],$user_info['mobility-3']);
+  }elseif (!$user_info['mobility'] and !$user_info['mobility-1'] and !$user_info['mobility-2'] and !$user_info['mobility-3'] and !$user_info['mobility-4']){
+    $user_info['mobility'] = 0;
   }else {
     $user_info['mobility'] = 100;
   }

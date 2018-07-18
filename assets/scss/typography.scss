@@ -90,6 +90,30 @@ h2{
       margin: 15px 0px 5px 0px;
       }
 
+      h3{
+        font-family: 'Abril Fatface', cursive;
+        font-size: 17px;
+        color: $text;
+        letter-spacing: -0.5px;
+        line-height: 27px;
+        margin: 20px 0px 10px 0px;
+      }
+      h4{
+        font-family: 'Roboto-Medium', sans-serif;
+        font-size: 13px;
+        color: $text;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin: 15px 0px 10px 0px;
+      }
+      h5{
+        font-family: 'Roboto-Medium', sans-serif;
+        font-size: 11px;
+        color: $text;
+        letter-spacing: 0.5px;
+        margin: 10px 0px 5px 0px;
+      }
+
 
       .thin-text{
         font-family: 'Roboto-Thin', sans-serif;
