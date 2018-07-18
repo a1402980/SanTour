@@ -170,6 +170,7 @@ if (!$user_info['physical-activity']) {
               <div class="ac-body">
                 <div class="row">
                   <div class="col-9">
+                    <h4>Description</h4>
                     <p><?php echo $itinerary['description']; ?></p>
                   </div>
 
@@ -188,6 +189,10 @@ if (!$user_info['physical-activity']) {
                     <a href="<?php echo URL_DIR . 'assets/gpx/' . $itinerary['name'] . '.gpx' ?>" download> <button type="button">GPX file <i class="icon_download"> </i> </button></a>
                     <?php $transportUrl = "https://timetable.search.ch/?from=&to=snap%3A" . $itinerary['latlng'][0][0] . "%2C" . $itinerary['latlng'][0][1] . "&time=&date=&time_type=depart" ?>
                     <a href="<?php echo $transportUrl ?>" target="_blank" > <button type="button">Public transport <i class="icon_pin_alt"></i> </button> </a>
+                  </div>
+                  <div class="col-12">
+                    <span>Trail type: <?php echo $itinerary['info']['trail-type'] ?> trail</span> <a href="<?php echo URL_DIR ?>about.php#trails" target="_blank"><i class="icon_question_alt2"></i></a>
+                    <div class="<?php echo $itinerary['info']['trail-type'] ?>"></div>
                   </div>
                   <div class="col-12">
                     <canvas id="altitude-<?php echo $itinerary['_id'] ?>" width="50" height="25"></canvas>

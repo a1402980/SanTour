@@ -1158,7 +1158,7 @@ require_once('header.php');
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <button type="submit" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
               <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
               <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
             </div>

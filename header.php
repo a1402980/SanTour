@@ -81,7 +81,7 @@ include_once ROOT_DIR.'languages/'.$lang_file;
       <div id="navigation">
         <ul id="nav-links">
           <li><a href="<?php echo URL_DIR ?>">Start</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="<?php echo URL_DIR ?>about.php">About</a></li>
           <li>
             <div class="dropdown">
                 <a class="dd-trigger"><?php echo $lang['LANGUAGE']; ?> <i class="arrow_triangle-down toggle-icon"></i></a>
@@ -113,12 +113,25 @@ include_once ROOT_DIR.'languages/'.$lang_file;
         <button class="nav-toggle"> <i class="icon_menu"></i> </button>
           <ul id="mobile-links">
             <button class="nav-toggle right"> <i class="icon_close"></i> </button>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#"> <i class="social_facebook_circle facebook"></i> </a></li>
-            <li><a href="#"> <i class="social_twitter_circle twitter"></i> </a></li>
+            <li class="mobile-some"><a href="#"> <i class="social_facebook_circle facebook"></i> </a></li>
+            <li class="mobile-some"><a href="#"> <i class="social_twitter_circle twitter"></i> </a></li>
+            <li></li>
+            <li><a href="<?php echo URL_DIR ?>">Start</a></li>
+            <li><a href="<?php echo URL_DIR ?>about.php">About</a></li>
+            <li>
+              <div class="dropdown">
+                  <a class="dd-trigger"><?php echo $lang['LANGUAGE']; ?> <i class="arrow_triangle-down toggle-icon"></i></a>
+                  <ul hidden>
+                    <?php $the_url = strtok($_SERVER["REQUEST_URI"],'?') ?>
+                    <li><a href="<?php echo $the_url ?>?lang=en">En</a></li>
+                    <li><a href="<?php echo $the_url ?>?lang=de">De</a></li>
+                    <li><a href="<?php echo $the_url ?>?lang=fr">Fr</a></li>
+                  </ul>
+              </div>
+            </li>
+
           </ul>
+
 
       </div>
     </nav>
