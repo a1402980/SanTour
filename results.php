@@ -257,7 +257,7 @@ if (!$user_info['physical-activity']) {
                               pointBorderColor: "#fff",
                               pointBackgroundColor: "rgba(179,181,198,1)",
                               data: [
-                                <?php foreach ($user_info as $user_attribute): ?>
+                                <?php foreach ($chart_user as $user_attribute): ?>
                                   <?php echo $user_attribute.",";?>
                                 <?php endforeach; ?>
                               ]
@@ -299,7 +299,7 @@ if (!$user_info['physical-activity']) {
                               pointBorderColor: "#fff",
                               pointBackgroundColor: "rgba(179,181,198,1)",
                               data: [
-                                <?php foreach ($itinerary['attributes'] as $itinerary_attribute): ?>
+                                <?php foreach ($chart_itinerary as $itinerary_attribute): ?>
                                   <?php echo $itinerary_attribute.",";?>
                                 <?php endforeach; ?>
                               ]
