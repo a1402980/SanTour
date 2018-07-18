@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b56448b-cdc7-49d3-9d7d-9454457c1b25" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/minified/css/main.css.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/minified/css/main.css.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/minified/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/minified/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.php" beforeDir="false" afterPath="$PROJECT_DIR$/results.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -124,16 +118,15 @@
       <updated>1531835484929</updated>
       <workItem from="1531835487825" duration="582000" />
       <workItem from="1531923126269" duration="674000" />
-      <workItem from="1531944320830" duration="92000" />
+      <workItem from="1531944320830" duration="691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1348000" />
+    <option name="totallyTimeSpent" value="1947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1477" height="888" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />

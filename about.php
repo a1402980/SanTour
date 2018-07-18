@@ -10,7 +10,7 @@ require_once('header.php');
             <h1 class="center">About</h1>
             <h2>General information</h2>
             <p>SanTour is a hiking application that was first introduced in 2015. SanTours aim is to propose hikers with itinerariers that serve their limitations and needs. In the itineraries that are proposed to the user, the user can see different points of interests (POI) and points of difficulty (POD). With this data, the user can find an itinerary that is most suitable for their needs.</p>
-            <p>This version of SanTour was developed in 2018 as a part of a bachelor thesis by <a target="_blank" href="https://www.linkedin.com/in/mikko-lerto-617106133">Mikko Lerto</a> </p>
+            <p>This version of SanTour was developed in 2018 as a part of a bachelor thesis by <a target="_blank" href="https://www.linkedin.com/in/mikko-lerto-617106133">Mikko Lerto</a>.</p>
 
             <h2 id="trails">Hiking trail network and signalization</h2>
             <h3>Hiking trails</h3>
