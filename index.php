@@ -813,7 +813,7 @@ require_once('header.php');
 
                   <img value="0"  class="img-0-rocks selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-0.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_1']; ?>">
                   <img value="25" class="img-25-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-1.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_2']; ?>">
-                  <img value="50" class="img-50-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_3']: ?>">
+                  <img value="50" class="img-50-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_3']; ?>">
                   <img value="75" class="img-75-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-3.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_1']; ?>">
                   <img value="100" class="img-100-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-4.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_4']; ?>">
 
@@ -824,7 +824,7 @@ require_once('header.php');
                   <span class="img-100-rocks"><?php echo $lang['PAGE_ROCKS_OPTION_5']; ?></span>
 
                 </div>
-                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="rocks">
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="rocks">
                 <span class="slide-tooltip"> <?php echo $lang['SLIDE_ME']?> <i class="arrow_triangle-up"></i></span>
               </div>
             </div>
@@ -865,7 +865,7 @@ require_once('header.php');
                   <span class="img-100-bumps"><?php echo $lang['PAGE_BUMPINESS_OPTION_5']; ?></span>
 
                 </div>
-                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="bumps">
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="bumps">
                 <span class="slide-tooltip"> <?php echo $lang['SLIDE_ME']?> <i class="arrow_triangle-up"></i></span>
               </div>
             </div>
@@ -906,7 +906,7 @@ require_once('header.php');
                   <span class="img-100-climbing"><?php echo $lang['PAGE_CLIMBING_OPTION_5']; ?></span>
 
                 </div>
-                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="climbing">
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="climbing">
                 <span class="slide-tooltip"> <?php echo $lang['SLIDE_ME']?> <i class="arrow_triangle-up"></i></span>
               </div>
             </div>
@@ -947,7 +947,7 @@ require_once('header.php');
                   <span class="img-100-descent"><?php echo $lang['PAGE_DESCENT_OPTION_5']; ?></span>
 
                 </div>
-                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="descent">
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="descent">
                 <span class="slide-tooltip"> <?php echo $lang['SLIDE_ME']?> <i class="arrow_triangle-up"></i></span>
               </div>
             </div>

@@ -59,17 +59,18 @@ include_once ROOT_DIR.'languages/'.$lang_file;
   <meta name="description" content="Hiking service">
   <meta name="author" content="Mikko Lerto">
 
-
-
   <link rel="stylesheet" href="assets/minified/css/main.min.css">
-  <script src="assets/minified/vendor/jquery-3.3.1.min.js" ></script>
-  <script src="assets/minified/js/js.cookie.min.js" ></script>
-  <script src="assets/minified/js/unserialize.min.js" ></script>
-  <script src="assets/minified/js/serialize.min.js" ></script>
-  <script src="assets/minified/vendor/chart.min.js" ></script>
+  <link rel="stylesheet" href="assets/minified/vendor/leaflet.min.css">
+  <script async src="assets/minified/vendor/jquery-3.3.1.min.js" ></script>
+  <script async src="assets/minified/js/js.cookie.min.js" ></script>
+  <script async src="assets/minified/js/unserialize.min.js" ></script>
+  <script async src="assets/minified/js/serialize.min.js" ></script>
+  <script async src="assets/minified/vendor/chart.min.js" ></script>
+  <script async src="assets/minified/vendor/leaflet.min.js" ></script>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+  <!-- use these if leaflet has issues -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/> -->
+  <!-- <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script> -->
 
 
 </head>
