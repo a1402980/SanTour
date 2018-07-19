@@ -24,7 +24,7 @@
     "rocks":75,
     "bumps":0,
     "climbing":50,
-    "decent":75,
+    "descent":75,
     "flatness":75,
     "bridges":0,
     "ridges":50,
@@ -71,7 +71,7 @@
         "name":"Narrow/slope path",
         "description":"Point of danger",
         "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a1fe5559ea40a0bf1b15967-1-m.jpg",
-        "type":"decent",
+        "type":"descent",
         "level":1,
         "latlng":{
           "lat":46.13930280052948,
@@ -93,7 +93,7 @@
         "name":"Descending",
         "description":"Steep path",
         "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a1fc08a9ea40a0bf1b15966-1-m.jpg",
-        "type":"decent",
+        "type":"descent",
         "level":1,
         "latlng":{
           "lat":46.138851177717676,
@@ -115,7 +115,7 @@
         "name":"Steep slope",
         "description":"Point of danger",
         "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a042f6da3f2ba0bf28eed51-1-m.jpg",
-        "type":"decent",
+        "type":"descent",
         "level":1,
         "latlng":{
           "lat":46.14355679408954,

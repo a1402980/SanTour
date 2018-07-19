@@ -47,8 +47,8 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Where do you want to go?</h1>
-            <p class="thin-text">Choose the canton you want to hike in</p>
+            <h1><?php echo $lang['PAGE_MAP_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_MAP_SUBTITLE']; ?></p>
             <?php include 'map.php'; ?>
             <div class="col-12 center">
               <select id="canton-select" name="canton">
@@ -95,8 +95,8 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>What's your name?</h1>
-            <p class="thin-text">By giving your name we can save your information to your browser so you can easily access it later</p>
+            <h1><?php echo $lang['PAGE_NAME_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_NAME_SUBTITLE']; ?></p>
             <div class="col-12">
               <input placeholder="Write here..." class="name-box" type="text" name="username" maxlength="20" value="">
             </div>
@@ -112,7 +112,7 @@ require_once('header.php');
             <div class="col-12">
               <div class="col-12">
                 <?php if (isset($_COOKIE[$cookie_name])): ?>
-                  <h4>Previous saved users:</h4>
+                  <h4><?php echo $lang['PAGE_NAME_USERS_TITLE']; ?></h4>
                 <?php endif; ?>
               </div>
               <div class="row">
@@ -152,8 +152,8 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Are you engaged in regular exercise?</h1>
-            <p class="thin-text">such as walking, running, biking jogging etc.</p>
+            <h1><?php echo $lang['PAGE_PHYSICAL_ACTIVITY_1_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_PHYSICAL_ACTIVITY_1_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="row">
                 <div class="col-4 thumb-container">
@@ -197,8 +197,8 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Are you active at least 30 minutes each day?</h1>
-            <p class="thin-text">(at least 5 days a week)</p>
+            <h1><?php echo $lang['PAGE_PHYSICAL_ACTIVITY_2_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_PHYSICAL_ACTIVITY_2_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="row">
                 <div class="col-4 thumb-container">
@@ -242,8 +242,8 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Do you sweat or be out of breath during this activity?</h1>
-            <p class="thin-text">occasionally or regularly</p>
+            <h1><?php echo $lang['PAGE_PHYSICAL_ACTIVITY_3_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_PHYSICAL_ACTIVITY_3_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="row">
                 <div class="col-4 thumb-container">
@@ -287,42 +287,42 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Do you require any walking device?</h1>
-            <p class="thin-text">Select a device you can't hike without</p>
+            <h1><?php echo $lang['PAGE_WALKING_HELP_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_WALKING_HELP_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="radio-buttons white-container">
                 <label>
-                  a cane
+                  <?php echo $lang['PAGE_WALKING_HELP_OPTION_1']; ?>
                   <input type="radio" name="walking-help" value="80"/>
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  two canes
+                  <?php echo $lang['PAGE_WALKING_HELP_OPTION_2']; ?>
                   <input type="radio" name="walking-help" value="60" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  walker
+                  <?php echo $lang['PAGE_WALKING_HELP_OPTION_3']; ?>
                   <input type="radio" name="walking-help" value="40" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  a walking frame
+                  <?php echo $lang['PAGE_WALKING_HELP_OPTION_4']; ?>
                   <input type="radio" name="walking-help" value="20" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  I need help of a third party
+                  <?php echo $lang['PAGE_WALKING_HELP_OPTION_5']; ?>
                   <input type="radio" name="walking-help" value="0" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  None
+                  <?php echo $lang['PAGE_WALKING_HELP_OPTION_6']; ?>
                   <input type="radio" name="walking-help" value="100" />
                   <span class="checkmark"></span>
                 </label>
@@ -345,35 +345,35 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Compared to the average walking speed,do you usually walk ...</h1>
-            <p class="thin-text">for example when walking with a friend</p>
+            <h1><?php echo $lang['PAGE_WALKING_SPEED_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_WALKING_SPEED_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="radio-buttons white-container">
                 <label>
-                  Noticeably slower
+                  <?php echo $lang['PAGE_WALKING_SPEED_OPTION_1']; ?>
                   <input type="radio" name="walking-speed" value="20" />
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  A bit slower
+                  <?php echo $lang['PAGE_WALKING_SPEED_OPTION_2']; ?>
                   <input type="radio" name="walking-speed" value="40" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  At the same speed
+                  <?php echo $lang['PAGE_WALKING_SPEED_OPTION_3']; ?>
                   <input type="radio" name="walking-speed" value="60"/>
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  A bit faster
+                  <?php echo $lang['PAGE_WALKING_SPEED_OPTION_4']; ?>
                   <input type="radio" name="walking-speed" value="80" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  Significantly faster
+                  <?php echo $lang['PAGE_WALKING_SPEED_OPTION_5']; ?>
                   <input type="radio" name="walking-speed" value="100" />
                   <span class="checkmark"></span>
                 </label>
@@ -396,53 +396,53 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>How long can you walk without stopping to rest?</h1>
-            <p class="thin-text">Choose the best suiting option</p>
+            <h1><?php echo $lang['PAGE_WALKING_TIME_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_WALKING_TIME_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="radio-buttons white-container">
                 <label>
-                  impossible
+                  <?php echo $lang['PAGE_WALKING_TIME_OPTION_1']; ?>
                   <input type="radio" name="walking-time" value="0" />
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  1 minute
+                  <?php echo $lang['PAGE_WALKING_TIME_OPTION_2']; ?>
                   <input type="radio" name="walking-time" value="14" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  5 minutes
+                  <?php echo $lang['PAGE_WALKING_TIME_OPTION_3']; ?>
                   <input type="radio" name="walking-time" value="29"/>
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  15 minutes
+                  <?php echo $lang['PAGE_WALKING_TIME_OPTION_4']; ?>
                   <input type="radio" name="walking-time" value="43" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  30 minutes
+                  <?php echo $lang['PAGE_WALKING_TIME_OPTION_5']; ?>
                   <input type="radio" name="walking-time" value="57" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  1 hour
+                  <?php echo $lang['PAGE_WALKING_TIME_OPTION_6']; ?>
                   <input type="radio" name="walking-time" value="71" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  2 hours
+                  <?php echo $lang['PAGE_WALKING_TIME_OPTION_7']; ?>
                   <input type="radio" name="walking-time" value="86" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  3 hours or more
+                  <?php echo $lang['PAGE_WALKING_TIME_OPTION_8']; ?>
                   <input type="radio" name="walking-time" value="100" />
                   <span class="checkmark"></span>
                 </label>
@@ -465,34 +465,33 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>How many floors of stairs would you be able to climb without taking a break?</h1>
-            <p class="thin-text">Which option describes your physical ability the best?</p>
+            <h1><?php echo $lang['PAGE_MOUNTING_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_MOUNTING_SUBTITLE']; ?></p>
             <div class="col-12">
               <div id="mount-slider" class="white-container">
-                <img class="mount mount-0" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-0.png" alt="Not at all">
-                <img hidden class="mount mount-10" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-10.png" alt="Not at all">
-                <img hidden class="mount mount-20" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-20.png" alt="Not at all">
-                <img hidden class="mount mount-30" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-30.png" alt="Not at all">
-                <img hidden class="mount mount-40" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-40.png" alt="Not at all">
-                <img hidden class="mount mount-50" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-50.png" alt="Not at all">
-                <img hidden class="mount mount-60" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-60.png" alt="Not at all">
-                <img hidden class="mount mount-70" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-70.png" alt="Not at all">
-                <img hidden class="mount mount-80" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-80.png" alt="Not at all">
-                <img hidden class="mount mount-90" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-90.png" alt="Not at all">
-                <img hidden class="mount mount-100" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-100.png" alt="Not at all">
-                <?php // TODO: add correct alt texts ?>
+                <img class="mount mount-0" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-0.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_1']; ?>">
+                <img hidden class="mount mount-10" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-10.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_2']; ?>">
+                <img hidden class="mount mount-20" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-20.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_3']; ?>">
+                <img hidden class="mount mount-30" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-30.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_4']; ?>">
+                <img hidden class="mount mount-40" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-40.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_5']; ?>">
+                <img hidden class="mount mount-50" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-50.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_6']; ?>">
+                <img hidden class="mount mount-60" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-60.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_7']; ?>">
+                <img hidden class="mount mount-70" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-70.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_8']; ?>">
+                <img hidden class="mount mount-80" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-80.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_9']; ?>">
+                <img hidden class="mount mount-90" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-90.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_10']; ?>">
+                <img hidden class="mount mount-100" src="<?php echo URL_DIR ?>assets/img/form/mounting/mount-100.png" alt="<?php echo $lang['PAGE_MOUNTING_OPTION_11']; ?>">
                 <br>
-                <span class="mount mount-0">I'm unable to climb stairs</span>
-                <span hidden class="mount mount-10">I'm unable to climb 1 floor of stairs without a break</span>
-                <span hidden class="mount mount-20">I might be able to climb 1 floor of stairs without a break</span>
-                <span hidden class="mount mount-30">I'm able to climb at maximum 1 floor of stairs without a break</span>
-                <span hidden class="mount mount-40">I'm unable to climb 3 floors of stairs without a break</span>
-                <span hidden class="mount mount-50">I might be able to climb 3 floors of stairs without a break</span>
-                <span hidden class="mount mount-60">I'm able to climb at maximum 3 floors of stairs without a break</span>
-                <span hidden class="mount mount-70">I'm unable to climb 5 floors of stairs without a break</span>
-                <span hidden class="mount mount-80">I might be able to climb 5 floors of stairs without a break</span>
-                <span hidden class="mount mount-90">I'm at maximum able to climb 5 floors of stairs without a break</span>
-                <span hidden class="mount mount-100">I'm able to climb over 5 floors of stairs without a break</span>
+                <span class="mount mount-0"><?php echo $lang['PAGE_MOUNTING_OPTION_1']; ?></span>
+                <span hidden class="mount mount-10"><?php echo $lang['PAGE_MOUNTING_OPTION_2']; ?></span>
+                <span hidden class="mount mount-20"><?php echo $lang['PAGE_MOUNTING_OPTION_3']; ?></span>
+                <span hidden class="mount mount-30"><?php echo $lang['PAGE_MOUNTING_OPTION_4']; ?></span>
+                <span hidden class="mount mount-40"><?php echo $lang['PAGE_MOUNTING_OPTION_5']; ?></span>
+                <span hidden class="mount mount-50"><?php echo $lang['PAGE_MOUNTING_OPTION_6']; ?></span>
+                <span hidden class="mount mount-60"><?php echo $lang['PAGE_MOUNTING_OPTION_7']; ?></span>
+                <span hidden class="mount mount-70"><?php echo $lang['PAGE_MOUNTING_OPTION_8']; ?></span>
+                <span hidden class="mount mount-80"><?php echo $lang['PAGE_MOUNTING_OPTION_9']; ?></span>
+                <span hidden class="mount mount-90"><?php echo $lang['PAGE_MOUNTING_OPTION_10']; ?></span>
+                <span hidden class="mount mount-100"><?php echo $lang['PAGE_MOUNTING_OPTION_11']; ?></span>
 
                 <input type="range" min="0" max="100" step="10" value="0" class="slider" name="mounting">
                 <span class="slide-tooltip"> <?php echo $lang['SLIDE_ME']?> <i class="arrow_triangle-up"></i></span>
@@ -515,56 +514,56 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Rate your self-confidence to walk</h1>
-            <p class="thin-text">Please choose the options that best describe you</p>
+            <h1><?php echo $lang['PAGE_WALKING_CONFIDENCE_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_WALKING_CONFIDENCE_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="radio-buttons white-container">
-                <p>Are you afraid of falling?</p>
+                <p><?php echo $lang['PAGE_WALKING_CONFIDENCE_QUESTION_1']; ?></p>
                 <label>
-                  Yes
+                  <?php echo $lang['Yes']; ?>
                   <input type="radio" name="walking-confidence-1" value="0" />
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  No
+                  <?php echo $lang['NO']; ?>
                   <input type="radio" name="walking-confidence-1" value="20" />
                   <span class="checkmark"></span>
                 </label>
 
-                <p>Have you fallen in the last 12 months?</p>
+                <p><?php echo $lang['PAGE_WALKING_CONFIDENCE_QUESTION_2'] ?></p>
                 <label>
-                  No
+                  <?php echo $lang['NO']; ?>
                   <input type="radio" name="walking-confidence-2" value="60"/>
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  Once
+                  <?php echo $lang['PAGE_WALKING_CONFIDENCE_OPTION_1']; ?>
                   <input type="radio" name="walking-confidence-2" value="40" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  Twice
+                  <?php echo $lang['PAGE_WALKING_CONFIDENCE_OPTION_2']; ?>
                   <input type="radio" name="walking-confidence-2" value="20" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  Several times
+                  <?php echo $lang['PAGE_WALKING_CONFIDENCE_OPTION_3']; ?>
                   <input type="radio" name="walking-confidence-2" value="0" />
                   <span class="checkmark"></span>
                 </label>
 
-                <p>Do you feel dizzy sometimes?</p>
+                <p><?php echo $lang['PAGE_WALKING_CONFIDENCE_QUESTION_3']; ?></p>
                 <label>
-                  Yes
+                  <?php echo $lang['Yes']; ?>
                   <input type="radio" name="walking-confidence-3" value="0" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  No
+                  <?php echo $lang['NO']; ?>
                   <input type="radio" name="walking-confidence-3" value="20" />
                   <span class="checkmark"></span>
                 </label>
@@ -588,8 +587,8 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Are you afraid of heights?</h1>
-            <p class="thin-text">Do you feel fear when looking down from high altitutes?</p>
+            <h1><?php echo $lang['PAGE_FEAR_OF_HEIGHTS_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_FEAR_OF_HEIGHTS_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="row">
                 <div class="col-4 thumb-container">
@@ -633,24 +632,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Do you feel safe when you stand on one leg?</h1>
-            <p class="thin-text">Without holding or leaning onto something</p>
+            <h1><?php echo $lang['PAGE_BALANCE_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_BALANCE_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="radio-buttons white-container">
                 <label>
-                  Yes, I feel sure
+                  <?php echo $lang['PAGE_BALANCE_OPTION_1']; ?>
                   <input type="radio" name="balance" value="100" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  No, I don't feel sure
+                  <?php echo $lang['PAGE_BALANCE_OPTION_2']; ?>
                   <input type="radio" name="balance" value="50" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  Impossible without holding
+                  <?php echo $lang['PAGE_BALANCE_OPTION_3']; ?>
                   <input type="radio" name="balance" value="0"/>
                   <span class="checkmark"></span>
                 </label>
@@ -673,32 +672,32 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Do you feel any of the following pains?</h1>
-            <p class="thin-text">Tick a box if you feel the type of pain</p>
+            <h1><?php echo $lang['PAGE_PAIN_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_PAIN_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="checkboxes white-container">
                 <label>
-                  Hip pain
+                  <?php echo $lang['PAGE_PAIN_OPTION_1']; ?>
                   <input type="checkbox" class="pain" name="pain-1" value="25">
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  Knee pain
+                  <?php echo $lang['PAGE_PAIN_OPTION_2']; ?>
                   <input type="checkbox" class="pain" name="pain-2" value="25">
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  Foot pain
+                  <?php echo $lang['PAGE_PAIN_OPTION_3']; ?>
                   <input type="checkbox" class="pain" name="pain-3" value="25">
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  Back pain
+                  <?php echo $lang['PAGE_PAIN_OPTION_4']; ?>
                   <input type="checkbox" class="pain" name="pain-4" value="25">
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  No pain
+                  <?php echo $lang['PAGE_PAIN_OPTION_5']; ?>
                   <input type="checkbox" class="no-pain" name="pain" value="100">
                   <span class="checkmark"></span>
                 </label>
@@ -721,27 +720,27 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Do you have mobility problems in the following joints?</h1>
-            <p class="thin-text">Choose one or more</p>
+            <h1><?php echo $lang['PAGE_MOBILITY_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_MOBILITY_SUBTITLE']; ?></p>
             <div class="col-12">
               <div class="checkboxes white-container">
                 <label>
-                  Reduced mobility in the ankles
+                  <?php echo $lang['PAGE_MOBILITY_OPTION_1']; ?>
                   <input type="checkbox" name="mobility-1" class="no-mobility" value="33">
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  Reduced mobility on your knees
+                  <?php echo $lang['PAGE_MOBILITY_OPTION_2']; ?>
                   <input type="checkbox" name="mobility-2" class="no-mobility" value="34">
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  Reduced mobility in your hip
+                  <?php echo $lang['PAGE_MOBILITY_OPTION_3']; ?>
                   <input type="checkbox" name="mobility-3" class="no-mobility" value="33">
                   <span class="checkmark"></span>
                 </label>
                 <label>
-                  No mobility problems
+                  <?php echo $lang['PAGE_MOBILITY_OPTION_4']; ?>
                   <input type="checkbox" name="mobility" class="full-mobility" value="100">
                   <span class="checkmark"></span>
                 </label>
@@ -764,24 +763,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Which level of roots would you prefer?</h1>
-            <p class="thin-text">What is the maximum density of roots you'd prefer on your hiking itinerary?</p>
+            <h1><?php echo $lang['PAGE_ROOTS_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_ROOTS_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="roots" class="img-carousel count-5">
 
-                  <img  value="0" class="img-0-roots selected" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-0.jpg" alt="">
-                  <img  value="25" class="img-25-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-1.jpg" alt="">
-                  <img value="50" class="img-50-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-2.jpg" alt="">
-                  <img value="75" class="img-75-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-3.jpg" alt="">
-                  <img value="100" class="img-100-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-4.jpg" alt="">
+                  <img  value="0" class="img-0-roots selected" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-0.jpg" alt="<?php echo $lang['PAGE_ROOTS_OPTION_1']; ?>">
+                  <img  value="25" class="img-25-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-1.jpg" alt="<?php echo $lang['PAGE_ROOTS_OPTION_2']; ?>">
+                  <img value="50" class="img-50-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-2.jpg" alt="<?php echo $lang['PAGE_ROOTS_OPTION_3']; ?>">
+                  <img value="75" class="img-75-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-3.jpg" alt="<?php echo $lang['PAGE_ROOTS_OPTION_4']; ?>">
+                  <img value="100" class="img-100-roots" src="<?php echo URL_DIR ?>assets/img/form/roots/roots-4.jpg" alt="<?php echo $lang['PAGE_ROOTS_OPTION_5']; ?>">
 
-                  <span class="img-0-roots selected">No roots</span>
-                  <span class="img-25-roots">Few roots</span>
-                  <span class="img-50-roots">Moderate amount of roots</span>
-                  <span class="img-75-roots">Many roots</span>
-                  <span class="img-100-roots">Extreme amount of roots</span>
+                  <span class="img-0-roots selected"><?php echo $lang['PAGE_ROOTS_OPTION_1']; ?></span>
+                  <span class="img-25-roots"><?php echo $lang['PAGE_ROOTS_OPTION_2']; ?></span>
+                  <span class="img-50-roots"><?php echo $lang['PAGE_ROOTS_OPTION_3']; ?></span>
+                  <span class="img-75-roots"><?php echo $lang['PAGE_ROOTS_OPTION_4']; ?></span>
+                  <span class="img-100-roots"><?php echo $lang['PAGE_ROOTS_OPTION_5']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" class="slider" name="roots">
@@ -805,24 +804,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Which level of rocks would you prefer?</h1>
-            <p class="thin-text">What is the largest rock you'd be able to face in an itinerary?</p>
+            <h1><?php echo $lang['PAGE_ROCKS_TITLE'] ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_ROCKS_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="rocks" class="img-carousel count-5">
 
-                  <img value="0"  class="img-0-rocks selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-0.jpg" alt="">
-                  <img value="25" class="img-25-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-1.jpg" alt="">
-                  <img value="50" class="img-50-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="">
-                  <img value="75" class="img-75-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-3.jpg" alt="">
-                  <img value="100" class="img-100-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-4.jpg" alt="">
+                  <img value="0"  class="img-0-rocks selected" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-0.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_1']; ?>">
+                  <img value="25" class="img-25-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-1.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_2']; ?>">
+                  <img value="50" class="img-50-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-2.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_3']: ?>">
+                  <img value="75" class="img-75-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-3.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_1']; ?>">
+                  <img value="100" class="img-100-rocks" src="<?php echo URL_DIR ?>assets/img/form/rocks/rocks-4.jpg" alt="<?php echo $lang['PAGE_ROCKS_OPTION_4']; ?>">
 
-                  <span class="img-0-rocks selected">No rocks</span>
-                  <span class="img-25-rocks">Minor rocks</span>
-                  <span class="img-50-rocks">Mediocre sized rocks</span>
-                  <span class="img-75-rocks">Large rocks</span>
-                  <span class="img-100-rocks">Extremely large rocks</span>
+                  <span class="img-0-rocks selected"><?php echo $lang['PAGE_ROCKS_OPTION_1']; ?></span>
+                  <span class="img-25-rocks"><?php echo $lang['PAGE_ROCKS_OPTION_2']; ?></span>
+                  <span class="img-50-rocks"><?php echo $lang['PAGE_ROCKS_OPTION_3']; ?></span>
+                  <span class="img-75-rocks"><?php echo $lang['PAGE_ROCKS_OPTION_4']; ?></span>
+                  <span class="img-100-rocks"><?php echo $lang['PAGE_ROCKS_OPTION_5']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="rocks">
@@ -846,24 +845,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Choose the level of bumpiness</h1>
-            <p class="thin-text">What is your preference in the bumpiness of the itinerary?</p>
+            <h1><?php echo $lang['PAGE_BUMPINESS_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_BUMPINESS_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="bumps" class="img-carousel count-5">
 
-                  <img value="0"  class="img-0-bumps selected" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-0.jpg" alt="">
-                  <img value="1" class="img-25-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-1.jpg" alt="">
-                  <img value="2" class="img-50-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-2.jpg" alt="">
-                  <img value="3" class="img-75-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-3.jpg" alt="">
-                  <img value="4" class="img-100-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-4.jpg" alt="">
+                  <img value="0"  class="img-0-bumps selected" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-0.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_1']; ?>">
+                  <img value="1" class="img-25-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-1.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_2']; ?>">
+                  <img value="2" class="img-50-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-2.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_3']; ?>">
+                  <img value="3" class="img-75-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-3.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_4']; ?>">
+                  <img value="4" class="img-100-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-4.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_5']; ?>">
 
-                  <span class="img-0-bumps selected">No bumps</span>
-                  <span class="img-25-bumps">Minor bumps</span>
-                  <span class="img-50-bumps">Mediocre sized of bumps</span>
-                  <span class="img-75-bumps">Large bumps</span>
-                  <span class="img-100-bumps">Extremely large bumps</span>
+                  <span class="img-0-bumps selected"><?php echo $lang['PAGE_BUMPINESS_OPTION_1']; ?></span>
+                  <span class="img-25-bumps"><?php echo $lang['PAGE_BUMPINESS_OPTION_2']; ?></span>
+                  <span class="img-50-bumps"><?php echo $lang['PAGE_BUMPINESS_OPTION_3']; ?></span>
+                  <span class="img-75-bumps"><?php echo $lang['PAGE_BUMPINESS_OPTION_4']; ?></span>
+                  <span class="img-100-bumps"><?php echo $lang['PAGE_BUMPINESS_OPTION_5']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="bumps">
@@ -887,24 +886,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>What level of climbing would you like?</h1>
-            <p class="thin-text">Which option describes your preference in climbing?</p>
+            <h1><?php echo $lang['PAGE_CLIMBING_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_CLIMBING_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="climbing" class="img-carousel count-5">
 
-                  <img value="0"  class="img-0-climbing selected" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-0.jpg" alt="">
-                  <img value="25" class="img-25-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-1.jpg" alt="">
-                  <img value="50" class="img-50-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-2.jpg" alt="">
-                  <img value="75" class="img-75-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-3.jpg" alt="">
-                  <img value="100" class="img-100-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-4.jpg" alt="">
+                  <img value="0"  class="img-0-climbing selected" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-0.jpg" alt="<?php echo $lang['PAGE_CLIMBING_OPTION_1']; ?>">
+                  <img value="25" class="img-25-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-1.jpg" alt="<?php echo $lang['PAGE_CLIMBING_OPTION_2']; ?>">
+                  <img value="50" class="img-50-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-2.jpg" alt="<?php echo $lang['PAGE_CLIMBING_OPTION_3']; ?>">
+                  <img value="75" class="img-75-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-3.jpg" alt="<?php echo $lang['PAGE_CLIMBING_OPTION_4']; ?>">
+                  <img value="100" class="img-100-climbing" src="<?php echo URL_DIR ?>assets/img/form/climbing/climbing-4.jpg" alt="<?php echo $lang['PAGE_CLIMBING_OPTION_5']; ?>">
 
-                  <span class="img-0-climbing selected">No climbing</span>
-                  <span class="img-25-climbing">Easy rock climbing</span>
-                  <span class="img-50-climbing">Moderate rock climbing</span>
-                  <span class="img-75-climbing">Challenging rock climbing</span>
-                  <span class="img-100-climbing">Wall climbing</span>
+                  <span class="img-0-climbing selected"><?php echo $lang['PAGE_CLIMBING_OPTION_1']; ?></span>
+                  <span class="img-25-climbing"><?php echo $lang['PAGE_CLIMBING_OPTION_2']; ?></span>
+                  <span class="img-50-climbing"><?php echo $lang['PAGE_CLIMBING_OPTION_3']; ?></span>
+                  <span class="img-75-climbing"><?php echo $lang['PAGE_CLIMBING_OPTION_4']; ?></span>
+                  <span class="img-100-climbing"><?php echo $lang['PAGE_CLIMBING_OPTION_5']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="climbing">
@@ -928,27 +927,27 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>What level of descending would you like?</h1>
-            <p class="thin-text">Which option describes your preference in the level of ground decent?</p>
+            <h1><?php echo $lang['PAGE_DESCENT_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_DESCENT_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
-                <div id="decent" class="img-carousel count-5">
+                <div id="descent" class="img-carousel count-5">
 
-                  <img value="0"  class="img-0-decent selected" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-0.jpg" alt="">
-                  <img value="25" class="img-25-decent" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-1.jpg" alt="">
-                  <img value="50" class="img-50-decent" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-2.jpg" alt="">
-                  <img value="75" class="img-75-decent" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-3.jpg" alt="">
-                  <img value="100" class="img-100-decent" src="<?php echo URL_DIR ?>assets/img/form/decent/decent-4.jpg" alt="">
+                  <img value="0"  class="img-0-descent selected" src="<?php echo URL_DIR ?>assets/img/form/descent/descent-0.jpg" alt="<?php echo $lang['PAGE_DESCENT_OPTION_1']; ?>">
+                  <img value="25" class="img-25-descent" src="<?php echo URL_DIR ?>assets/img/form/descent/descent-1.jpg" alt="<?php echo $lang['PAGE_DESCENT_OPTION_2']; ?>">
+                  <img value="50" class="img-50-descent" src="<?php echo URL_DIR ?>assets/img/form/descent/descent-2.jpg" alt="<?php echo $lang['PAGE_DESCENT_OPTION_3']; ?>">
+                  <img value="75" class="img-75-descent" src="<?php echo URL_DIR ?>assets/img/form/descent/descent-3.jpg" alt="<?php echo $lang['PAGE_DESCENT_OPTION_4']; ?>">
+                  <img value="100" class="img-100-descent" src="<?php echo URL_DIR ?>assets/img/form/descent/descent-4.jpg" alt="<?php echo $lang['PAGE_DESCENT_OPTION_5']; ?>">
 
-                  <span class="img-0-decent selected">No decent</span>
-                  <span class="img-25-decent">Easy decent</span>
-                  <span class="img-50-decent">Moderate decent</span>
-                  <span class="img-75-decent">Challenging decent</span>
-                  <span class="img-100-decent">Extreme decent</span>
+                  <span class="img-0-descent selected"><?php echo $lang['PAGE_DESCENT_OPTION_1']; ?></span>
+                  <span class="img-25-descent"><?php echo $lang['PAGE_DESCENT_OPTION_2']; ?></span>
+                  <span class="img-50-descent"><?php echo $lang['PAGE_DESCENT_OPTION_3']; ?></span>
+                  <span class="img-75-descent"><?php echo $lang['PAGE_DESCENT_OPTION_4']; ?></span>
+                  <span class="img-100-descent"><?php echo $lang['PAGE_DESCENT_OPTION_5']; ?></span>
 
                 </div>
-                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="decent">
+                <input type="range" min="0" max="100" value="0" step="25" value="0" class="slider" name="descent">
                 <span class="slide-tooltip"> <?php echo $lang['SLIDE_ME']?> <i class="arrow_triangle-up"></i></span>
               </div>
             </div>
@@ -969,24 +968,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>What level of ground flatness would you like?</h1>
-            <p class="thin-text">Which option describes your preference in the level of ground flatness?</p>
+            <h1><?php echo $lang['PAGE_FLATNESS_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_FLATNESS_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="flatness" class="img-carousel count-5">
 
-                  <img value="0" class="img-0-flatness selected" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-0.jpg" alt="">
-                  <img value="25" class="img-25-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-1.jpg" alt="">
-                  <img value="50" class="img-50-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-2.jpg" alt="">
-                  <img value="75" class="img-75-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-3.jpg" alt="">
-                  <img value="100" class="img-100-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-4.jpg" alt="">
+                  <img value="0" class="img-0-flatness selected" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-0.jpg" alt="<?php echo $lang['PAGE_FLATNESS_OPTION_1']; ?>">
+                  <img value="25" class="img-25-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-1.jpg" alt="<?php echo $lang['PAGE_FLATNESS_OPTION_2']; ?>">
+                  <img value="50" class="img-50-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-2.jpg" alt="<?php echo $lang['PAGE_FLATNESS_OPTION_3']; ?>">
+                  <img value="75" class="img-75-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-3.jpg" alt="<?php echo $lang['PAGE_FLATNESS_OPTION_4']; ?>">
+                  <img value="100" class="img-100-flatness" src="<?php echo URL_DIR ?>assets/img/form/flatness/flatness-4.jpg" alt="<?php echo $lang['PAGE_FLATNESS_OPTION_5']; ?>">
 
-                  <span class="img-0-flatness selected">Flat land</span>
-                  <span class="img-25-flatness">Easy hills</span>
-                  <span class="img-50-flatness">Moderate hills</span>
-                  <span class="img-75-flatness">Challenging hills</span>
-                  <span class="img-100-flatness">Extreme hills</span>
+                  <span class="img-0-flatness selected"><?php echo $lang['PAGE_FLATNESS_OPTION_1']; ?></span>
+                  <span class="img-25-flatness"><?php echo $lang['PAGE_FLATNESS_OPTION_2']; ?></span>
+                  <span class="img-50-flatness"><?php echo $lang['PAGE_FLATNESS_OPTION_3']; ?></span>
+                  <span class="img-75-flatness"><?php echo $lang['PAGE_FLATNESS_OPTION_4']; ?></span>
+                  <span class="img-100-flatness"><?php echo $lang['PAGE_FLATNESS_OPTION_5']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" class="slider" name="flatness">
@@ -1010,24 +1009,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>What kind of bridges would you prefer?</h1>
-            <p class="thin-text">Which option describes your preference in the type of bridges?</p>
+            <h1><?php echo $lang['PAGE_BRIDGES_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_BRIDGES_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="bridges" class="img-carousel count-5">
 
-                  <img value="0" class="img-0-bridges selected" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-0.jpg" alt="">
-                  <img value="25" class="img-25-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-1.jpg" alt="">
-                  <img value="50" class="img-50-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-2.jpg" alt="">
-                  <img value="75" class="img-75-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-3.jpg" alt="">
-                  <img value="100" class="img-100-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-4.jpg" alt="">
+                  <img value="0" class="img-0-bridges selected" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-0.jpg" alt="<?php echo $lang['PAGE_BRIDGES_OPTION_1']; ?>">
+                  <img value="25" class="img-25-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-1.jpg" alt="<?php echo $lang['PAGE_BRIDGES_OPTION_2']; ?>">
+                  <img value="50" class="img-50-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-2.jpg" alt="<?php echo $lang['PAGE_BRIDGES_OPTION_3']; ?>">
+                  <img value="75" class="img-75-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-3.jpg" alt="<?php echo $lang['PAGE_BRIDGES_OPTION_4']; ?>">
+                  <img value="100" class="img-100-bridges" src="<?php echo URL_DIR ?>assets/img/form/bridges/bridges-4.jpg" alt="<?php echo $lang['PAGE_BRIDGES_OPTION_5']; ?>">
 
-                  <span class="img-0-bridges selected">No bridges</span>
-                  <span class="img-25-bridges">Very shallow bridges</span>
-                  <span class="img-50-bridges">Moderately high bridges</span>
-                  <span class="img-75-bridges">High bridges</span>
-                  <span class="img-100-bridges">Very high bridges</span>
+                  <span class="img-0-bridges selected"><?php echo $lang['PAGE_BRIDGES_OPTION_1']; ?></span>
+                  <span class="img-25-bridges"><?php echo $lang['PAGE_BRIDGES_OPTION_2']; ?></span>
+                  <span class="img-50-bridges"><?php echo $lang['PAGE_BRIDGES_OPTION_3']; ?></span>
+                  <span class="img-75-bridges"><?php echo $lang['PAGE_BRIDGES_OPTION_4']; ?></span>
+                  <span class="img-100-bridges"><?php echo $lang['PAGE_BRIDGES_OPTION_5']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" class="slider" name="bridges">
@@ -1051,24 +1050,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>What kind of ridges would you prefer?</h1>
-            <p class="thin-text">Which option describes your preference in the type of ridges?</p>
+            <h1><?php echo $lang['PAGE_RIDGES_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_RIDGES_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="ridges" class="img-carousel count-5">
 
-                  <img value="0" class="img-0-ridges selected" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-0.jpg" alt="">
-                  <img value="25" class="img-25-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-1.jpg" alt="">
-                  <img value="50" class="img-50-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-2.jpg" alt="">
-                  <img value="75" class="img-75-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-3.jpg" alt="">
-                  <img value="100" class="img-100-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-4.jpg" alt="">
+                  <img value="0" class="img-0-ridges selected" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-0.jpg" alt="<?php echo $lang['PAGE_RIDGES_OPTION_1']; ?>">
+                  <img value="25" class="img-25-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-1.jpg" alt="<?php echo $lang['PAGE_RIDGES_OPTION_2']; ?>">
+                  <img value="50" class="img-50-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-2.jpg" alt="<?php echo $lang['PAGE_RIDGES_OPTION_3']; ?>">
+                  <img value="75" class="img-75-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-3.jpg" alt="<?php echo $lang['PAGE_RIDGES_OPTION_4']; ?>">
+                  <img value="100" class="img-100-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-4.jpg" alt="<?php echo $lang['PAGE_RIDGES_OPTION_5']; ?>">
 
-                  <span class="img-0-ridges selected">No ridges</span>
-                  <span class="img-25-ridges">Very small ridges</span>
-                  <span class="img-50-ridges">Moderately large ridges</span>
-                  <span class="img-75-ridges">Large ridges</span>
-                  <span class="img-100-ridges">Extremely large ridges</span>
+                  <span class="img-0-ridges selected"><?php echo $lang['PAGE_RIDGES_OPTION_1']; ?></span>
+                  <span class="img-25-ridges"><?php echo $lang['PAGE_RIDGES_OPTION_2']; ?></span>
+                  <span class="img-50-ridges"><?php echo $lang['PAGE_RIDGES_OPTION_3']; ?></span>
+                  <span class="img-75-ridges"><?php echo $lang['PAGE_RIDGES_OPTION_4']; ?></span>
+                  <span class="img-100-ridges"><?php echo $lang['PAGE_RIDGES_OPTION_5']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" class="slider" name="ridges">
@@ -1092,24 +1091,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>How narrow would you prefer the itinerary to be?</h1>
-            <p class="thin-text">Which option describes your preference in the width of the path?</p>
+            <h1><?php echo $lang['PAGE_PATH_NARROWNESS_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_PATH_NARROWNESS_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="path-narrowness" class="img-carousel count-5">
 
-                  <img value="0" class="img-0-path-narrowness selected" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-0.jpg" alt="">
-                  <img value="25" class="img-25-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-1.jpg" alt="">
-                  <img value="50" class="img-50-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-2.jpg" alt="">
-                  <img value="75" class="img-75-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-3.jpg" alt="">
-                  <img value="100" class="img-100-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-4.jpg" alt="">
+                  <img value="0" class="img-0-path-narrowness selected" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-0.jpg" alt="<?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_1']; ?>">
+                  <img value="25" class="img-25-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-1.jpg" alt="<?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_2']; ?>">
+                  <img value="50" class="img-50-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-2.jpg" alt="<?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_3']; ?>">
+                  <img value="75" class="img-75-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-3.jpg" alt="<?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_4']; ?>">
+                  <img value="100" class="img-100-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-4.jpg" alt="<?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_5']; ?>">
 
-                  <span class="img-0-path-narrowness selected">Very wide path</span>
-                  <span class="img-25-path-narrowness">Wide path</span>
-                  <span class="img-50-path-narrowness">Moderately wide path</span>
-                  <span class="img-75-path-narrowness">Narrow path</span>
-                  <span class="img-100-path-narrowness">Extremely narrow path</span>
+                  <span class="img-0-path-narrowness selected"><?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_1']; ?></span>
+                  <span class="img-25-path-narrowness"><?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_2']; ?></span>
+                  <span class="img-50-path-narrowness"><?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_3']; ?></span>
+                  <span class="img-75-path-narrowness"><?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_4']; ?></span>
+                  <span class="img-100-path-narrowness"><?php echo $lang['PAGE_PATH_NARROWNESS_OPTION_5']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" class="slider" name="path-narrowness">
@@ -1133,25 +1132,25 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>What kind of handrails would you prefer?</h1>
-            <p class="thin-text">Which option describes your preference in the type of handrails?</p>
+            <h1><?php echo $lang['PAGE_HANDRAILS_TITLE']; ?></h1>
+            <p class="thin-text"><?php echo $lang['PAGE_HANDRAILS_SUBTITLE']; ?></p>
             <div class="col-12">
 
               <div class="preview-slider white-container">
                 <div id="handrails" class="img-carousel count-5">
 
 
-                  <img value="0" class="img-0-handrails selected" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-4.jpg" alt="">
-                  <img value="25" class="img-25-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-3.jpg" alt="">
-                  <img value="50" class="img-50-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-2.jpg" alt="">
-                  <img value="75" class="img-75-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-1.jpg" alt="">
-                  <img value="100" class="img-100-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-0.jpg" alt="">
+                  <img value="0" class="img-0-handrails selected" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-4.jpg" alt="<?php echo $lang['PAGE_HANDRAILS_OPTION_5']; ?>">
+                  <img value="25" class="img-25-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-3.jpg" alt="<?php echo $lang['PAGE_HANDRAILS_OPTION_4']; ?>">
+                  <img value="50" class="img-50-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-2.jpg" alt="<?php echo $lang['PAGE_HANDRAILS_OPTION_3']; ?>">
+                  <img value="75" class="img-75-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-1.jpg" alt="<?php echo $lang['PAGE_HANDRAILS_OPTION_2']; ?>">
+                  <img value="100" class="img-100-handrails" src="<?php echo URL_DIR ?>assets/img/form/handrails/handrails-0.jpg" alt="<?php echo $lang['PAGE_HANDRAILS_OPTION_1']; ?>">
 
-                  <span class="img-100-handrails">No handrails</span>
-                  <span class="img-75-handrails">Very simple handrails</span>
-                  <span class="img-50-handrails">Safety chains for handrails</span>
-                  <span class="img-25-handrails">Waist high handrails</span>
-                  <span class="img-0-handrails selected">Full height handrails</span>
+                  <span class="img-100-handrails"><?php echo $lang['PAGE_HANDRAILS_OPTION_5']; ?></span>
+                  <span class="img-75-handrails"><?php echo $lang['PAGE_HANDRAILS_OPTION_4']; ?></span>
+                  <span class="img-50-handrails"><?php echo $lang['PAGE_HANDRAILS_OPTION_3']; ?></span>
+                  <span class="img-25-handrails"><?php echo $lang['PAGE_HANDRAILS_OPTION_2']; ?></span>
+                  <span class="img-0-handrails selected"><?php echo $lang['PAGE_HANDRAILS_OPTION_1']; ?></span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" class="slider" name="handrails">
@@ -1175,24 +1174,24 @@ require_once('header.php');
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>How long do you wish to hike?</h1>
-            <p class="thin-text">Which option best describes the time you'd want to spend on hiking?</p>
+            <h1></h1>
+            <p class="thin-text"></p>
             <div class="col-12">
               <div class="radio-buttons white-container">
                 <label>
-                  0-2 hours
+                  <?php echo $lang['PAGE_TIME_OPTION_1']; ?>
                   <input type="radio" name="time" value="0" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  2-4 hours
+                  <?php echo $lang['PAGE_TIME_OPTION_2']; ?>
                   <input type="radio" name="time" value="50" />
                   <span class="checkmark"></span>
                 </label>
 
                 <label>
-                  Over 5 hours
+                  <?php echo $lang['PAGE_TIME_OPTION_3']; ?>
                   <input type="radio" name="time" value="100"/>
                   <span class="checkmark"></span>
                 </label>

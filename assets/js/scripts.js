@@ -127,9 +127,7 @@ $( ".accordian .ac-head" ).click(function() {
     var gps = $(this).attr("value")
     var temp;
     var that = $(this);
-    console.log(gps);
     getWeather(gps).then(function(weather) {
-          console.log(weather);
           temp = weather.main.temp;
           var iconCode = weather.weather[0].icon
           var icon = 'http://openweathermap.org/img/w/'+iconCode+'.png'

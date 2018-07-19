@@ -23,7 +23,7 @@
     "rocks":75,
     "bumps":0,
     "climbing":25,
-    "decent":50,
+    "descent":50,
     "flatness":50,
     "bridges":25,
     "ridges":75,
@@ -110,7 +110,7 @@
       "name":"Bank",
       "description":"View of the downhill slope",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a090798c500bf04bbf46-1-m.jpg",
-      "type":"decent",
+      "type":"descent",
       "level":2,
       "latlng":{
         "lat":46.12363654947795,
@@ -165,7 +165,7 @@
       "name":"Path elevation",
       "description":"Rise with slope",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89fbc798c500bf04bbf44-1-m.jpg",
-      "type":"decent",
+      "type":"descent",
       "level":1,
       "latlng":{
         "lat":46.12320896604683,
@@ -176,7 +176,7 @@
       "name":"Steps",
       "description":"Steps on the path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89eae798c500bf04bbf40-1-m.jpg",
-      "type":"decent",
+      "type":"descent",
       "level":1,
       "latlng":{
         "lat":46.12319037538756,
@@ -286,7 +286,7 @@
       "name":"Descent",
       "description":"zig-zag descent",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a3d1798c500bf04bbf51-1-m.jpg",
-      "type":"decent",
+      "type":"descent",
       "level":2,
       "latlng":{
         "lat":46.12958519206601,
@@ -308,7 +308,7 @@
       "name":"Descent",
       "description":"Descent on rocky path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59e89733798c50343672d556-1-m.jpg",
-      "type":"decent",
+      "type":"descent",
       "level":2,
       "latlng":{
         "lat":46.13004246737507,
@@ -330,7 +330,7 @@
       "name":"Path",
       "description":"Path and slope",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a2f6798c500bf04bbf4e-1-m.jpg",
-      "type":"decent",
+      "type":"descent",
       "level":2,
       "latlng":{
         "lat":46.12797540406504,
@@ -363,7 +363,7 @@
       "name":"Path elevation",
       "description":"Small climb in the trees",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a339798c500bf04bbf4f-1-m.jpg",
-      "type":"decent",
+      "type":"descent",
       "level":1,
       "latlng":{
         "lat":46.128179883209384,

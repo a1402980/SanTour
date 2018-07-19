@@ -23,7 +23,7 @@
       "rocks":25,
       "bumps":0,
       "climbing":25,
-      "decent":75,
+      "descent":75,
       "flatness":75,
       "bridges":25,
       "ridges":75,
@@ -112,7 +112,7 @@
         "name":"Verticality/Stones",
         "description":"Point of danger",
         "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a2028709ea40a0bf1b15973-1-m.jpg",
-        "type":"decent",
+        "type":"descent",
         "level":2,
         "latlng":{
           "lat":46.10000649733446,
