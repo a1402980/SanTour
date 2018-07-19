@@ -15,16 +15,6 @@ $( ".nav-toggle" ).click(function(){
 });
 
 
-$(".map-canton").click(function(){
-  if ($(this).attr('id') == "VS") {
-    $("#canton-select").val($(this).attr('id'));
-    $("#map .map-canton").removeClass("selected");
-    $(this).addClass("selected")
-  }else {
-    alert("Unfortunetly only Valais is currently available for SanTour. More cantons will be supported in the future.");
-  }
-
-});
 
 
 $(".next-page").click(function(){
@@ -124,13 +114,13 @@ $(".accordian .ac-head").click(function(){
 
 $( ".accordian .ac-head" ).click(function() {
   if($(this).next(".ac-body").find(".weather-temp").text().length == 0){
-    var gps = $(this).attr("value")
+    var gps = $(this).attr("value");
     var temp;
     var that = $(this);
     getWeather(gps).then(function(weather) {
           temp = weather.main.temp;
-          var iconCode = weather.weather[0].icon
-          var icon = 'http://openweathermap.org/img/w/'+iconCode+'.png'
+          var iconCode = weather.weather[0].icon;
+          var icon = 'http://openweathermap.org/img/w/'+iconCode+'.png';
           that.next(".ac-body").find( ".spinner" ).remove();
           that.next(".ac-body").find( ".weather-icon" ).attr("src", icon);
           that.next(".ac-body").find( ".weather-icon" ).show();
@@ -204,8 +194,7 @@ function skipPhysical(){
   $(".done-percentage").text(Math.round(percentageDone));
   changeBG();
   $(window).scrollTop(0);
-};
-
+}
 //special case for back press on question after
 function backToPhysical(){
   var num = 4;
@@ -216,11 +205,8 @@ function backToPhysical(){
   $(".done-percentage").text(Math.round(percentageDone));
   changeBG();
   $(window).scrollTop(0);
-};
-
-
-
-$(".user-box").click(function(){
+}
+    $(".user-box").click(function(){
   var index = $(this).attr('value');
   $("#user-"+index).submit();
 });
@@ -274,4 +260,4 @@ function getWeather(gps) {
   });
 
 
-};
+}

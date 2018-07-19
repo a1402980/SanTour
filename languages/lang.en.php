@@ -6,6 +6,11 @@ Language: English
 */
 $lang = array();
 $lang['LANGUAGE'] = 'En';
+
+//navigations
+$lang['NAV_START'] = "Start";
+$lang['NAV_ABOUT'] = "About";
+
 //Front page
 $lang['INDEX_WELCOME'] = 'Welcome to SanTour';
 $lang['INDEX_INTRO'] = "SanTour helps you find a hiking itineraries that are fit just for you.";
@@ -24,6 +29,7 @@ $lang['SLIDE_ME'] = "Slide me";
 //map
 $lang['PAGE_MAP_TITLE'] = "Where do you want to go?";
 $lang['PAGE_MAP_SUBTITLE'] = "Choose the canton you want to hike in:";
+$lang['PAGE_MAP_ALERT'] = "Unfortunetly only Valais is currently available for SanTour. More cantons will be supported in the future.";
 
 //name
 $lang['PAGE_NAME_TITLE'] = "What's your name?";
@@ -191,10 +197,10 @@ $lang['PAGE_BRIDGES_OPTION_5'] = "Very high bridges";
 $lang['PAGE_RIDGES_TITLE'] = "What kind of ridges would you prefer?";
 $lang['PAGE_RIDGES_SUBTITLE'] = "Which option describes your preference in the type of ridges?";
 $lang['PAGE_RIDGES_OPTION_1'] = "No ridges";
-$lang['PAGE_RIDGES_OPTION_2'] = "Very small ridges";
-$lang['PAGE_RIDGES_OPTION_3'] = "Moderately large ridges";
-$lang['PAGE_RIDGES_OPTION_4'] = "Large ridges";
-$lang['PAGE_RIDGES_OPTION_5'] = "Extremely large ridges";
+$lang['PAGE_RIDGES_OPTION_2'] = "Wide ridges";
+$lang['PAGE_RIDGES_OPTION_3'] = "Moderately wide ridges";
+$lang['PAGE_RIDGES_OPTION_4'] = "Narrow ridges";
+$lang['PAGE_RIDGES_OPTION_5'] = "Extremely narrow ridges";
 
 //PATH NARROWNESS
 $lang['PAGE_PATH_NARROWNESS_TITLE'] = "How narrow would you prefer the itinerary to be?";
@@ -237,5 +243,17 @@ $lang['PAGE_RESULTS_YOUR_ATTRIBUTES'] = "Your attributes";
 $lang['PAGE_RESULTS_ITINERARY_SCORE'] = "Itinerary score";
 $lang['PAGE_RESULTS_ITINERARY_ATTRIBUTES'] = "Itinerary attribute";
 
+//About page
+$lang['PAGE_ABOUT_GENERAL_INFO_TITLE'] = "General information";
+$lang['PAGE_ABOUT_GENERAL_INFO'] = "SanTour is a hiking application that was first introduced in 2015. SanTours aim is to propose hikers with itinerariers that serve their limitations and needs. In the itineraries that are proposed to the user, the user can see different points of interests (POI) and points of difficulty (POD). With this data, the user can find an itinerary that is most suitable for their needs.";
+$lang['PAGE_ABOUT_GENERAL_CREDIT'] = "This version of SanTour was developed in 2018 as a part of a bachelor thesis by";
+$lang['PAGE_ABOUT_HIKING_TRAILS_TITLE'] = "Hiking trail network and signalization";
+$lang['PAGE_ABOUT_HIKING_TRAILS'] = "Hiking trails";
+$lang['PAGE_ABOUT_HIKING_TRAILS_TEXT'] = "Hiking trails are generally accessible trails and usually determined for foot traffic. They generally lead aside from roads carrying motorized traffic and are usually not surfaced with asphalt or concrete. Steep sections are negotiated with steps and areas with the danger of falling are protected by hand rails. Streams are crossed by catwalks or bridges. Hiking trails make no special demands upon the users. Signalization for hiking trails is yellow.";
+$lang['PAGE_ABOUT_MOUNTAIN_TRAILS'] = "Mountain trails";
+$lang['PAGE_ABOUT_MOUNTAIN_TRAILS_TEXT'] = "Mountain trails are hiking trails, which partly access difficult terrain. They are mostly steep, narrow and exposed in places. Particularly difficult sections are secured with ropes or chains. In certain circumstances streams can only be crossed via fords. Users must be surefooted, have a head for heights, be physically fit and have knowledge of dangers in the mountains (rock falls, danger of slipping/falling, sudden changes in the weather). Solid boots with good sole profiles, equipment appropriate to weather conditions and topographical maps are preconditions. Signalization of mountain trails is a yellow signpost with white-red-white tip. White-red-white painted stripes confirm the route. ";
+$lang['PAGE_ABOUT_ALPINE_ROUTES'] = "Alpine routes";
+$lang['PAGE_ABOUT_ALPINE_ROUTES_TEXT'] = "Alpine routes are challenging mountain trails. They sometimes lead across glaciers and scree, through rockfall areas and through rocks with short climbing sections. It can not be assumed that any structural provisions have been undertaken and these would in any case be limited to securing particularly exposed sections with a danger of falling. Users of Alpine routes must be surefooted, have a head for heights, be physically very fit and know how to use ropes and pick axe as well as being able to negotiate climbing sections with the aid of their hands. They must have knowledge of dangers in the mountains. In addition to the equipment for mountain trails, an altimeter, compass, rope and pick axe for crossing glaciers are essential. Signalization of Alpine routes is a blue signpost with white-blue-white tip, white-blue-white painted stripes confirm the route. The information panels at the beginning of Alpine routes indicate special requirements.";
+$lang['PAGE_ABOUT_SOURCE'] = "Source";
 
 ?>

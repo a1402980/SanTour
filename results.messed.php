@@ -81,7 +81,7 @@ foreach($user_info as $key => $value) echo $key . '=' . $value . '<br />'; ?>
     <div id="it-map"></div>
     <script>
     //map center to center of Switzerland
-     var mymap = L.map('it-map').setView([46.7985286,8.2296061], 8); L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', { //maxZoom: 15, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>', bounds: [[45, 5], [48, 11]] }).addTo(mymap); var poiIcon = L.icon({ iconUrl: '<?php
+     var mymap = L.map('it-map').setView([46.7985286,8.2296061], 8); L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {; //maxZoom: 15, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>', bounds: [[45, 5], [48, 11]] }).addTo(mymap); var poiIcon = L.icon({ iconUrl: '<?php
 echo URL_DIR ?>/assets/img/point_of_interest.png', iconSize:     [36, 43.2], // size of the icon iconAnchor:   [18, 43.2], // point of the icon which will correspond to marker's location popupAnchor:  [0, -43.2] // point from which the popup should open relative to the iconAnchor }); var podIcon = L.icon({ iconUrl: '<?php
 echo URL_DIR ?>/assets/img/point_of_danger.png', iconSize:     [36, 43.2], // size of the icon iconAnchor:   [18, 43.2], // point of the icon which will correspond to marker's location popupAnchor:  [0, -43.2] // point from which the popup should open relative to the iconAnchor }); </script> </div> <?php
 
@@ -131,7 +131,7 @@ foreach($responseData as $itinerary): ?> <?php //calculate the color for scores 
 		echo $altitude[2] . ","; ?> <?php
 	endforeach; ?> ], label: "Meters", borderColor: "#B6F890", fill: false } ] }, options: { title: { display: true, text: 'Altitude profile' }, legend: { display: false, }, elements: { point: { radius: 0 } } }, }); </script> </div> <div class="col-6"> <canvas id="user-chart<?php
 	echo $itinerary['_id'] ?>" width="100%" height="100px"></canvas> <script type="text/javascript"> new Chart(document.getElementById("user-chart<?php
-	echo $itinerary['_id'] ?>"), { type: 'radar', data: { labels: [ //sort values so they are arranged in the same order in both graphs <?php
+	echo $itinerary['_id'] ?>"), { type: 'radar', data: { labels: [; //sort values so they are arranged in the same order in both graphs <?php
 	$chart_user = $user_info; ?> <?php
 	ksort($chart_user); ?> <?php
 	foreach($chart_user as $key => $user_attribute): ?> <?php
@@ -141,7 +141,7 @@ foreach($responseData as $itinerary): ?> <?php //calculate the color for scores 
 		echo $user_attribute . ","; ?> <?php
 	endforeach; ?> ] } ] }, options: { title: { display: true, text: 'Your attributes' }, elements: { point: { radius: 0 } }, scale: { pointLabels: { fontSize: 8 } } } }); </script> </div> <div class="col-6"> <canvas id="itinerary-chart<?php
 	echo $itinerary['_id'] ?>" width="100%" height="100px"></canvas> <script type="text/javascript"> new Chart(document.getElementById("itinerary-chart<?php
-	echo $itinerary['_id'] ?>"), { type: 'radar', data: { labels: [ //sort values so they are arranged in the same order in both graphs <?php
+	echo $itinerary['_id'] ?>"), { type: 'radar', data: { labels: [; //sort values so they are arranged in the same order in both graphs <?php
 	$chart_itinerary = $itinerary['attributes']; ?> <?php
 	ksort($chart_itinerary); ?> <?php
 	foreach($chart_itinerary as $key => $itinerary_attribute): ?> <?php
