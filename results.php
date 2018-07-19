@@ -174,7 +174,20 @@ if (!$user_info['physical-activity']) {
               <div class="ac-body">
                 <div class="row">
                   <div class="col-9">
-                    <h4>Description</h4>
+                    <h4>Description
+                      <?php if ($user_info['pain'] < $itinerary['attributes']['pain'] || $user_info['mobility'] < $itinerary['attributes']['mobility'] || $user_info['physical-activity'] < $itinerary['attributes']['physical-activity']): ?>
+                        <i class="tooltip icon_error-triangle">
+                          <span class="tooltiptext">
+                            <?php if ($user_info['pain'] < $itinerary['attributes']['pain'] || $user_info['mobility'] < $itinerary['attributes']['mobility']): ?>
+                              <p>Caution if severe pain</p>
+                            <?php endif; ?>
+                            <?php if ($user_info['physical-activity'] < $itinerary['attributes']['physical-activity']): ?>
+                              <p>Good physical condition recommended</p>
+                            <?php endif; ?>
+                          </span>
+                        </i>
+                    <?php endif; ?>
+                  </h4>
                     <p><?php echo $itinerary['description']; ?></p>
                   </div>
 

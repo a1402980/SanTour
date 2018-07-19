@@ -27,6 +27,7 @@
     "flatness":75,
     "bridges":25,
     "ridges":75,
+    "path-narrowness":75,
     "handrails":25,
     "time":50,
     "walking-confidence":100,
@@ -47,7 +48,7 @@
       "name":"Plank bridge",
       "description":"Point of danger",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a201c0a9ea40a0bf1b1596c-1-m.jpg",
-      "type":"Bridge",
+      "type":"bridge",
       "level":1,
       "latlng":{
         "lat":46.10150380046665,
@@ -58,7 +59,7 @@
       "name":"Verticality",
       "description":"Point of danger",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a201b249ea40a0bf1b1596a-1-m.jpg",
-      "type":"Elevation",
+      "type":"decent",
       "level":1,
       "latlng":{
         "lat":46.09298154789381,

@@ -27,6 +27,7 @@
     "flatness":0,
     "bridges":25,
     "ridges":0,
+    "path-narrowness":0,
     "handrails":100,
     "time":0,
     "walking-confidence":40,

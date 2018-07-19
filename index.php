@@ -1065,10 +1065,10 @@ require_once('header.php');
                   <img value="100" class="img-100-ridges" src="<?php echo URL_DIR ?>assets/img/form/ridges/ridges-4.jpg" alt="">
 
                   <span class="img-0-ridges selected">No ridges</span>
-                  <span class="img-25-ridges">Very shallow ridges</span>
-                  <span class="img-50-ridges">Moderately high ridges</span>
-                  <span class="img-75-ridges">High ridges</span>
-                  <span class="img-100-ridges">Extremely high ridges</span>
+                  <span class="img-25-ridges">Very small ridges</span>
+                  <span class="img-50-ridges">Moderately large ridges</span>
+                  <span class="img-75-ridges">Large ridges</span>
+                  <span class="img-100-ridges">Extremely large ridges</span>
 
                 </div>
                 <input type="range" min="0" max="100" value="0" step="25" class="slider" name="ridges">
@@ -1089,6 +1089,47 @@ require_once('header.php');
     </section>
 
     <section id="page-24" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <h1>How narrow would you prefer the itinerary to be?</h1>
+            <p class="thin-text">Which option describes your preference in the width of the path?</p>
+            <div class="col-12">
+
+              <div class="preview-slider white-container">
+                <div id="path-narrowness" class="img-carousel count-5">
+
+                  <img value="0" class="img-0-path-narrowness selected" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-0.jpg" alt="">
+                  <img value="25" class="img-25-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-1.jpg" alt="">
+                  <img value="50" class="img-50-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-2.jpg" alt="">
+                  <img value="75" class="img-75-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-3.jpg" alt="">
+                  <img value="100" class="img-100-path-narrowness" src="<?php echo URL_DIR ?>assets/img/form/path-narrowness/path-narrowness-4.jpg" alt="">
+
+                  <span class="img-0-path-narrowness selected">Very wide path</span>
+                  <span class="img-25-path-narrowness">Wide path</span>
+                  <span class="img-50-path-narrowness">Moderately wide path</span>
+                  <span class="img-75-path-narrowness">Narrow path</span>
+                  <span class="img-100-path-narrowness">Extremely narrow path</span>
+
+                </div>
+                <input type="range" min="0" max="100" value="0" step="25" class="slider" name="path-narrowness">
+                <span class="slide-tooltip"> <?php echo $lang['SLIDE_ME']?> <i class="arrow_triangle-up"></i></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
+              <a class="left previous-page"><?php echo $lang['BACK'] ?></a>
+              <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
+            </div>
+            <div class="col-12">
+              <a class="skip"><?php echo $lang['SKIP'] ?></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-25" class="page">
       <div class="container">
         <div class="row">
           <div class="col-12 center">
@@ -1130,7 +1171,7 @@ require_once('header.php');
       </div>
     </section>
 
-    <section id="page-25" class="page">
+    <section id="page-26" class="page">
       <div class="container">
         <div class="row">
           <div class="col-12 center">

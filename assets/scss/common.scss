@@ -355,3 +355,32 @@ label .checkmark:after {
     }
   }
 }
+
+.tooltip {
+    position: relative;
+    display: inline ;
+    color: $red;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: $black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    p{
+      line-height: 16px;
+    }
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.tooltip:hover .tooltiptext, .tooltip:active .tooltiptext, .tooltip:focus .tooltiptext{
+    visibility: visible;
+}

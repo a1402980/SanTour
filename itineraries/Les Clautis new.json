@@ -27,6 +27,7 @@
     "flatness":50,
     "bridges":25,
     "ridges":75,
+    "path-narrowness":25,
     "handrails":50,
     "time":50,
     "walking-confidence":80,
@@ -65,7 +66,7 @@
       "name":"Pebbles",
       "description":"Pebbles on the way",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
+      "type":"rocks",
       "level":1,
       "latlng":{
         "lat":46.12591198113181,
@@ -87,7 +88,7 @@
       "name":"Pile of pebbles",
       "description":"A pile of pebbles cuts the path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a14e798c500bf04bbf49-1-m.jpg",
-      "type":"Rocks",
+      "type":"rocks",
       "level":1,
       "latlng":{
         "lat":46.12506428228482,
@@ -98,7 +99,7 @@
       "name":"Roots",
       "description":"A root through the path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a10f798c500bf04bbf48-1-m.jpg",
-      "type":"Obsticle",
+      "type":"roots",
       "level":1,
       "latlng":{
         "lat":46.124677608303244,
@@ -109,7 +110,7 @@
       "name":"Bank",
       "description":"View of the downhill slope",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a090798c500bf04bbf46-1-m.jpg",
-      "type":"Elevation",
+      "type":"decent",
       "level":2,
       "latlng":{
         "lat":46.12363654947795,
@@ -120,7 +121,7 @@
       "name":"Path",
       "description":"Mossy path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a0d0798c500bf04bbf47-1-m.jpg",
-      "type":"Slipperyness",
+      "type":"bumpiness",
       "level":1,
       "latlng":{
         "lat":46.12369603908364,
@@ -131,7 +132,7 @@
       "name":"Turnstile",
       "description":"Turnstile prevents cowds from passing",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89f7c798c500bf04bbf43-1-m.jpg",
-      "type":"Path narrowness",
+      "type":"path narrowness",
       "level":1,
       "latlng":{
         "lat":46.123335382363315,
@@ -153,7 +154,7 @@
       "name":"Path",
       "description":"Mossy path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a0d0798c500bf04bbf47-1-m.jpg",
-      "type":"Slipperyness",
+      "type":"bumpiness",
       "level":1,
       "latlng":{
         "lat":46.12337999981753,
@@ -164,7 +165,7 @@
       "name":"Path elevation",
       "description":"Rise with slope",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89fbc798c500bf04bbf44-1-m.jpg",
-      "type":"Elevation",
+      "type":"decent",
       "level":1,
       "latlng":{
         "lat":46.12320896604683,
@@ -175,7 +176,7 @@
       "name":"Steps",
       "description":"Steps on the path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89eae798c500bf04bbf40-1-m.jpg",
-      "type":"Elevation",
+      "type":"decent",
       "level":1,
       "latlng":{
         "lat":46.12319037538756,
@@ -186,7 +187,7 @@
       "name":"Path",
       "description":"Path covered with moss",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89e74798c500bf04bbf3f-1-m.jpg",
-      "type":"Slipperyness",
+      "type":"bumpiness",
       "level":1,
       "latlng":{
         "lat":46.12306767687928,
@@ -208,7 +209,7 @@
       "name":"Path elevation",
       "description":"Soil path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a377798c500bf04bbf50-1-m.jpg",
-      "type":"Slipperyness",
+      "type":"bumpiness",
       "level":1,
       "latlng":{
         "lat":46.12317550285569,
@@ -219,7 +220,7 @@
       "name":"Path with rocks",
       "description":"Path covered with stones",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89acf798c500bf04bbf3c-1-m.jpg",
-      "type":"Rocks",
+      "type":"rocks",
       "level":1,
       "latlng":{
         "lat":46.12315691218516,
@@ -227,10 +228,10 @@
       }
     },
     {
-      "name":"Rocks",
+      "name":"rocks",
       "description":"Some rocks in a bend",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89dd2798c500bf04bbf3d-1-m.jpg",
-      "type":"Rocks",
+      "type":"rocks",
       "level":2,
       "latlng":{
         "lat":46.12316063031974,
@@ -241,7 +242,7 @@
       "name":"Dirt path",
       "description":"Dented dirt path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d89e32798c500bf04bbf3e-1-m.jpg",
-      "type":"Slipperyness",
+      "type":"bumpiness",
       "level":1,
       "latlng":{
         "lat":46.12324242921769,
@@ -252,7 +253,7 @@
       "name":"Turnstile",
       "description":"Tourniquet at the start of chemin des Clautis",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59cdfa95798c500bf04bbeff-1-m.jpg",
-      "type":"Obsticle",
+      "type":"path narrowness",
       "level":1,
       "latlng":{
         "lat":46.12351180989865,
@@ -263,7 +264,7 @@
       "name":"Decending road",
       "description":"Descends along a dirt road",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a4ff798c500bf04bbf56-1-m.jpg",
-      "type":"Rocks",
+      "type":"rocks",
       "level":1,
       "latlng":{
         "lat":46.13102392351255,
@@ -274,7 +275,7 @@
       "name":"Turnstile",
       "description":"Wood turnstile prevents cowds from passing",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a4c3798c500bf04bbf55-1-m.jpg",
-      "type":"Rocks",
+      "type":"path narrowness",
       "level":1,
       "latlng":{
         "lat":46.130075926394994,
@@ -285,7 +286,7 @@
       "name":"Descent",
       "description":"zig-zag descent",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a3d1798c500bf04bbf51-1-m.jpg",
-      "type":"Elevation",
+      "type":"decent",
       "level":2,
       "latlng":{
         "lat":46.12958519206601,
@@ -293,10 +294,10 @@
       }
     },
     {
-      "name":"Bridge",
+      "name":"bridge",
       "description":"Small wooden bridge not fixed on a heap of stones",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a414798c500bf04bbf52-1-m.jpg",
-      "type":"Bridge",
+      "type":"bridge",
       "level":1,
       "latlng":{
         "lat":46.12968928759206,
@@ -307,7 +308,7 @@
       "name":"Descent",
       "description":"Descent on rocky path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59e89733798c50343672d556-1-m.jpg",
-      "type":"Elevation",
+      "type":"decent",
       "level":2,
       "latlng":{
         "lat":46.13004246737507,
@@ -318,7 +319,7 @@
       "name":"Pebbles",
       "description":"Pebbles cross the path",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
+      "type":"rocks",
       "level":1,
       "latlng":{
         "lat":46.12703107235102,
@@ -329,7 +330,7 @@
       "name":"Path",
       "description":"Path and slope",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a2f6798c500bf04bbf4e-1-m.jpg",
-      "type":"Elevation",
+      "type":"decent",
       "level":2,
       "latlng":{
         "lat":46.12797540406504,
@@ -340,7 +341,7 @@
       "name":"Pebbles",
       "description":"Point of danger",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a20c798c500bf04bbf4c-1-m.jpg",
-      "type":"Rocks",
+      "type":"rocks",
       "level":1,
       "latlng":{
         "lat":46.130075926394994,
@@ -351,7 +352,7 @@
       "name":"Roots",
       "description":"Roots in a small descent",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a249798c500bf04bbf4d-1-m.jpg",
-      "type":"Obsticle",
+      "type":"roots",
       "level":1,
       "latlng":{
         "lat":46.12787316420816,
@@ -362,7 +363,7 @@
       "name":"Path elevation",
       "description":"Small climb in the trees",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a339798c500bf04bbf4f-1-m.jpg",
-      "type":"Elevation",
+      "type":"decent",
       "level":1,
       "latlng":{
         "lat":46.128179883209384,
@@ -373,7 +374,7 @@
       "name":"Road",
       "description":"Tarred road to the car park",
       "image":"https://d25u9ndbhhiciz.cloudfront.net/points/59d8a53a798c500bf04bbf57-1-m.jpg",
-      "type":"Rocks",
+      "type":"bumpiness",
       "level":1,
       "latlng":{
         "lat":46.130815737308474,

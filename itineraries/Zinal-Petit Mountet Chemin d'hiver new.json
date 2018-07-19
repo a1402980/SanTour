@@ -27,6 +27,7 @@
       "flatness":75,
       "bridges":25,
       "ridges":75,
+      "path-narrowness":75,
       "handrails":25,
       "time":50,
       "walking-confidence":100,
@@ -78,7 +79,7 @@
         "name":"Stones",
         "description":"Point of danger",
         "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a20278a9ea40a0bf1b15971-1-m.jpg",
-        "type":"Rocks",
+        "type":"rocks",
         "level":1,
         "latlng":{
           "lat":46.10167196643558,
@@ -89,7 +90,7 @@
         "name":"Stones/rustic bridge",
         "description":"Point of danger",
         "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a20257a9ea40a0bf1b1596f-1-m.jpg",
-        "type":"Bridge",
+        "type":"bridge",
         "level":1,
         "latlng":{
           "lat":46.101266530239506,
@@ -111,7 +112,7 @@
         "name":"Verticality/Stones",
         "description":"Point of danger",
         "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a2028709ea40a0bf1b15973-1-m.jpg",
-        "type":"Elevation",
+        "type":"decent",
         "level":2,
         "latlng":{
           "lat":46.10000649733446,
@@ -122,7 +123,7 @@
         "name":"Unstable path/Narrowness",
         "description":"Point of danger",
         "image":"https://d25u9ndbhhiciz.cloudfront.net/points/5a2027f69ea40a0bf1b15972-1-m.jpg",
-        "type":"Path narrowness",
+        "type":"path narrowness",
         "level":1,
         "latlng":{
           "lat":46.09819032544573,
