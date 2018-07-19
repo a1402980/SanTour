@@ -65,7 +65,7 @@ include_once ROOT_DIR.'languages/'.$lang_file;
   <script async src="assets/minified/js/js.cookie.min.js" ></script>
   <script async src="assets/minified/js/unserialize.min.js" ></script>
   <script async src="assets/minified/js/serialize.min.js" ></script>
-  <script async src="assets/minified/vendor/chart.min.js" ></script>
+  <script defer src="assets/minified/vendor/chart.min.js" ></script>
   <script async src="assets/minified/vendor/leaflet.min.js" ></script>
 
   <!-- use these if leaflet has issues -->

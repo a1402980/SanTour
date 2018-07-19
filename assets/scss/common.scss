@@ -48,6 +48,10 @@ select{
 
 }
 
+select::-ms-expand {
+    display: none;
+}
+
 form{
   font-family: 'Roboto-Medium', sans-serif;
   a{

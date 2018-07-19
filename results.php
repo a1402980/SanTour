@@ -97,7 +97,7 @@ if (!$user_info['physical-activity']) {
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <h1>Okay, heres what we would recommend:</h1>
+            <h1><?php echo $lang['PAGE_RESULTS_TITLE']; ?></h1>
 
           </div>
           <div class="col-5">
@@ -174,15 +174,15 @@ if (!$user_info['physical-activity']) {
               <div class="ac-body">
                 <div class="row">
                   <div class="col-9">
-                    <h4>Description
+                    <h4><?php echo $lang['PAGE_RESULTS_Description']; ?>
                       <?php if ($user_info['pain'] < $itinerary['attributes']['pain'] || $user_info['mobility'] < $itinerary['attributes']['mobility'] || $user_info['physical-activity'] < $itinerary['attributes']['physical-activity']): ?>
                         <i class="tooltip icon_error-triangle">
                           <span class="tooltiptext">
                             <?php if ($user_info['pain'] < $itinerary['attributes']['pain'] || $user_info['mobility'] < $itinerary['attributes']['mobility']): ?>
-                              <p>Caution if severe pain</p>
+                              <p><?php echo $lang['PAGE_RESULTS_WARNING_1']; ?></p>
                             <?php endif; ?>
                             <?php if ($user_info['physical-activity'] < $itinerary['attributes']['physical-activity']): ?>
-                              <p>Good physical condition recommended</p>
+                              <p><?php echo $lang['PAGE_RESULTS_WARNING_2']; ?></p>
                             <?php endif; ?>
                           </span>
                         </i>
@@ -192,7 +192,7 @@ if (!$user_info['physical-activity']) {
                   </div>
 
                   <div class="col-3 weather center">
-                    <h4>Weather</h4>
+                    <h4><?php echo $lang['PAGE_RESULTS_WEATHER']; ?></h4>
                     <div class="icon_loading spinner">
 
                     </div>
@@ -203,12 +203,12 @@ if (!$user_info['physical-activity']) {
                   </div>
                   <div class="col-12">
                     <a href="<?php echo $itinerary['url']; ?>" target="_blank"> <button type="button">Snukr <i class="icon_map"></i> </button></a>
-                    <a href="<?php echo URL_DIR . 'assets/gpx/' . $itinerary['name'] . '.gpx' ?>" download> <button type="button">GPX file <i class="icon_download"> </i> </button></a>
+                    <a href="<?php echo URL_DIR . 'assets/gpx/' . $itinerary['name'] . '.gpx' ?>" download> <button type="button"><?php echo $lang['PAGE_RESULTS_GPS_FILE']; ?><i class="icon_download"> </i> </button></a>
                     <?php $transportUrl = "https://timetable.search.ch/?from=&to=snap%3A" . $itinerary['latlng'][0][0] . "%2C" . $itinerary['latlng'][0][1] . "&time=&date=&time_type=depart" ?>
-                    <a href="<?php echo $transportUrl ?>" target="_blank" > <button type="button">Public transport <i class="icon_pin_alt"></i> </button> </a>
+                    <a href="<?php echo $transportUrl ?>" target="_blank" > <button type="button"><?php echo $lang['PAGE_RESULTS_PUBLIC_TRANSPORT']; ?><i class="icon_pin_alt"></i> </button> </a>
                   </div>
                   <div class="col-12">
-                    <span>Trail type: <?php echo $itinerary['info']['trail-type'] ?> trail</span> <a href="<?php echo URL_DIR ?>about.php#trails" target="_blank"><i class="icon_question_alt2"></i></a>
+                    <span><?php echo $lang['PAGE_RESULTS_TRAIL_TYPE']; ?> <?php echo $itinerary['info']['trail-type'] ?> <?php echo $lang['PAGE_RESULTS_TRAIL']; ?></span> <a href="<?php echo URL_DIR ?>about.php#trails" target="_blank"><i class="icon_question_alt2"></i></a>
                     <div class="<?php echo $itinerary['info']['trail-type'] ?>"></div>
                   </div>
                   <div class="col-12">
@@ -237,7 +237,7 @@ if (!$user_info['physical-activity']) {
                     options: {
                       title: {
                         display: true,
-                        text: 'Altitude profile'
+                        text: "<?php echo $lang['PAGE_RESULTS_ALTITUDE_PROFILE'] ?>"
                       },
                       legend: {
                         display: false,
@@ -263,7 +263,7 @@ if (!$user_info['physical-activity']) {
                           ],
                           datasets: [
                             {
-                              label: "User score",
+                              label: "<?php echo $lang['PAGE_RESULTS_YOUR_SCORE']; ?>",
                               fill: true,
                               backgroundColor: "rgba(179,181,198,0.2)",
                               borderColor: "#B6F890",
@@ -280,7 +280,7 @@ if (!$user_info['physical-activity']) {
                         options: {
                           title: {
                             display: true,
-                            text: 'Your attributes'
+                            text: "<?php echo $lang['PAGE_RESULTS_YOUR_ATTRIBUTES']; ?>"
                           },
                           elements: { point: { radius: 0 } },
                           scale: { pointLabels: { fontSize: 8 } }
@@ -305,7 +305,7 @@ if (!$user_info['physical-activity']) {
                           ],
                           datasets: [
                             {
-                              label: "Itinerary score",
+                              label: "<?php echo $lang['PAGE_RESULTS_ITINERARY_SCORE']; ?>",
                               fill: true,
                               backgroundColor: "rgba(179,181,198,0.2)",
                               borderColor: "#DFD285",
@@ -322,7 +322,7 @@ if (!$user_info['physical-activity']) {
                         options: {
                           title: {
                             display: true,
-                            text: 'Itinerary attribute'
+                            text: "<?php echo $lang['PAGE_RESULTS_ITINERARY_ATTRIBUTES']; ?>"
                           },
                           elements: { point: { radius: 0 } },
                           scale: { pointLabels: { fontSize: 8 } }

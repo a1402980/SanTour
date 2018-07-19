@@ -221,4 +221,21 @@ $lang['PAGE_TIME_OPTION_1'] = "0-2 hours";
 $lang['PAGE_TIME_OPTION_2'] = "2-4 hours";
 $lang['PAGE_TIME_OPTION_3'] = "Over 5 hours";
 
+// Results page
+$lang['PAGE_RESULTS_TITLE'] = "Okay, heres what we would recommend:";
+$lang['PAGE_RESULTS_Description'] = "Description";
+$lang['PAGE_RESULTS_WARNING_1'] = "Caution if severe pain";
+$lang['PAGE_RESULTS_WARNING_2'] = "Good physical condition recommended";
+$lang['PAGE_RESULTS_WEATHER'] = "Weather";
+$lang['PAGE_RESULTS_GPS_FILE'] = "GPX file";
+$lang['PAGE_RESULTS_PUBLIC_TRANSPORT'] = "Public transport";
+$lang['PAGE_RESULTS_TRAIL'] = "trail";
+$lang['PAGE_RESULTS_TRAIL_TYPE'] = "Trail type:";
+$lang['PAGE_RESULTS_ALTITUDE_PROFILE'] = "Altitude profile";
+$lang['PAGE_RESULTS_YOUR_SCORE'] = "Your score";
+$lang['PAGE_RESULTS_YOUR_ATTRIBUTES'] = "Your attributes";
+$lang['PAGE_RESULTS_ITINERARY_SCORE'] = "Itinerary score";
+$lang['PAGE_RESULTS_ITINERARY_ATTRIBUTES'] = "Itinerary attribute";
+
+
 ?>
