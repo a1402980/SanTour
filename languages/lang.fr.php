@@ -8,8 +8,8 @@ $lang = array();
 $lang['LANGUAGE'] = 'Fr';
 
 //navigations
-$lang['NAV_START'] = "Start";
-$lang['NAV_ABOUT'] = "About";
+$lang['NAV_START'] = "Début";
+$lang['NAV_ABOUT'] = "A propos";
 
 //Front page
 $lang['INDEX_WELCOME'] = 'Bienvenue à SanTour';
@@ -24,93 +24,93 @@ $lang['SKIP'] = "Je veux sauter cette question";
 $lang['Yes'] = "Oui";
 $lang['NOT_SURE'] = "Pas sûr";
 $lang['NO'] = "Non";
-$lang['SLIDE_ME'] = "Slide me";
+$lang['SLIDE_ME'] = "Faites-moi glisser";
 
 //map
-$lang['PAGE_MAP_TITLE'] = "Where do you want to go?";
-$lang['PAGE_MAP_SUBTITLE'] = "Choose the canton you want to hike in:";
-$lang['PAGE_MAP_ALERT'] = "Unfortunetly only Valais is currently available for SanTour. More cantons will be supported in the future.";
+$lang['PAGE_MAP_TITLE'] = "Où voulez-vous aller ?";
+$lang['PAGE_MAP_SUBTITLE'] = "Choisissez le canton où vous souhaitez aller :";
+$lang['PAGE_MAP_ALERT'] = "Malheureusement, l'unique canton disponible dans SanTour est le Valais. D'autres cantons seront ajoutés dans le futur.";
 
 //name
-$lang['PAGE_NAME_TITLE'] = "What's your name?";
-$lang['PAGE_NAME_SUBTITLE'] = "By giving your name we can save your information to your browser so you can easily access it later";
-$lang['PAGE_NAME_USERS_TITLE'] = "Previously saved users:";
+$lang['PAGE_NAME_TITLE'] = "Quel est votre nom?";
+$lang['PAGE_NAME_SUBTITLE'] = "En donnant votre nom, nous pouvons sauver vos informations dans votre navigateur pour que vous puissiez y accéder aisément plus tard.";
+$lang['PAGE_NAME_USERS_TITLE'] = "Utilisateurs sauvegardés précédemment :";
 
 //physical-activity
-$lang['PAGE_PHYSICAL_ACTIVITY_1_TITLE'] ="Are you engaged in regular exercise?";
-$lang['PAGE_PHYSICAL_ACTIVITY_1_SUBTITLE'] ="such as walking, running, biking jogging etc.";
-$lang['PAGE_PHYSICAL_ACTIVITY_2_TITLE'] ="Are you active at least 30 minutes each day?";
-$lang['PAGE_PHYSICAL_ACTIVITY_2_SUBTITLE'] ="(at least 5 days a week)";
-$lang['PAGE_PHYSICAL_ACTIVITY_3_TITLE'] ="Do you sweat or be out of breath during this activity?";
-$lang['PAGE_PHYSICAL_ACTIVITY_3_SUBTITLE'] ="occasionally or regularly";
+$lang['PAGE_PHYSICAL_ACTIVITY_1_TITLE'] ="Est-ce que vous avez une activité physique régulière?";
+$lang['PAGE_PHYSICAL_ACTIVITY_1_SUBTITLE'] ="comme la marche, la course à pied, le vélo, etc.";
+$lang['PAGE_PHYSICAL_ACTIVITY_2_TITLE'] ="Etes-vous actif au moins 30 minutes par jour?";
+$lang['PAGE_PHYSICAL_ACTIVITY_2_SUBTITLE'] ="(au moins 5 jours par semaine)";
+$lang['PAGE_PHYSICAL_ACTIVITY_3_TITLE'] ="Transpirez-vous ou êtes-vous essouflé pendant cette activité?";
+$lang['PAGE_PHYSICAL_ACTIVITY_3_SUBTITLE'] ="occasionnellement ou régulièrement";
 
 //walking-help
-$lang['PAGE_WALKING_HELP_TITLE'] = "Do you require any walking device?";
-$lang['PAGE_WALKING_HELP_SUBTITLE'] = "Select a device you can't hike without";
-$lang['PAGE_WALKING_HELP_OPTION_1'] = "A cane";
-$lang['PAGE_WALKING_HELP_OPTION_2'] = "Two canes";
-$lang['PAGE_WALKING_HELP_OPTION_3'] = "Walker";
-$lang['PAGE_WALKING_HELP_OPTION_4'] = "A walking frame";
-$lang['PAGE_WALKING_HELP_OPTION_5'] = "I need help of a third party";
-$lang['PAGE_WALKING_HELP_OPTION_6'] = "None";
+$lang['PAGE_WALKING_HELP_TITLE'] = "Avez-vous besoin d'un dispositif d'aide à la marche?";
+$lang['PAGE_WALKING_HELP_SUBTITLE'] = "Sélectionnez un dispositif sans lequel vous ne pouvez pas faire de la marche";
+$lang['PAGE_WALKING_HELP_OPTION_1'] = "Une canne";
+$lang['PAGE_WALKING_HELP_OPTION_2'] = "Deux cannes";
+$lang['PAGE_WALKING_HELP_OPTION_3'] = "Déambulateur";
+$lang['PAGE_WALKING_HELP_OPTION_4'] = "Un cadre de marche";
+$lang['PAGE_WALKING_HELP_OPTION_5'] = "J'ai besoin d'aide d'une tierce personne";
+$lang['PAGE_WALKING_HELP_OPTION_6'] = "Aucune";
 
 //walking-speed
-$lang['PAGE_WALKING_SPEED_TITLE'] = "Compared to the average walking speed,do you usually walk ...";
-$lang['PAGE_WALKING_SPEED_SUBTITLE'] = "for example when walking with a friend";
-$lang['PAGE_WALKING_SPEED_OPTION_1'] = "Noticeably slower";
-$lang['PAGE_WALKING_SPEED_OPTION_2'] = "A bit slower";
-$lang['PAGE_WALKING_SPEED_OPTION_3'] = "At the same speed";
-$lang['PAGE_WALKING_SPEED_OPTION_4'] = "A bit faster";
-$lang['PAGE_WALKING_SPEED_OPTION_5'] = "Significantly faster";
+$lang['PAGE_WALKING_SPEED_TITLE'] = "Par rapport à la vitesse de marche moyenne, pensez-vous marcher habituellement ...";
+$lang['PAGE_WALKING_SPEED_SUBTITLE'] = "par exemple quand vous marchez avec un ami";
+$lang['PAGE_WALKING_SPEED_OPTION_1'] = "Nettement moins vite";
+$lang['PAGE_WALKING_SPEED_OPTION_2'] = "Un peu moins vite";
+$lang['PAGE_WALKING_SPEED_OPTION_3'] = "A la même vitesse";
+$lang['PAGE_WALKING_SPEED_OPTION_4'] = "Un peu plus vite";
+$lang['PAGE_WALKING_SPEED_OPTION_5'] = "Nettement plus vite";
 
 //walking-time
-$lang['PAGE_WALKING_TIME_TITLE'] = "How long can you walk without stopping to rest?";
-$lang['PAGE_WALKING_TIME_SUBTITLE'] = "Choose the best suiting option";
+$lang['PAGE_WALKING_TIME_TITLE'] = "Combien de temps pouvez-vous marcher sans devoir faire une pause?";
+$lang['PAGE_WALKING_TIME_SUBTITLE'] = "Choisissez l'option qui convient le mieux";
 $lang['PAGE_WALKING_TIME_OPTION_1'] = "Impossible";
 $lang['PAGE_WALKING_TIME_OPTION_2'] = "1 minute";
 $lang['PAGE_WALKING_TIME_OPTION_3'] = "5 minutes";
 $lang['PAGE_WALKING_TIME_OPTION_4'] = "15 minutes";
 $lang['PAGE_WALKING_TIME_OPTION_5'] = "30 minutes";
-$lang['PAGE_WALKING_TIME_OPTION_6'] = "1 hour";
-$lang['PAGE_WALKING_TIME_OPTION_7'] = "2 hours";
-$lang['PAGE_WALKING_TIME_OPTION_8'] = "3 hours or more";
+$lang['PAGE_WALKING_TIME_OPTION_6'] = "1 heure";
+$lang['PAGE_WALKING_TIME_OPTION_7'] = "2 heures";
+$lang['PAGE_WALKING_TIME_OPTION_8'] = "3 heures ou plus";
 
 //mounting
-$lang['PAGE_MOUNTING_TITLE'] = "How many floors of stairs would you be able to climb without taking a break?";
-$lang['PAGE_MOUNTING_SUBTITLE'] = "Which option describes your physical ability the best?";
-$lang['PAGE_MOUNTING_OPTION_1'] = "I'm unable to climb stairs";
-$lang['PAGE_MOUNTING_OPTION_2'] = "I'm unable to climb 1 floor of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_3'] = "I might be able to climb 1 floor of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_4'] = "I'm able to climb at maximum 1 floor of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_5'] = "I'm unable to climb 3 floors of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_6'] = "I might be able to climb 3 floors of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_7'] = "I'm able to climb at maximum 3 floors of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_8'] = "I'm unable to climb 5 floors of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_9'] = "I might be able to climb 5 floors of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_10'] = "I'm at maximum able to climb 5 floors of stairs without a break";
-$lang['PAGE_MOUNTING_OPTION_11'] = "I'm able to climb over 5 floors of stairs without a break";
+$lang['PAGE_MOUNTING_TITLE'] = "Combien de marches êtes-vous capable de monter sans devoir faire une pause?";
+$lang['PAGE_MOUNTING_SUBTITLE'] = "Choisissez l'option qui décrit le mieux votre capacité physique?";
+$lang['PAGE_MOUNTING_OPTION_1'] = "Je suis incapable de monter les escaliers";
+$lang['PAGE_MOUNTING_OPTION_2'] = "Je suis incapable de monter un étage sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_3'] = "Je pourrais monter un étage sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_4'] = "Je suis capable de monter au maximum un étage sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_5'] = "Je suis incapable de monter 3 étages sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_6'] = "Je pourrais monter 3 étages sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_7'] = "Je suis capable de monter au maximum 3 étages sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_8'] = "Je suis incapable de monter 5 étages sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_9'] = "Je pourrais monter 5 étages sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_10'] = "Je suis capable de monter au maximum 5 étages sans faire de pause";
+$lang['PAGE_MOUNTING_OPTION_11'] = "Je suis capable de monter plus de 5 étages sans faire de pause";
 
 //walking-confidence
-$lang['PAGE_WALKING_CONFIDENCE_TITLE'] = "Rate your self-confidence to walk";
-$lang['PAGE_WALKING_CONFIDENCE_SUBTITLE'] = "Please choose the options that best describe you";
-$lang['PAGE_WALKING_CONFIDENCE_QUESTION_1'] = "Are you afraid of falling?";
-$lang['PAGE_WALKING_CONFIDENCE_QUESTION_2'] = "Have you fallen in the last 12 months?";
-$lang['PAGE_WALKING_CONFIDENCE_OPTION_1'] = "Once";
-$lang['PAGE_WALKING_CONFIDENCE_OPTION_2'] = "Twice";
-$lang['PAGE_WALKING_CONFIDENCE_OPTION_3'] = "Several times";
-$lang['PAGE_WALKING_CONFIDENCE_QUESTION_3'] = "Do you feel dizzy sometimes?";
+$lang['PAGE_WALKING_CONFIDENCE_TITLE'] = "Evaluez votre assurance pour la marche";
+$lang['PAGE_WALKING_CONFIDENCE_SUBTITLE'] = "choisissez l'option qui vous décrit le mieux";
+$lang['PAGE_WALKING_CONFIDENCE_QUESTION_1'] = "Avez-vous peur de chuter?";
+$lang['PAGE_WALKING_CONFIDENCE_QUESTION_2'] = "Avez-vous déjà chuté lors des 12 derniers mois?";
+$lang['PAGE_WALKING_CONFIDENCE_OPTION_1'] = "Une fois";
+$lang['PAGE_WALKING_CONFIDENCE_OPTION_2'] = "2 fois";
+$lang['PAGE_WALKING_CONFIDENCE_OPTION_3'] = "Plusieurs fois";
+$lang['PAGE_WALKING_CONFIDENCE_QUESTION_3'] = "Avez-vous parfois des vertiges?";
 
 
 //fear-of-heights
-$lang['PAGE_FEAR_OF_HEIGHTS_TITLE'] = "Are you afraid of heights?";
-$lang['PAGE_FEAR_OF_HEIGHTS_SUBTITLE'] = "Do you feel fear when looking down from high altitutes?";
+$lang['PAGE_FEAR_OF_HEIGHTS_TITLE'] = "Avez-vous peur de l'altitude ?";
+$lang['PAGE_FEAR_OF_HEIGHTS_SUBTITLE'] = "Avez vous peur de regarder en bas lorsque vous êtes en haute altitude?";
 
 //balance
-$lang['PAGE_BALANCE_TITLE'] = "Do you feel safe when you stand on one leg?";
-$lang['PAGE_BALANCE_SUBTITLE'] = "Without holding or leaning onto something";
-$lang['PAGE_BALANCE_OPTION_1'] = "Yes, I feel sure";
-$lang['PAGE_BALANCE_OPTION_2'] = "No, I don't feel sure";
-$lang['PAGE_BALANCE_OPTION_3'] = "Impossible without holding";
+$lang['PAGE_BALANCE_TITLE'] = "Vous sentez-vous sûr lorsque vous vous tenez debout sur une jambe?";
+$lang['PAGE_BALANCE_SUBTITLE'] = "Sans vous tenir à quelque chose";
+$lang['PAGE_BALANCE_OPTION_1'] = "Oui, je me sens sûr ";
+$lang['PAGE_BALANCE_OPTION_2'] = "Non, je ne me sens pas sûr";
+$lang['PAGE_BALANCE_OPTION_3'] = "Impossible sans me tenir à quelque chose";
 
 //pain
 $lang['PAGE_PAIN_TITLE'] = "Do you feel any of the following pains?";
@@ -255,9 +255,5 @@ $lang['PAGE_ABOUT_MOUNTAIN_TRAILS_TEXT'] = " Les chemins de randonnée de montag
 $lang['PAGE_ABOUT_ALPINE_ROUTES'] = "Chemins de randonnée alpine";
 $lang['PAGE_ABOUT_ALPINE_ROUTES_TEXT'] = "Les chemins de randonnée alpine sont des chemins de randonnée de montagne exigeants. Ils mènent en partie à travers des terrains sans chemins, des champs de neige et des glaciers, des pentes pierreuses, des éboulis ou des falaises comprenant de courts passages d’escalade. L’existence d’aménagements n’est pas garantie. Le cas échéant, ces derniers se limitent à la sécurisation des endroits particulièrement exposés au risque de chute. Exigences posées aux usagers: Les chemins de randonnée alpine sont réservés aux usagers en excellente condition physique, qui ont le pied ferme, ne souffrent pas de vertige, maîtrisent le maniement de la corde et du piolet et les passages à escalader à l’aide des mains. Ils doivent connaître les dangers liés à la montagne. En plus de l’équipement requis pour les chemins de randonnée de montagne, un altimètre et une boussole, ainsi qu’une corde et un piolet pour la traversée des glaciers sont nécessaires. Signalisation: Les indicateurs de direction sont de couleur bleue avec des pointes de couleurs blanc-bleu-blanc. Les confirmations et les marquages sont de couleurs blanc-bleu-blanc. Le panneau d’information pour chemin de randonnée alpine au début du chemin indique les exigences particulières requises.";
 $lang['PAGE_ABOUT_SOURCE'] = "Source";
-
-?>
-
-
 
 ?>

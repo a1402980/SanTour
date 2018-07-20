@@ -865,10 +865,10 @@ require_once('header.php');
                                 <div id="bumps" class="img-carousel count-5">
 
                                     <img value="0"  class="img-0-bumps selected" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-0.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_1']; ?>">
-                                    <img value="1" class="img-25-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-1.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_2']; ?>">
-                                    <img value="2" class="img-50-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-2.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_3']; ?>">
-                                    <img value="3" class="img-75-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-3.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_4']; ?>">
-                                    <img value="4" class="img-100-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-4.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_5']; ?>">
+                                    <img value="25" class="img-25-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-1.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_2']; ?>">
+                                    <img value="50" class="img-50-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-2.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_3']; ?>">
+                                    <img value="75" class="img-75-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-3.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_4']; ?>">
+                                    <img value="100" class="img-100-bumps" src="<?php echo URL_DIR ?>assets/img/form/bumps/bumps-4.jpg" alt="<?php echo $lang['PAGE_BUMPINESS_OPTION_5']; ?>">
 
                                     <span class="img-0-bumps selected"><?php echo $lang['PAGE_BUMPINESS_OPTION_1']; ?></span>
                                     <span class="img-25-bumps"><?php echo $lang['PAGE_BUMPINESS_OPTION_2']; ?></span>

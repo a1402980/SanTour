@@ -3,23 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0b56448b-cdc7-49d3-9d7d-9454457c1b25" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/serialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/serialize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/unserialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/unserialize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/minified/css/main.css.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/minified/css/main.css.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/minified/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/minified/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/minified/js/scripts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/minified/js/scripts.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/lang.de.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/lang.de.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/lang.en.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/lang.en.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/lang.fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/lang.fr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/map.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.messed.php" beforeDir="false" afterPath="$PROJECT_DIR$/results.messed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.php" beforeDir="false" afterPath="$PROJECT_DIR$/results.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,12 +14,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="lang.en.php" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="lang.en.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/languages/lang.en.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lang.fr.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/languages/lang.fr.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="256" column="38" selection-start-line="256" selection-start-column="38" selection-end-line="256" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1309">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -82,15 +85,14 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="49" />
     <option name="y" value="35" />
-    <option name="width" value="2457" />
-    <option name="height" value="1414" />
+    <option name="width" value="2459" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,6 +109,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -141,11 +144,12 @@
       <workItem from="1531944320830" duration="691000" />
       <workItem from="1532022194436" duration="1028000" />
       <workItem from="1532034483234" duration="1194000" />
+      <workItem from="1532098030725" duration="665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4169000" />
+    <option name="totallyTimeSpent" value="4834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1477" height="888" extended-state="6" />
@@ -180,6 +184,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/languages/lang.en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -224,24 +235,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1500">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12956">
           <caret line="922" column="18" lean-forward="true" selection-start-line="922" selection-start-column="18" selection-end-line="922" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/lang.fr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="256" column="38" lean-forward="true" selection-start-line="256" selection-start-column="38" selection-end-line="256" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -255,7 +252,21 @@
     <entry file="file://$PROJECT_DIR$/languages/lang.en.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/lang.fr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="256" column="38" selection-start-line="256" selection-start-column="38" selection-end-line="256" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1309">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>

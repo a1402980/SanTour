@@ -10,43 +10,6 @@ define('ROOT_DIR', dirname(getcwd()) . '/' . SITE_NAME.'/'); //physical path on 
 //define('URL_DIR', $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT']
 define('URL_DIR', 'http'.'://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT']. '/' . SITE_NAME.'/');
 
-
-//multilanguage support
-if(isSet($_GET['lang']))
-{
-    $lang = $_GET['lang'];
-// register the session and set the cookie
-    $_SESSION['lang'] = $lang;
-    setcookie('lang', $lang, time() + (3600 * 24 * 30));
-}
-else if(isSet($_SESSION['lang']))
-{
-    $lang = $_SESSION['lang'];
-}
-else if(isSet($_COOKIE['lang']))
-{
-    $lang = $_COOKIE['lang'];
-}
-else
-{
-    $lang = 'en';
-}
-
-switch ($lang) {
-    case 'en':
-        $lang_file = 'lang.en.php';
-        break;
-    case 'de':
-        $lang_file = 'lang.de.php';
-        break;
-    case 'fr':
-        $lang_file = 'lang.fr.php';
-        break;
-    default:
-        $lang_file = 'lang.en.php';
-}
-include_once ROOT_DIR.'languages/'.$lang_file;
-
 ?>
 
 <!doctype html>
@@ -60,11 +23,11 @@ include_once ROOT_DIR.'languages/'.$lang_file;
     <meta name="description" content="Hiking service">
     <meta name="author" content="Mikko Lerto">
 
-    <link rel="stylesheet" href="assets/minified/css/main.min.css">
-    <link rel="stylesheet" href="assets/minified/vendor/leaflet.min.css">
-    <script src="assets/minified/vendor/jquery-3.3.1.min.js" ></script>
-    <script src="assets/minified/vendor/chart.min.js" ></script>
-    <script src="assets/minified/vendor/leaflet.min.js" ></script>
+    <link rel="stylesheet" href="../assets/minified/css/main.min.css">
+    <link rel="stylesheet" href="../assets/minified/vendor/leaflet.min.css">
+    <script src="../assets/minified/vendor/jquery-3.3.1.min.js" ></script>
+    <script src="../assets/minified/vendor/chart.min.js" ></script>
+    <script src="../assets/minified/vendor/leaflet.min.js" ></script>
 
     <!-- use these if leaflet has issues -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/> -->
@@ -79,11 +42,11 @@ include_once ROOT_DIR.'languages/'.$lang_file;
     <nav>
         <div id="navigation">
             <ul id="nav-links">
-                <li><a href="<?php echo URL_DIR ?>"><?php echo $lang['NAV_START']; ?></a></li>
-                <li><a href="<?php echo URL_DIR ?>about.php"><?php echo $lang['NAV_ABOUT']; ?></a></li>
+                <li><a href="<?php echo URL_DIR ?>">Start</a></li>
+                <li><a href="<?php echo URL_DIR ?>about.php">About</a></li>
                 <li>
                     <div class="dropdown">
-                        <a class="dd-trigger"><?php echo $lang['LANGUAGE']; ?> <i class="arrow_triangle-down toggle-icon"></i></a>
+                        <a class="dd-trigger">En <i class="arrow_triangle-down toggle-icon"></i></a>
                         <ul hidden>
                             <?php $the_url = strtok($_SERVER["REQUEST_URI"],'?') ?>
                             <li><a href="<?php echo $the_url ?>?lang=en">En</a></li>
@@ -115,8 +78,8 @@ include_once ROOT_DIR.'languages/'.$lang_file;
                 <li class="mobile-some"><a href="#"> <i class="social_facebook_circle facebook"></i> </a></li>
                 <li class="mobile-some"><a href="#"> <i class="social_twitter_circle twitter"></i> </a></li>
                 <li></li>
-                <li><a href="<?php echo URL_DIR ?>"><?php echo $lang['NAV_START']; ?></a></li>
-                <li><a href="<?php echo URL_DIR ?>about.php"><?php echo $lang['NAV_ABOUT']; ?></a></li>
+                <li><a href="<?php echo URL_DIR ?>">Start</a></li>
+                <li><a href="<?php echo URL_DIR ?>about.php">About</a></li>
                 <li>
                     <div class="dropdown">
                         <a class="dd-trigger"><?php echo $lang['LANGUAGE']; ?> <i class="arrow_triangle-down toggle-icon"></i></a>
