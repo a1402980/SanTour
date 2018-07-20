@@ -89,9 +89,9 @@ if (!$user_info['mobility'] and $user_info['mobility-1'] || $user_info['mobility
 
 <main class="bg5">
     <?php
-    // echo "<br> <br> <br> <br> <br> ";
-    // foreach ($user_info as $key => $value)
-    //     echo $key.'='.$value.'<br />';
+    echo "<br> <br> <br> <br> <br> ";
+    foreach ($user_info as $key => $value)
+        echo $key.'='.$value.'<br />';
     ?>
     <section class="page active">
         <div class="container">
@@ -208,9 +208,9 @@ if (!$user_info['mobility'] and $user_info['mobility-1'] || $user_info['mobility
                                     </div>
                                     <div class="col-12">
                                         <a href="<?php echo $itinerary['url']; ?>" target="_blank"> <button type="button">Snukr <i class="icon_map"></i> </button></a>
-                                        <a href="<?php echo URL_DIR . 'assets/gpx/' . $itinerary['name'] . '.gpx' ?>" download> <button type="button"><?php echo $lang['PAGE_RESULTS_GPS_FILE']; ?><i class="icon_download"> </i> </button></a>
+                                        <a href="<?php echo URL_DIR . 'assets/gpx/' . $itinerary['name'] . '.gpx' ?>" download> <button type="button"><?php echo $lang['PAGE_RESULTS_GPS_FILE']; ?> <i class="icon_download"> </i> </button></a>
                                         <?php $transportUrl = "https://timetable.search.ch/?from=&to=snap%3A" . $itinerary['latlng'][0][0] . "%2C" . $itinerary['latlng'][0][1] . "&time=&date=&time_type=depart" ?>
-                                        <a href="<?php echo $transportUrl ?>" target="_blank" > <button type="button"><?php echo $lang['PAGE_RESULTS_PUBLIC_TRANSPORT']; ?><i class="icon_pin_alt"></i> </button> </a>
+                                        <a href="<?php echo $transportUrl ?>" target="_blank" > <button type="button"><?php echo $lang['PAGE_RESULTS_PUBLIC_TRANSPORT']; ?> <i class="icon_pin"></i> </button> </a>
                                     </div>
 
                                     <div class="col-12">
