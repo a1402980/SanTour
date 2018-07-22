@@ -256,7 +256,9 @@ $lang['PAGE_ABOUT_ALPINE_ROUTES'] = "Alpine routes";
 $lang['PAGE_ABOUT_ALPINE_ROUTES_TEXT'] = "Alpine routes are challenging mountain trails. They sometimes lead across glaciers and scree, through rockfall areas and through rocks with short climbing sections. It can not be assumed that any structural provisions have been undertaken and these would in any case be limited to securing particularly exposed sections with a danger of falling. Users of Alpine routes must be surefooted, have a head for heights, be physically very fit and know how to use ropes and pick axe as well as being able to negotiate climbing sections with the aid of their hands. They must have knowledge of dangers in the mountains. In addition to the equipment for mountain trails, an altimeter, compass, rope and pick axe for crossing glaciers are essential. Signalization of Alpine routes is a blue signpost with white-blue-white tip, white-blue-white painted stripes confirm the route. The information panels at the beginning of Alpine routes indicate special requirements.";
 $lang['PAGE_ABOUT_SOURCE'] = "Source";
 
-
+//cookies
+$lang['COOKIE_PROMPT'] = "Wir verwenden cookies, um Ihr Erlebnis zu verbessern. Durch die Nutzung dieser Website erklären Sie sich einverstanden mit unserer ";
+$lang['COOKIE_POLICY'] = "cookie-Richtlinie";
 
 
 ?>

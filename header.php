@@ -50,8 +50,8 @@ include_once ROOT_DIR.'languages/'.$lang_file;
 ?>
 
 <!doctype html>
-
-<html lang="en">
+<?php //set the html language to the page language ?>
+<html lang="<?php echo strtolower($lang['LANGUAGE']); ?>">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122715152-1"></script>
@@ -65,6 +65,8 @@ include_once ROOT_DIR.'languages/'.$lang_file;
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php //page cache set to 30 days ?>
+    <meta http-equiv="Expires" content="30">
 
     <title>SanTour</title>
     <meta name="description" content="Hiking service">
@@ -76,7 +78,7 @@ include_once ROOT_DIR.'languages/'.$lang_file;
     <script src="assets/minified/vendor/chart.min.js" ></script>
     <script src="assets/minified/vendor/leaflet.min.js" ></script>
 
-    <!-- use these if leaflet has issues -->
+    <?php //use these if leaflet has issues ?>
     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/> -->
     <!-- <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script> -->
 

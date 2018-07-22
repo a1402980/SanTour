@@ -256,4 +256,8 @@ $lang['PAGE_ABOUT_ALPINE_ROUTES'] = "Chemins de randonnée alpine";
 $lang['PAGE_ABOUT_ALPINE_ROUTES_TEXT'] = "Les chemins de randonnée alpine sont des chemins de randonnée de montagne exigeants. Ils mènent en partie à travers des terrains sans chemins, des champs de neige et des glaciers, des pentes pierreuses, des éboulis ou des falaises comprenant de courts passages d’escalade. L’existence d’aménagements n’est pas garantie. Le cas échéant, ces derniers se limitent à la sécurisation des endroits particulièrement exposés au risque de chute. Exigences posées aux usagers: Les chemins de randonnée alpine sont réservés aux usagers en excellente condition physique, qui ont le pied ferme, ne souffrent pas de vertige, maîtrisent le maniement de la corde et du piolet et les passages à escalader à l’aide des mains. Ils doivent connaître les dangers liés à la montagne. En plus de l’équipement requis pour les chemins de randonnée de montagne, un altimètre et une boussole, ainsi qu’une corde et un piolet pour la traversée des glaciers sont nécessaires. Signalisation: Les indicateurs de direction sont de couleur bleue avec des pointes de couleurs blanc-bleu-blanc. Les confirmations et les marquages sont de couleurs blanc-bleu-blanc. Le panneau d’information pour chemin de randonnée alpine au début du chemin indique les exigences particulières requises.";
 $lang['PAGE_ABOUT_SOURCE'] = "Source";
 
+//cookies
+$lang['COOKIE_PROMPT'] = "Nous utilisons des cookies pour améliorer votre expérience. En utilisant ce site Web, vous consentez à ce que notre ";
+$lang['COOKIE_POLICY'] = "politique des cookies";
+
 ?>
