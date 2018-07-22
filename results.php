@@ -89,9 +89,9 @@ if (!$user_info['mobility'] and $user_info['mobility-1'] || $user_info['mobility
 
 <main class="bg5">
     <?php
-    echo "<br> <br> <br> <br> <br> ";
-    foreach ($user_info as $key => $value)
-        echo $key.'='.$value.'<br />';
+    // echo "<br> <br> <br> <br> <br> ";
+    // foreach ($user_info as $key => $value)
+    //     echo $key.'='.$value.'<br />';
     ?>
     <section class="page active">
         <div class="container">

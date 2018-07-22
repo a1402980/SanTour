@@ -4,6 +4,7 @@ $( document ).ready(function() {
   //Cookies.remove("saved-users");
 
 
+
 $( ".info-trigger" ).click(function() {
 
 $( ".more-info" ).slideToggle()
@@ -240,7 +241,18 @@ if($(".cookie-form").length != 0) {
   $("input[type='text'][name='canton']").attr('value', canton);
 }
 
+//cookie policy
+console.log(Cookies.get('cookies'));
+var cook = Cookies.get('cookies');
+if (cook !== 'true') {
+  console.log("yoyo")
+  $('#cookie-info').show();
+}
 
+$("#cookie-info i").click(function(){
+  Cookies.set('cookies', 'true');
+  $('#cookie-info').hide();
+});
 
 });
 

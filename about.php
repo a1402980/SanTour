@@ -5,7 +5,7 @@ require_once('header.php');
   <section class="page active">
     <div class="container">
       <div class="row">
-        <div id="about" class="col-12">
+        <div id="about" class="col-12 text-page">
           <div class="text-container">
             <h1 class="center"><?php echo $lang['NAV_ABOUT']; ?></h1>
             <h2><?php echo $lang['PAGE_ABOUT_GENERAL_INFO_TITLE']; ?></h2>

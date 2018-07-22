@@ -11,6 +11,8 @@
         </div>
     </div>
 </footer>
-
+<div id="cookie-info" hidden>
+  <p>We use cookies to improve your experience. By using this website you agree to to our <a href="<?php echo URL_DIR ?>cookies.php">cookie policy</a>. <i class="icon_close_alt"></i> </p>
+</div>
 </body>
 </html>
