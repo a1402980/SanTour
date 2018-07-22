@@ -242,10 +242,8 @@ if($(".cookie-form").length != 0) {
 }
 
 //cookie policy
-console.log(Cookies.get('cookies'));
 var cook = Cookies.get('cookies');
 if (cook !== 'true') {
-  console.log("yoyo")
   $('#cookie-info').show();
 }
 
