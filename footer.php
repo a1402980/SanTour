@@ -1,7 +1,7 @@
-<script async src="assets/minified/js/js.cookie.min.js" ></script>
-<script async src="assets/minified/js/unserialize.min.js" ></script>
-<script async src="assets/minified/js/serialize.min.js" ></script>
-<script src="assets/minified/js/scripts.min.js" ></script>
+<script defer src="assets/minified/js/js.cookie.min.js" ></script>
+<script defer src="assets/minified/js/unserialize.min.js" ></script>
+<script defer src="assets/minified/js/serialize.min.js" ></script>
+<script defer src="assets/minified/js/scripts.min.js" ></script>
 <footer>
     <div class="container">
         <div class="row">

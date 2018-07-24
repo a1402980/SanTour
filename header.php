@@ -1,8 +1,8 @@
 <?php
 //show errors
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ ini_set('display_errors', 1);
+ ini_set('display_startup_errors', 1);
+ error_reporting(E_ALL);
 
 //Init global Constants
 define('SITE_NAME', substr(dirname($_SERVER['SCRIPT_NAME']),1)); //--> php_mvc
@@ -75,8 +75,7 @@ include_once ROOT_DIR.'languages/'.$lang_file;
     <link rel="stylesheet" href="assets/minified/css/main.min.css">
     <link rel="stylesheet" href="assets/minified/vendor/leaflet.min.css">
     <script src="assets/minified/vendor/jquery-3.3.1.min.js" ></script>
-    <script src="assets/minified/vendor/chart.min.js" ></script>
-    <script src="assets/minified/vendor/leaflet.min.js" ></script>
+
 
     <?php //use these if leaflet has issues ?>
     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/> -->

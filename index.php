@@ -1186,8 +1186,8 @@ require_once('header.php');
             <div class="container">
                 <div class="row">
                     <div class="col-12 center">
-                        <h1></h1>
-                        <p class="thin-text"></p>
+                        <h1><?php echo $lang['PAGE_TIME_TITLE']; ?></h1>
+                        <p class="thin-text"><?php echo $lang['PAGE_TIME_SUBTITLE']; ?></p>
                         <div class="col-12">
                             <div class="radio-buttons white-container">
                                 <label>
@@ -1215,7 +1215,6 @@ require_once('header.php');
                             <span class="right done-text"><span class="done-percentage"></span>% <?php echo $lang['DONE'] ?></span>
                         </div>
                         <div class="col-12">
-                            <a class="skip"><?php echo $lang['SKIP'] ?></a>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,6 @@
+<?php //include only for results page for better performance ?>
+<script src="assets/minified/vendor/chart.min.js" ></script>
+<script src="assets/minified/vendor/leaflet.min.js" ></script>
 <?php
 require_once('header.php');
 // The data to send to the API
@@ -358,12 +361,12 @@ if (!$user_info['mobility'] and $user_info['mobility-1'] || $user_info['mobility
                                             //add points of interest
                                             <?php foreach ($itinerary['poi'] as $poi): ?>
                                             L.marker([<?php echo $poi['latlng']['lat'].",".$poi['latlng']['lng'] ?>], {icon: poiIcon}).addTo(mymap)
-                                                .bindPopup("<img style='max-width:100%; height:50px;' src='<?php echo $poi['image'] ?>' alt='<?php echo $poi['name'] ?>'><br/> <b><?php echo $poi['name'] ?></b> <br/> <span><?php echo $poi['description']?></span>");
+                                                .bindPopup("<strong>Point of interest:</strong><br/><img style='max-width:100%; height:50px;' src='<?php echo $poi['image'] ?>' alt='<?php echo $poi['name'] ?>'><br/> <b><?php echo $poi['name'] ?></b> <br/> <span><?php echo $poi['description']?></span>");
                                             <?php endforeach; ?>
                                             //add points of danger to the map
                                             <?php foreach ($itinerary['pod'] as $pod): ?>
                                             L.marker([<?php echo $pod['latlng']['lat'].",".$pod['latlng']['lng'] ?>], {icon: podIcon}).addTo(mymap)
-                                                .bindPopup( "<img style='max-width:100%; height:50px;' src='<?php echo $pod['image'] ?>' alt='<?php echo $pod['name'] ?>'><br/> <b><?php echo $pod['name'] ?></b> <br/> <span><?php echo $pod['description']?></span>");
+                                                .bindPopup( "<strong>Point of danger:</strong><br/><img style='max-width:100%; height:50px;' src='<?php echo $pod['image'] ?>' alt='<?php echo $pod['name'] ?>'><br/> <b><?php echo $pod['name'] ?></b> <br/> <span><?php echo $pod['description']?></span> <br/> <span>Type:<?php echo $pod['type']?></span> <br/> <span>Level: <?php echo $pod['level']?>/5</span>");
                                             <?php endforeach; ?>
                                         }
                                     </script>
