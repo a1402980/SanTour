@@ -56,15 +56,6 @@ include_once ROOT_DIR.'languages/'.$lang_file;
 <?php //set the html language to the page language ?>
 <html lang="<?php echo strtolower($lang['LANGUAGE']); ?>">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122715152-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-122715152-1');
-    </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
