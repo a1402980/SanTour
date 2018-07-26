@@ -52,6 +52,8 @@ $lang['NO'] = "Non";
 
 $lang['SLIDE_ME'] = "Faites-moi glisser";
 
+$lang['WRITE_HERE'] = "écrivez ici...";
+
 
 
 //map

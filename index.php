@@ -110,7 +110,7 @@ require_once('header.php');
                         <h1><?php echo $lang['PAGE_NAME_TITLE']; ?></h1>
                         <p class="thin-text"><?php echo $lang['PAGE_NAME_SUBTITLE']; ?></p>
                         <div class="col-12">
-                            <input placeholder="Write here..." class="name-box" type="text" name="username" maxlength="20" value="">
+                            <input placeholder="<?php echo $lang['WRITE_HERE']; ?>" class="name-box" type="text" name="username" maxlength="20" value="">
                         </div>
                         <div class="col-12">
                             <button type="button" id="physical-1" class="next-page"><?php echo $lang['CONTINUE'] ?></button>
@@ -1221,7 +1221,6 @@ require_once('header.php');
             </div>
         </section>
 
-        <button type="submit">Submit form</button>
     </form>
 
 

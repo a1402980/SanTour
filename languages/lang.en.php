@@ -25,6 +25,7 @@ $lang['Yes'] = "Yes";
 $lang['NOT_SURE'] = "Not sure";
 $lang['NO'] = "No";
 $lang['SLIDE_ME'] = "Slide me";
+$lang['WRITE_HERE'] = "write here...";
 
 //map
 $lang['PAGE_MAP_TITLE'] = "Where do you want to go?";
